@@ -2,6 +2,9 @@ import React from 'react'
 import { Link } from 'gatsby'
 import LayoutProject from '../../components/layoutproject'
 import { WaveLine, ArrowBack } from '../../components/icons'
+
+import img from '../../images/pupusas-cover.png'
+
 const PagePupusas = () => (
   <LayoutProject title="GMF" link="/apps/gmf">
     <div className="project-page pupusas" style={{ position: 'relative' }}>
@@ -28,7 +31,7 @@ const PagePupusas = () => (
               </div>
             </div>
             <div className="col-md-8">
-              <img className="sec-cover" src="/img/pupusas-cover.png" alt="" />
+              <img className="sec-cover" src={img} alt="" />
             </div>
           </div>
 

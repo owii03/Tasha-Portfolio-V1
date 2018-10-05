@@ -2,8 +2,12 @@ import React from 'react'
 import { Link } from 'gatsby'
 import LayoutProject from '../../components/layoutproject'
 import { ArrowBack } from '../../components/icons'
+
+import img1 from '../../images/volant-back1.png'
+import img2 from '../../images/volant-back2.svg'
+import img from '../../images/volant.png'
 const PageVolant = () => (
-  <LayoutProject title="VOLANT APP" link="/apps/volant">
+  <LayoutProject title="FIDO APP" link="/apps/fido">
     <div className="project-page volant" style={{ position: 'relative' }}>
       <div className="sec-header">
         <div className="container">
@@ -14,8 +18,8 @@ const PageVolant = () => (
         </div>
       </div>
       <section className="sec-hero" >
-        <img className="volant-back1" src="/img/volant-back1.png" alt="" />
-        <img className="volant-back2" src="/img/volant-back2.svg" alt="" />
+        <img className="volant-back1" src={img1} alt="" />
+        <img className="volant-back2" src={img2} alt="" />
         <div className="container content">
           <div className="row align-items-center" >
             <div className="col-md-4">
@@ -29,7 +33,7 @@ const PageVolant = () => (
               </div>
             </div>
             <div className="col-md-8 text-center">
-              <img className="sec-cover" src="/img/volant.png" alt="" />
+              <img className="sec-cover" src={img} alt="" />
             </div>
           </div>
         </div>

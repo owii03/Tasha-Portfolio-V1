@@ -1,13 +1,17 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import LayoutProject from '../../components/layoutproject'
-
+import { ArrowBack } from '../../components/icons'
+import img from '../../images/jwh.png'
 const PageJWH = () => (
   <LayoutProject title="EVET" link="/websites/evet">
     <div className="project-page jwh" style={{ position: 'relative' }}>
-      <div className="sec-header">
+    <div className="sec-header">
         <div className="container">
-          <Link className="action" to="/apps">REGRESAR</Link>
+          <div className="d-flex">
+            <ArrowBack width="22px" height="22px" />
+            <Link className="action" to="/websites">REGRESAR</Link>
+          </div>
         </div>
       </div>
       <section className="sec-hero">
@@ -25,7 +29,7 @@ const PageJWH = () => (
               </div>
             </div>
             <div className="col-md-8">
-              <img className="sec-cover" src="/img/jwh.png" alt="" />
+              <img className="sec-cover" src={img} alt="" />
             </div>
           </div>
 

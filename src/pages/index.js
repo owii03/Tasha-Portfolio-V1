@@ -2,7 +2,12 @@ import React, { Component } from 'react'
 import { IconBehance, IconInstagram, IconDribbble } from '../components/icons'
 import { TimelineMax, Expo } from "gsap/TweenMax";
 import Layout from '../components/layout'
-
+import img1 from '../images/logo.svg'
+import img2 from '../images/illustratio-hero.svg'
+import img3 from '../images/flower.svg'
+import img4 from '../images/block-apps.svg'
+import img5 from '../images/block-websites.svg'
+import img6 from '../images/areas.svg'
 class IndexPage extends Component {
 
   state = {
@@ -66,14 +71,14 @@ class IndexPage extends Component {
               </div>
               <div className="container-fluid">
                 <div className="logo-container">
-                  <img className="main-logo" src="./../img/logo.svg" alt="" />
+                  <img className="main-logo" src={img1} alt="" />
                 </div>
                 <div className="content">
                   <h1 className="sec-title">GITA</h1>
                   <h1 className="sec-title">GOVINDA</h1>
                   <span>GRAPHIC DESIGNER</span>
                 </div>
-                <img className="illustration-hero" src="./../img/illustratio-hero.svg" alt="img" />
+                <img className="illustration-hero" src={img2} alt="img" />
               </div>
             </div>
           </section>
@@ -82,7 +87,9 @@ class IndexPage extends Component {
               <div className="content">
                 <h1 className="sec-title">ACERCA <br /> DE MI</h1>
                 <div className="row">
-                  <div className="col-md-3"></div>
+                  <div className="col-md-3">
+                    <img src={img3} alt=""/>
+                  </div>
                   <div className="col-md-9">
                     <p className="sec-text">
                       Hola, <br />
@@ -114,7 +121,7 @@ class IndexPage extends Component {
                   <div className="col-md-6 px-0 text-center">
                     <div className="block-apps">
                       <div className="block-img ">
-                        <img src="/img/block-apps.svg" alt="" />
+                        <img src={img4} alt="" />
                       </div>
                       <a href="/apps/" className="title">APLICACIONES</a>
                     </div>
@@ -122,7 +129,7 @@ class IndexPage extends Component {
                   <div className="col-md-6 px-0 text-center">
                     <div className="block-websites">
                       <div className="block-img">
-                        <img src="/img/block-websites.svg" alt="" />
+                        <img src={img5} alt="" />
                       </div>
                       <a href="/websites/" className="title ">WEBSITES</a>
                     </div>
@@ -136,7 +143,7 @@ class IndexPage extends Component {
               <div className="content text-center">
               <h1 className="sec-title ">ÁREAS DE DISEÑO</h1>
               <p className="e-text"> <span>Diseño UX - UI:</span>  Me especialicé en diseño ux - ui para crear interacciones y generar experiencias en los usuarios. Actualmente llevo 2 años y medio en esta área del diseño.</p>
-              <img className="cover-areas" src="/img/areas.svg" alt="" />
+              <img className="cover-areas" src={img6} alt="" />
               </div>
             </div>
           </section>

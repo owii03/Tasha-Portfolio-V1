@@ -2,6 +2,8 @@ import React from 'react'
 import { Link } from 'gatsby'
 import LayoutProject from '../../components/layoutproject'
 import { WaveLine, ArrowBack } from '../../components/icons'
+
+import img1 from '../../images/gmf-cover.png'
 const PageGMF = () => (
   <LayoutProject title="VOLANT APP" link="/apps/volant">
     <div className="project-page gmf" style={{ position: 'relative' }}>
@@ -13,7 +15,8 @@ const PageGMF = () => (
           </div>
         </div>
       </div>
-      <section className="sec-hero" style={{ backgroundImage: 'url(/img/gmf-cover.png)' }}>
+      <section className="sec-hero" style={{ position: 'relative',overflow:'hidden' }}>
+      <img src={img1} alt="" style={{position:'absolute', top:'0',width:'100%' }}/>
         <div className="container content">
           <div className="row">
             <div className="col-md-4">

@@ -3,6 +3,9 @@ import { Link } from 'gatsby'
 
 import Layout from '../components/layout'
 import { WaveLine } from '../components/icons'
+import img1 from '../images/inxights.png'
+import img2 from '../images/jwh.png'
+import img3 from '../images/evet.png'
 const Websites = () => (
   <Layout>
     <div className="apps-page websites">
@@ -24,7 +27,7 @@ const Websites = () => (
             <div className="container-fluid">
               <div className="row align-items-center">
                 <div className="col-md-7 text-center">
-                    <img className="image" src="/img/inxights.png" alt=""/>
+                    <img className="image" src={img1} alt=""/>
                 </div>
                 <div className="col-md-5">
                   <div className="block-info text-left">
@@ -51,11 +54,11 @@ const Websites = () => (
                     <p className="sec-text">
                     Esta aplicación te ayuda a realizar pedidos para ordenar hamburguesas y poderlas  personalizar, así como muestra su precio y descripción de productos.
                     </p>
-                    <a href="#" className="link">VER MÁS</a>
+                    <a href="/websites/jwh" className="link">VER MÁS</a>
                   </div>
                 </div>
                 <div className="col-md-7 text-center">
-                  <img className="image" src="/img/jwh.png" alt=""/>
+                  <img className="image" src={img2} alt=""/>
                 </div>
               </div>
             </div>
@@ -66,7 +69,7 @@ const Websites = () => (
             <div className="container-fluid">
               <div className="row align-items-center">
                 <div className="col-md-7 text-center">
-                <img className="image" src="/img/evet.png" alt=""/>
+                <img className="image" src={img3} alt=""/>
                 </div>
                 <div className="col-md-5">
                 <div className="block-info text-left">

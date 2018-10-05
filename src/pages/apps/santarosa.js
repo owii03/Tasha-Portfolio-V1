@@ -2,8 +2,11 @@ import React from 'react'
 import { Link } from 'gatsby'
 import LayoutProject from '../../components/layoutproject'
 import { WaveLine, ArrowBack } from '../../components/icons'
+
+import img from '../../images/santorsa-cover.png'
+import img2 from '../../images/santarosa-back1.svg'
 const PageSantarosa = () => (
-  <LayoutProject title="EVET" link="/websites/evet">
+  <LayoutProject title="PUPUSAS APP" link="/apps/pupusas">
     <div className="project-page santarosa" style={{ position: 'relative' }}>
       <div className="sec-header">
         <div className="container">
@@ -13,7 +16,8 @@ const PageSantarosa = () => (
           </div>
         </div>
       </div>
-      <section className="sec-hero" style={{ backgroundImage: 'url(/img/santorsa-cover.png)' }}>
+      <section className="sec-hero" style={{ position: 'relative',overflow:'hidden' }}>
+      <img src={img} alt="" style={{position:'absolute', top:'0',width:'100%' }}/>
         <div className="container content">
           <div className="row">
             <div className="col-md-4">
@@ -31,7 +35,7 @@ const PageSantarosa = () => (
           </div>
 
         </div>
-        <img className="sr-back1" src="/img/santarosa-back1.svg" alt="" />
+        <img className="sr-back1" src={img2} alt="" />
       </section>
 
     </div>

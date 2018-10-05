@@ -2,8 +2,11 @@ import React from 'react'
 import { Link } from 'gatsby'
 import LayoutProject from '../../components/layoutproject'
 import { WaveLine, ArrowBack } from '../../components/icons'
+
+import img from '../../images/fido-cover.png'
+import img1 from '../../images/fido-back1.png'
 const PageFido = () => (
-  <LayoutProject title="EVET" link="/websites/evet">
+  <LayoutProject title="SANTA ROSA" link="/apps/santarosa">
     <div className="project-page fido" style={{ position: 'relative' }}>
       <div className="sec-header">
         <div className="container">
@@ -28,12 +31,12 @@ const PageFido = () => (
               </div>
             </div>
             <div className="col-md-7 text-center">
-              <img className="sec-cover" src="/img/fido-cover.png" alt="" />
+              <img className="sec-cover" src={img} alt="" />
             </div>
           </div>
 
         </div>
-        <img className="sec-back1" src="/img/fido-back1.png" alt="" />
+        <img className="sec-back1" src={img1} alt="" />
       </section>
 
     </div>

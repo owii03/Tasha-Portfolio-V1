@@ -3,7 +3,12 @@ import { Link } from 'gatsby'
 
 import Layout from '../components/layout'
 import { WaveLine } from '../components/icons'
-
+import img1 from '../images/gmf.png'
+import img2 from '../images/volant.png'
+import img3 from '../images/fido.png'
+import img4 from '../images/santarosa.png'
+import img5 from '../images/pupusas.png'
+import img6 from '../images/gmf.png'
 const Apps = () => (
   <Layout>
     <div className="apps-page apps">
@@ -25,7 +30,7 @@ const Apps = () => (
             <div className="container-fluid">
               <div className="row align-items-center">
                 <div className="col-md-7 text-right">
-                    <img className="image" src="/img/gmf.png" alt=""/>
+                    <img className="image" src={img1} alt=""/>
                 </div>
                 <div className="col-md-5">
                   <div className="block-info text-left">
@@ -54,7 +59,7 @@ const Apps = () => (
                   </div>
                 </div>
                 <div className="col-md-7 text-left">
-                  <img className="image" src="/img/volant" alt=""/>
+                  <img className="image" src={img2} alt=""/>
                 </div>
               </div>
             </div>
@@ -65,7 +70,7 @@ const Apps = () => (
             <div className="container-fluid">
               <div className="row align-items-center">
                 <div className="col-md-7 text-right">
-                <img className="image" src="/img/fido.png" alt=""/>
+                <img className="image" src={img3} alt=""/>
                 </div>
                 <div className="col-md-5">
                 <div className="block-info text-left">
@@ -94,7 +99,7 @@ const Apps = () => (
                   </div>
                 </div>
                 <div className="col-md-6 text-left">
-                <img className="image" src="/img/santarosa.png" alt=""/>
+                <img className="image" src={img4} alt=""/>
                 </div>
               </div>
             </div>
@@ -105,7 +110,7 @@ const Apps = () => (
             <div className="container-fluid">
               <div className="row align-items-center">
                 <div className="col-md-6 text-right">    
-                <img className="image" src="/img/pupusas.png" alt=""/>         
+                <img className="image" src={img5} alt=""/>         
                 </div>
                 <div className="col-md-6">
                 <div className="block-info text-left">
