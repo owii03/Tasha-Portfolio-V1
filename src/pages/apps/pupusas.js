@@ -4,7 +4,12 @@ import LayoutProject from '../../components/layoutproject'
 import { WaveLine, ArrowBack } from '../../components/icons'
 
 import img from '../../images/pupusas-cover.png'
+import img1 from '../../images/pupusas-content.png'
+import img_f2 from '../../images/flowe-pupusas.png'
+import img_back1 from '../../images/pupusas-back1.png'
 
+import imgMarvel from '../../images/marvel.svg'
+import imgAdobe from '../../images/adobexd.svg'
 const PagePupusas = () => (
   <LayoutProject title="GMF" link="/apps/gmf">
     <div className="project-page pupusas" style={{ position: 'relative' }}>
@@ -37,6 +42,35 @@ const PagePupusas = () => (
 
         </div>
 
+      </section>
+      <section className="sec-info">
+      <img className="img-back1" src={img_back1} alt=""/>
+        <div className="content">
+          <div className="container-fluid">
+            <div className="row">
+              <div className="col-md-7">
+                <img className="img-content" src={img1} alt="" />
+              </div>
+              <div className="col-md-5">
+                <div className="block-info">
+                  <div className="sec-title">PANTALLAS PUPUSAS</div>
+                  <div className="details">
+                    <span>Titulo:</span>
+                    <p>PUPUSAS APP.</p>
+                    <span>Tipo:</span>
+                    <p>APP iOS.</p>
+                    <span>Programas utilizados:</span>
+                    <div className="tools">
+                      <img className="i-tool" src={imgMarvel} alt="" />
+                      <img className="i-tool" src={imgAdobe} alt="" />
+                    </div>
+                  </div>
+                </div>
+                <img style={{maxWidth:'80px'}} src={img_f2} alt=""/>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
     </div>

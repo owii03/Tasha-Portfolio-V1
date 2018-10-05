@@ -5,6 +5,9 @@ import { WaveLine, ArrowBack } from '../../components/icons'
 
 import img from '../../images/fido-cover.png'
 import img1 from '../../images/fido-back1.png'
+import img2 from '../../images/fido-content.png'
+import imgMarvel from '../../images/marvel.svg'
+import imgAdobe from '../../images/adobexd.svg'
 const PageFido = () => (
   <LayoutProject title="SANTA ROSA" link="/apps/santarosa">
     <div className="project-page fido" style={{ position: 'relative' }}>
@@ -38,7 +41,39 @@ const PageFido = () => (
         </div>
         <img className="sec-back1" src={img1} alt="" />
       </section>
+      <section className="sec-info">
 
+        <div className="content">
+          <div className="container-fluid">
+            <div className="row">
+              <div className="col-md-5">
+                <div className="block-info">
+                  <h3 className="title">¿Cómo Funciona?</h3>
+                  <p className="sec-text">Buscas tus restaurantes favoritos, ordenas tus platillos preferidos y la entrega llega a la puerta de la casa u oficina.</p>
+                  <p className="sec-text">Puedes buscar por tipo de cocina, platos y restaurantes. Además cuenta con ofertas especiales, entregas gratuitas con el cual se puede rastrear cada una de las órdenes.</p>
+                  <div className="details">
+                    <span>Titulo:</span>
+                    <p>GMF</p>
+                    <span>Tipo:</span>
+                    <p>App iOS, Android</p>
+                    <span>Programas utilizados:</span>
+                    <div className="tools">
+                      <img className="i-tool" src={imgMarvel} alt="" />
+                      <img className="i-tool" src={imgAdobe} alt="" />
+                    </div>
+                  </div>
+                  {/* <a href="www.inxights.co" className="nav-link">www.inxights.co</a> */}
+                </div>
+              </div>
+              <div className="col-md-7">
+              <img className="img-detail" src={img2} alt="" />
+              </div>
+              
+            </div>
+          </div>
+        </div>
+
+      </section>
     </div>
   </LayoutProject>
 )

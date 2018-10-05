@@ -5,6 +5,10 @@ import { WaveLine, ArrowBack } from '../../components/icons'
 import { withPrefix } from 'gatsby'
 import hero1 from '../../images/inxight-hero.png'
 import img2 from '../../images/inxights-info.png'
+
+import imgMarvel from '../../images/marvel.svg'
+import imgAdobe from '../../images/adobexd.svg'
+
 const PageIxights = () => (
   <LayoutProject title="JWH BURGERS" link="/websites/jwh">
     <div className="project-page inxights" style={{ position: 'relative' }}>
@@ -41,8 +45,8 @@ const PageIxights = () => (
                   <p>Web Responsive</p>
                   <span>Programas utilizados:</span>
                   <div className="tools">
-                    <img className="i-tool" src="/img/marvel.svg" alt="" />
-                    <img className="i-tool" src="/img/adobexd.svg" alt="" />
+                    <img className="i-tool" src={imgMarvel} alt="" />
+                    <img className="i-tool" src={imgAdobe} alt="" />
                   </div>
                 </div>
 

@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 
 import Layout from '../components/layout'
-import { WaveLine } from '../components/icons'
+import { WaveLine, ArrowBack } from '../components/icons'
 import img1 from '../images/gmf.png'
 import img2 from '../images/volant.png'
 import img3 from '../images/fido.png'
@@ -13,6 +13,14 @@ const Apps = () => (
   <Layout>
     <div className="apps-page apps">
       <section className="sec-header">
+  
+        <div className="container">
+          <div className="navigate d-flex">
+            <ArrowBack width="22px" height="22px" />
+            <Link className="action" to="/">REGRESAR</Link>
+          </div>
+        </div>
+     
         <div className="content text-center">
           <h1 className="sec-title ">APLICACIONES</h1>
           <WaveLine width="200px" />

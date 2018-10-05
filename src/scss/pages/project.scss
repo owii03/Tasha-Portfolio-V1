@@ -141,10 +141,16 @@
   }
 
   &.gmf {
-    .sec-header{
-      .action{color: white;}
-      .icon-svg{fill: white;}
+    .sec-header {
+      .action {
+        color: white;
+      }
+
+      .icon-svg {
+        fill: white;
+      }
     }
+
     .sec-hero {
       background-color: #F04032;
       padding: 120px 0;
@@ -188,12 +194,92 @@
         }
       }
     }
+
+    .sec-info {
+      padding: 80px 0;
+      position: relative;
+
+      .img-back3 {
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+
+      .img-back4 {
+        position: absolute;
+        top: -80px;
+        left: 20px;
+      }
+
+      .block-info {
+        padding: 40px;
+
+        .title {
+          font-size: 24px;
+          font-weight: 600;
+          color: #3D3D3D;
+        }
+
+        .sec-text {
+          color: $color-text;
+
+        }
+
+        .details {
+          margin: 40px 0 80px;
+
+          span {
+            color: $color-text;
+            font-weight: 300;
+          }
+
+          p {
+            font-weight: 600;
+            color: #3D3D3D;
+          }
+
+          .tools {
+            display: flex;
+            margin-top: 20px;
+
+            .i-tool {
+              width: 25px;
+              height: 25px;
+              margin-right: 15px;
+            }
+          }
+        }
+
+        .nav-link {
+          color: #460A89;
+          font-weight: 700;
+          position: relative;
+
+          &:after {
+            content: "";
+            display: inline-block;
+            width: 70px;
+            height: 7px;
+            background-color: $color-two;
+            position: absolute;
+            left: -20px;
+            bottom: 0;
+            z-index: -1;
+          }
+        }
+      }
+
+      .img-detail {
+        max-width: 100%;
+      }
+    }
   }
 
   &.fido {
     .sec-hero {
       background-color: #A389CF;
       padding: 80px 0;
+      position: relative;
 
       .sec-back1 {
         position: absolute;
@@ -231,6 +317,85 @@
             font-size: 24px;
           }
         }
+      }
+    }
+
+    .sec-info {
+      position: relative;
+
+      .img-back3 {
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+
+      .img-back4 {
+        position: absolute;
+        top: -80px;
+        left: 20px;
+      }
+
+      .block-info {
+
+        padding: 80px;
+
+        .title {
+          font-size: 24px;
+          font-weight: 600;
+          color: #3D3D3D;
+        }
+
+        .sec-text {
+          color: $color-text;
+
+        }
+
+        .details {
+          margin: 40px 0 80px;
+
+          span {
+            color: $color-text;
+            font-weight: 300;
+          }
+
+          p {
+            font-weight: 600;
+            color: #3D3D3D;
+          }
+
+          .tools {
+            display: flex;
+            margin-top: 20px;
+
+            .i-tool {
+              width: 25px;
+              height: 25px;
+              margin-right: 15px;
+            }
+          }
+        }
+
+        .nav-link {
+          color: #460A89;
+          font-weight: 700;
+          position: relative;
+
+          &:after {
+            content: "";
+            display: inline-block;
+            width: 70px;
+            height: 7px;
+            background-color: $color-two;
+            position: absolute;
+            left: -20px;
+            bottom: 0;
+            z-index: -1;
+          }
+        }
+      }
+
+      .img-detail {
+        max-width: 100%;
       }
     }
   }
@@ -285,10 +450,16 @@
   }
 
   &.pupusas {
-    .sec-header{
-      .action{color: white;}
-      .icon-svg{fill: white;}
+    .sec-header {
+      .action {
+        color: white;
+      }
+
+      .icon-svg {
+        fill: white;
+      }
     }
+
     .sec-hero {
       background-color: #FF6590;
       padding: 120px 0;
@@ -300,7 +471,7 @@
 
       .sec-cover {
         width: 100%;
-       
+
         padding: 0 5%;
       }
 
@@ -309,6 +480,10 @@
 
         .icon-svg {
           fill: #E24052;
+        }
+
+        .sec-title {
+          font-size: 22px;
         }
 
         .details {
@@ -335,6 +510,51 @@
       .sec-back1 {
         position: absolute;
         bottom: 0;
+      }
+
+    }
+
+    .sec-info {
+      padding: 80px 0;
+      position: relative;
+      .img-back1{
+        position: absolute;
+        top: 20px;
+        left: 20px;
+      }
+      .img-content {
+        width: 100%;
+      }
+
+      .block-info {
+        .sec-title{
+          font-size: 36px;
+          color: #6d6d6d;
+        }
+        .details {
+          margin: 40px 0 80px;
+
+          span {
+            color: $color-text;
+            font-weight: 300;
+          }
+
+          p {
+            font-weight: 600;
+            color: #3D3D3D;
+          }
+
+          .tools {
+            display: flex;
+            margin-top: 20px;
+
+            .i-tool {
+              width: 25px;
+              height: 25px;
+              margin-right: 15px;
+            }
+          }
+        }
       }
 
     }
@@ -398,33 +618,33 @@
       }
     }
   }
-
 }
 
-.project-footer {
-  background-color: #F8F8F8;
-  padding: 40px 20px;
 
-  .action {
-    display: inline-block;
-    color: $color-text;
-    font-size: 20px;
-    font-weight: 600;
-    border-bottom: 3px solid #DFDFDF;
-    margin-bottom: 20px;
-  }
+  .project-footer {
+    background-color: #F8F8F8;
+    padding: 40px 20px;
 
-  .title {
-    display: block;
-    font-size: 44px;
-    font-weight: 600;
-    color: #383737;
-    transition: .7s all ease;
-    height: 45px;
-    cursor: pointer;
+    .action {
+      display: inline-block;
+      color: $color-text;
+      font-size: 20px;
+      font-weight: 600;
+      border-bottom: 3px solid #DFDFDF;
+      margin-bottom: 20px;
+    }
 
-    &:hover {
-      font-size: 46px;
+    .title {
+      display: block;
+      font-size: 44px;
+      font-weight: 600;
+      color: #383737;
+      transition: .7s all ease;
+      height: 45px;
+      cursor: pointer;
+
+      &:hover {
+        font-size: 46px;
+      }
     }
   }
-}

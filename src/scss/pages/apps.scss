@@ -1,7 +1,16 @@
 .apps-page {
   .sec-header {
-    padding: 80px 0;
-
+    padding: 40px 0 80px;
+    .navigate{
+      align-items: center;
+      a{
+        color: white;
+      }      
+      .icon-svg{
+        fill: white !important;
+        margin-right: 10px;
+      }
+    }
     .sec-title {
       font-size: 36px;
 

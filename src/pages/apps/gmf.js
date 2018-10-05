@@ -4,6 +4,12 @@ import LayoutProject from '../../components/layoutproject'
 import { WaveLine, ArrowBack } from '../../components/icons'
 
 import img1 from '../../images/gmf-cover.png'
+import img2 from '../../images/gmf-img2.png'
+import img3 from '../../images/gmd-back3.png'
+import img4 from '../../images/gmf-back4.png'
+
+import imgMarvel from '../../images/marvel.svg'
+import imgAdobe from '../../images/adobexd.svg'
 const PageGMF = () => (
   <LayoutProject title="VOLANT APP" link="/apps/volant">
     <div className="project-page gmf" style={{ position: 'relative' }}>
@@ -15,11 +21,12 @@ const PageGMF = () => (
           </div>
         </div>
       </div>
-      <section className="sec-hero" style={{ position: 'relative',overflow:'hidden' }}>
-      <img src={img1} alt="" style={{position:'absolute', top:'0',width:'100%' }}/>
+      <section className="sec-hero" style={{ position: 'relative', overflow: 'hidden' }}>
+        <img src={img1} alt="" style={{ position: 'absolute', top: '0', width: '100%' }} />
+
         <div className="container content">
           <div className="row">
-            <div className="col-md-4">
+            <div className="col-md-5">
               <div className="block-info">
                 <h1 className="title">GMF</h1>
                 <p className="sec-text">Aplicación de comida rápida</p>
@@ -29,14 +36,45 @@ const PageGMF = () => (
                 </div>
               </div>
             </div>
-            <div className="col-md-8">
+            <div className="col-md-7">
             </div>
           </div>
 
         </div>
         <img className="gmd-back1" src="/img/gmd-back1.svg" alt="" />
       </section>
-
+      <section className="sec-info">
+        <img className="img-back3" src={img3} alt="" />
+        <img className="img-back4" src={img4} alt="" />
+        <div className="content">
+          <div className="container">
+            <div className="row">
+              <div className="col-md-5">
+                <div className="block-info">
+                  <h3 className="title">¿Cómo Funciona?</h3>
+                  <p className="sec-text">Buscas tus restaurantes favoritos, ordenas tus platillos preferidos y la entrega llega a la puerta de la casa u oficina.</p>
+                  <p className="sec-text">Puedes buscar por tipo de cocina, platos y restaurantes. Además cuenta con ofertas especiales, entregas gratuitas con el cual se puede rastrear cada una de las órdenes.</p>
+                  <div className="details">
+                    <span>Titulo:</span>
+                    <p>GMF</p>
+                    <span>Tipo:</span>
+                    <p>App iOS, Android</p>
+                    <span>Programas utilizados:</span>
+                    <div className="tools">
+                      <img className="i-tool" src={imgMarvel} alt="" />
+                      <img className="i-tool" src={imgAdobe} alt="" />
+                    </div>
+                  </div>
+                  {/* <a href="www.inxights.co" className="nav-link">www.inxights.co</a> */}
+                </div>
+              </div>
+              <div className="col-md-7">
+                <img className="img-detail" src={img2} alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   </LayoutProject>
 )
