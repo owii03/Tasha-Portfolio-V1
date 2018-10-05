@@ -3,6 +3,7 @@ import { Link } from 'gatsby'
 import LayoutProject from '../../components/layoutproject'
 import { WaveLine, ArrowBack } from '../../components/icons'
 import { withPrefix } from 'gatsby'
+import image from '../../images/gatsby-icon.png'
 const PageIxights = () => (
   <LayoutProject title="JWH BURGERS" link="/websites/jwh">
     <div className="project-page inxights" style={{ position: 'relative' }}>
@@ -19,7 +20,7 @@ const PageIxights = () => (
           <h1 className="title">INXIGHTS</h1>
           <p className="sec-text">Plataforma para monitorear campañas</p>
         </div>
-        <img className="sec-cover" src={withPrefix('/img/inxight-hero.png')} alt="" />
+        <img className="sec-cover" src={image} alt="" />
       </section>
       <section className="sec-info">
         <div className="container-fluid">
