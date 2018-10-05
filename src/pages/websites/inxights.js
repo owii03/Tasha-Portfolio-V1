@@ -1,13 +1,17 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import LayoutProject from '../../components/layoutproject'
-
+import { WaveLine, ArrowBack } from '../../components/icons'
+import { withPrefix } from 'gatsby'
 const PageIxights = () => (
   <LayoutProject title="JWH BURGERS" link="/websites/jwh">
-    <div className="project-page inxights" style={{position:'relative'}}>
+    <div className="project-page inxights" style={{ position: 'relative' }}>
       <div className="sec-header">
         <div className="container">
-          <Link className="action" to="/websites">REGRESAR</Link>
+          <div className="d-flex">
+            <ArrowBack width="22px" height="22px" />
+            <Link className="action" to="/apps">REGRESAR</Link>
+          </div>
         </div>
       </div>
       <section className="sec-hero">
@@ -15,15 +19,15 @@ const PageIxights = () => (
           <h1 className="title">INXIGHTS</h1>
           <p className="sec-text">Plataforma para monitorear campañas</p>
         </div>
-        <img className="sec-cover" src="/img/inxight-hero.png" alt="" />
+        <img className="sec-cover" src={withPrefix('/img/inxight-hero.png')} alt="" />
       </section>
       <section className="sec-info">
         <div className="container-fluid">
           <div className="row align-items-center">
             <div className="col-md-6 text-center">
-              <img className="info-img" src="/img/inxights-info.png" alt=""/>
+              <img className="info-img" src="/img/inxights-info.png" alt="" />
             </div>
-            <div className="col-md-6">  
+            <div className="col-md-6">
               <div className="block-info">
                 <h3 className="title">¿Qué es Inxights?</h3>
                 <p className="sec-text">Plataforma para monitorear campañas creando informes de marketing, donde los datos se pueden consultar en una API para recopilar información, genera informes profesionales que permiten ver el rendimiento de todas las campañas y crea un propio informe de marketing e información útil para alcanzar su objetivo de marketing.</p>
@@ -35,14 +39,14 @@ const PageIxights = () => (
                   <p>Web Responsive</p>
                   <span>Programas utilizados:</span>
                   <div className="tools">
-                    <img className="i-tool" src="/img/marvel.svg" alt=""/>
-                    <img className="i-tool" src="/img/adobexd.svg" alt=""/>
+                    <img className="i-tool" src="/img/marvel.svg" alt="" />
+                    <img className="i-tool" src="/img/adobexd.svg" alt="" />
                   </div>
                 </div>
 
                 <a href="www.inxights.co" className="nav-link">www.inxights.co</a>
               </div>
-              
+
             </div>
           </div>
         </div>
