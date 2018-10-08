@@ -55,7 +55,7 @@ const Apps = () => (
           <div className="content">
             <div className="container">
               <div className="row align-items-center">
-                <div className="col-md-6 ">
+                <div className="col-md-6 order-sm">
                 <div className="block-info text-right">
                     <p className="title">VOLANT</p>
                     <p className="subtitle">App de viajes <span>//</span></p>
@@ -64,7 +64,7 @@ const Apps = () => (
                     <Link to="/apps/volant" className="link">VER MÁS</Link>
                   </div>
                 </div>
-                <div className="col-md-6 text-left">
+                <div className="col-md-6 text-left ">
                   <img className="image" src={img2} alt=""/>
                 </div>
               </div>
@@ -95,7 +95,7 @@ const Apps = () => (
           <div className="content">
             <div className="container">
               <div className="row align-items-center">
-                <div className="col-md-6">
+                <div className="col-md-6 order-sm">
                 <div className="block-info text-right">
                     <p className="title">SANTA ROSA</p>
                     <p className="subtitle">Plataforma Complejo Urbano<span>//</span></p>
@@ -104,7 +104,7 @@ const Apps = () => (
                     <Link to="/apps/santarosa" className="link">VER MÁS</Link>
                   </div>
                 </div>
-                <div className="col-md-6 text-left">
+                <div className="col-md-6 text-left ">
                 <img className="image" src={img4} alt=""/>
                 </div>
               </div>

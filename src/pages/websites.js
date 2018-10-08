@@ -54,7 +54,7 @@ const Websites = () => (
           <div className="content">
             <div className="container">
               <div className="row align-items-center">
-                <div className="col-md-5 ">
+                <div className="col-md-5  order-sm">
                 <div className="block-info text-right">
                     <p className="title">JWH</p>
                     <p className="subtitle">App Comida Rápida<span>//</span></p>
@@ -82,7 +82,7 @@ const Websites = () => (
                 <div className="block-info text-left">
                     <p className="title">EVET</p>
                     <p className="subtitle"><span>//</span>Plataforma para Eventos</p>
-                    <p className="sec-text">
+                    <p className="sec-text hidden-sm">
                     Plataforma que ayuda a crear, gestionar y hacer eventos, analizar eventos desde cualquier lugar, alcanzar nuevas audiencias y venta de entradas.</p>
                     <Link to="/websites/evet" className="link">VER MÁS</Link>
                   </div>

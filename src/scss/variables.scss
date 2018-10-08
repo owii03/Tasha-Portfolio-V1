@@ -2,3 +2,13 @@
 $color-green: #015151;
 $color-two: #F98E6D;
 $color-text: #6D6D6D;
+
+//breakpoints responsive
+
+$break-xs: 576px;
+// Small devices (landscape phones, less than 768px)
+$break-sm: 768px;
+// Medium devices (tablets, less than 992px)
+$break-md: 992px;
+// Large devices (desktops, less than 1200px)
+$break-lg: 1200px;

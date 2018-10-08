@@ -1,16 +1,20 @@
 .apps-page {
   .sec-header {
     padding: 40px 0 80px;
-    .navigate{
+
+    .navigate {
       align-items: center;
-      a{
+
+      a {
         color: white;
-      }      
-      .icon-svg{
+      }
+
+      .icon-svg {
         fill: white !important;
         margin-right: 10px;
       }
     }
+
     .sec-title {
       font-size: 36px;
 
@@ -77,6 +81,10 @@
 
         .sec-text {
           color: $color-text;
+
+          @media screen and (max-width: $break-sm) {
+            display: none !important;
+          }
         }
 
         .link {
@@ -130,5 +138,11 @@
         }
       }
     }
+  }
+}
+
+.order-sm {
+  @media screen and (max-width: $break-sm) {
+    order: 1;
   }
 }

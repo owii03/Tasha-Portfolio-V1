@@ -8,7 +8,7 @@ const Footer = ({ siteTitle }) => (
   <footer className="main-footer">
     <img className="f-back-left" src={img2} alt=""/>
     <img className="f-back-right" src={img3} alt=""/>
-    <div className="container">
+    <div className="container-fluid">
       <div className="content text-center">
         <h1 className="sec-title">TAKE THE RISK OF DOING WHAT YOU LIKE</h1>
         <div className="actions">
