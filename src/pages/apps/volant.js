@@ -1,11 +1,15 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import LayoutProject from '../../components/layoutproject'
-import { ArrowBack } from '../../components/icons'
+import { ArrowBack, WaveLine } from '../../components/icons'
 
 import img1 from '../../images/volant-back1.png'
 import img2 from '../../images/volant-back2.svg'
 import img from '../../images/volant.png'
+import volantContent from '../../images/volant-content.png'
+import imgMarvel from '../../images/marvel.svg'
+import imgAdobe from '../../images/adobexd.svg'
+
 const PageVolant = () => (
   <LayoutProject title="FIDO APP" link="/apps/fido">
     <div className="project-page volant" style={{ position: 'relative' }}>
@@ -38,6 +42,32 @@ const PageVolant = () => (
           </div>
         </div>
         <img className="volant-back1" src="/img/volant-back1.svg" alt="" />
+      </section>
+      <section className="sec-info">        
+        <div className="content container">
+          <div className="row">
+            <div className="col-md-5">
+              <h1 className="sec-title">PANTALLAS VOLANT</h1>
+              <WaveLine width="150px" />
+              <div className="block-info">
+                <div className="details">
+                  <span>Titulo:</span>
+                  <p>VOLANT</p>
+                  <span>Tipo:</span>
+                  <p>APP iOS.</p>
+                  <span>Programas utilizados:</span>
+                  <div className="tools">
+                    <img className="i-tool" src={imgMarvel} alt="" />
+                    <img className="i-tool" src={imgAdobe} alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-7"></div>
+          </div>
+          <img className="img-responsive" src={volantContent} alt="" />
+        </div>
+        
       </section>
 
     </div>

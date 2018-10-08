@@ -1,31 +1,97 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import LayoutProject from '../../components/layoutproject'
-
+import { WaveLine, ArrowBack } from '../../components/icons';
+import imgHero from '../../images/evet-hero.png'
+import imgInfo2 from '../../images/evet-info2.png'
+import imgAnim from '../../images/evet-anim.gif'
+import imgMarvel from '../../images/marvel.svg'
+import imgAdobe from '../../images/adobexd.svg'
+import imgBack1 from '../../images/evet-back1.svg'
 const PageEvet = () => (
-  <LayoutProject title="EVET" link="/websites/evet">
+  <LayoutProject title="INXIGHTS" link="/websites/inxights">
     <div className="project-page evet" style={{ position: 'relative' }}>
       <div className="sec-header">
         <div className="container">
-          <Link className="action" to="/apps">REGRESAR</Link>
+          <div className="d-flex">
+            <ArrowBack width="22px" height="22px" />
+            <Link className="action" to="/websites">REGRESAR</Link>
+          </div>
         </div>
       </div>
       <section className="sec-hero">
         <div className="container content">
-          <div className="row">
+          <div className="row align-items-center">
             <div className="col-md-4">
               <div className="block-info">
-                <h1 className="title">JWH</h1>
+                <h1 className="title">EVET</h1>
                 <p className="sec-text">Plataforma para monitorear campañas</p>
-
+                <WaveLine width="200px" />
                 <div className="details">
-                  <div className="title">¿Qué es JWH Burgers?</div>
-                  <p className="sec-text">Esta aplicación te ayuda a realizar tu pedido de forma sencilla, muestra muchas opciones para ordenar hamburguesas, personalizarlas con aderezos o cualquier condimento en especial,  asi como muestra su precio y descripción de productos.</p>
+                  <div className="title">¿Qué es Evet?</div>
+                  <p className="sec-text">Plataforma que ayuda a crear, gestionar y hacer eventos, analiza eventos desde cualquier lugar, alcanza nuevas audiencias y cuenta con venta de entradas, desde donde te encuentres.</p>
                 </div>
               </div>
             </div>
             <div className="col-md-8">
-              <img className="sec-cover" src="/img/jwh.png" alt="" />
+              <img className="sec-cover" src={imgHero} alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <div className="sec-info-1">
+        <img className="img-back1" src={imgBack1} alt="" />
+        <div className="content container">
+          <div className="row">
+            <div className="col-md-6">
+              <div className="block-info">
+                <h3 className="title">¿Cómo Funciona?</h3>
+                <p className="sec-text">Ofrece a los invitados una experiencia de acceso sin problemas, utilizando un sistema confiable para escanear entradas y acreditar invitados.
+                Además encuentras conferencias, convenciones, seminarios, capacitaciones, etc,
+                evitando colas a los asistentes del evento.</p>
+                <div className="details">
+                  <span>Titulo:</span>
+                  <p>GMF</p>
+                  <span>Tipo:</span>
+                  <p>App iOS, Android</p>
+                  <span>Programas utilizados:</span>
+                  <div className="tools">
+                    <img className="i-tool" src={imgMarvel} alt="" />
+                    <img className="i-tool" src={imgAdobe} alt="" />
+                  </div>
+                </div>
+                {/* <a href="www.inxights.co" className="nav-link">www.inxights.co</a> */}
+              </div>
+            </div>
+            <div className="col-md-6 text-center">
+              <img className="img-responsive" src={imgAnim} alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <section className="sec-info-2">
+        <div className="content container">
+          <div className="row">
+            <div className="col-md-7">
+              <img className="img-responsive" src={imgInfo2} alt="" />
+            </div>
+            <div className="col-md-5">
+              <div className="block-info">
+                <h3 className="title">¿Cómo Funciona la plataforma?</h3>
+                <p className="sec-text">Puedes acceder a datos de ventas y acreditaciones en tiempo real, así como gestionar y promocionar un evento, desde cualquier dispositivo.</p>
+                <div className="details">
+                  <span>Titulo:</span>
+                  <p>EVET</p>
+                  <span>Tipo:</span>
+                  <p>Website, Dashboard </p>
+                  <span>Programas utilizados:</span>
+                  <div className="tools">
+                    <img className="i-tool" src={imgMarvel} alt="" />
+                    <img className="i-tool" src={imgAdobe} alt="" />
+                  </div>
+                </div>
+                <a href="www.evet.io" className="nav-link">www.evet.io</a>
+              </div>
             </div>
           </div>
         </div>

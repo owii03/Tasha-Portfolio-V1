@@ -24,14 +24,14 @@ const Websites = () => (
       </section>
       <div className="nav-tabs">
         <div className="tabs">
-          <a href="/apps/" className="tab ">APLICACIONES</a>
-          <a href="/websites/" className="tab active">WEBSITES</a>
+          <Link to="/apps/" className="tab ">APLICACIONES</Link>
+          <Link to="/websites/" className="tab active">WEBSITES</Link>
         </div>
       </div>
       <section className="sec-projects">
-        <div className="project">
+        <div className="project wow animated fadeInUp">
           <div className="content">
-            <div className="container-fluid">
+            <div className="container">
               <div className="row align-items-center">
                 <div className="col-md-7 text-center">
                     <img className="image" src={img1} alt=""/>
@@ -43,16 +43,16 @@ const Websites = () => (
                     <p className="sec-text">
                     Plataforma para monitorear campañas creando informes de marketing, generando informes profesionales que permiten ver el rendimiento de todas las campañas.
                     </p>
-                    <a href="/websites/inxights" className="link">VER MÁS</a>
+                    <Link to="/websites/inxights" className="link">VER MÁS</Link>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="project">
+        <div className="project wow animated fadeInUp">
           <div className="content">
-            <div className="container-fluid">
+            <div className="container">
               <div className="row align-items-center">
                 <div className="col-md-5 ">
                 <div className="block-info text-right">
@@ -61,7 +61,7 @@ const Websites = () => (
                     <p className="sec-text">
                     Esta aplicación te ayuda a realizar pedidos para ordenar hamburguesas y poderlas  personalizar, así como muestra su precio y descripción de productos.
                     </p>
-                    <a href="/websites/jwh" className="link">VER MÁS</a>
+                    <Link to="/websites/jwh" className="link">VER MÁS</Link>
                   </div>
                 </div>
                 <div className="col-md-7 text-center">
@@ -71,9 +71,9 @@ const Websites = () => (
             </div>
           </div>
         </div>
-        <div className="project">
+        <div className="project wow animated fadeInUp">
           <div className="content">
-            <div className="container-fluid">
+            <div className="container">
               <div className="row align-items-center">
                 <div className="col-md-7 text-center">
                 <img className="image" src={img3} alt=""/>
@@ -84,7 +84,7 @@ const Websites = () => (
                     <p className="subtitle"><span>//</span>Plataforma para Eventos</p>
                     <p className="sec-text">
                     Plataforma que ayuda a crear, gestionar y hacer eventos, analizar eventos desde cualquier lugar, alcanzar nuevas audiencias y venta de entradas.</p>
-                    <a href="#" className="link">VER MÁS</a>
+                    <Link to="/websites/evet" className="link">VER MÁS</Link>
                   </div>
                 </div>
               </div>

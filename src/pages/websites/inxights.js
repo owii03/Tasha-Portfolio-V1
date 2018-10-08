@@ -4,7 +4,7 @@ import LayoutProject from '../../components/layoutproject'
 import { WaveLine, ArrowBack } from '../../components/icons'
 import { withPrefix } from 'gatsby'
 import hero1 from '../../images/inxight-hero.png'
-import img2 from '../../images/inxights-info.png'
+import img2 from '../../images/inxights-anim.gif'
 
 import imgMarvel from '../../images/marvel.svg'
 import imgAdobe from '../../images/adobexd.svg'
@@ -25,13 +25,13 @@ const PageIxights = () => (
           <h1 className="title">INXIGHTS</h1>
           <p className="sec-text">Plataforma para monitorear campañas</p>
         </div>
-        <img className="sec-cover" src={hero1} alt="" />
+        <img className="sec-cover animated fadeIn" src={hero1} alt="" />
       </section>
       <section className="sec-info">
         <div className="container-fluid">
           <div className="row align-items-center">
             <div className="col-md-6 text-center">
-              <img className="info-img" src={img2} alt="" />
+              <img className="info-img wow animated fadeIn" src={img2} alt="" />
             </div>
             <div className="col-md-6">
               <div className="block-info">

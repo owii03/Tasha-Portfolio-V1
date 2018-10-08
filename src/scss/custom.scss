@@ -52,9 +52,11 @@ summary {
 .text-center {
   text-align: center !important;
 }
+
 .text-left {
   text-align: left !important;
 }
+
 .text-right {
   text-align: right !important;
 }
@@ -94,7 +96,7 @@ summary {
 
   &:after {
     content: "";
-    background-image: url('/img/title-line.svg');
+    background-image: url('../images/title-line.svg');
     background-repeat: no-repeat;
     display: block;
     width: 188px;
@@ -117,6 +119,7 @@ summary {
     width: 100%;
     padding: 20px 50px;
     position: relative;
+
     .section-content {
       display: flex;
       height: 100%;
@@ -196,8 +199,9 @@ summary {
 
     .sec-title {
       font-size: 75px;
-      &:after{
-        content : none;
+
+      &:after {
+        content: none;
       }
     }
 
@@ -206,14 +210,15 @@ summary {
       color: white;
       padding-left: 10px;
       position: relative;
+
       &:after {
         content: "";
-        background-image: url('/img/hero-line.svg');
+        background-image: url('../images/hero-line.svg');
         background-repeat: no-repeat;
         display: block;
         width: 190px;
-        height: 8px;    
-        position: absolute;    
+        height: 8px;
+        position: absolute;
         right: -166px;
         top: 42%;
       }
@@ -230,10 +235,19 @@ summary {
   .sec-about {
     padding: 120px 0;
     background-color: $color-two;
+    position: relative;
 
     .content {
       .sec-text {
         margin-bottom: 25px;
+      }
+
+      .img-responsive {
+        max-width: 150px;
+      }
+
+      .icon-svg {
+        fill: $color-green;
       }
 
       .social-links {
@@ -257,16 +271,34 @@ summary {
         }
       }
     }
+
+    .a-back1 {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+
+    .a-back2 {
+      position: absolute;
+      width: 80px;
+      bottom: 20px;
+      right: 20px;
+    }
   }
 
   .sec-projects {
-    padding: 120px 0 40px;
+    padding: 80px 0 40px;
 
-    .content {      
+    .content {
       .sec-title {
         color: #3D3D3D;
-        margin-bottom: 120px;
         font-size: 50px;
+        margin-bottom: 60px;        
+      }
+
+      .icon-svg {
+        fill: $color-two;
+        margin-bottom: 40px;
       }
 
       .block-apps,
@@ -274,12 +306,7 @@ summary {
         height: 100%;
 
         .block-img {
-          padding: 40px;
-          
-
-          img {
-            height: 100%;
-          }
+          padding: 40px;          
         }
 
         .title {
@@ -289,18 +316,22 @@ summary {
           display: inline-block;
           padding-bottom: 10px;
           border-bottom: 2px solid transparent;
-          &:hover{
+          &:hover {
             border-color: #f2f2f2;
           }
         }
       }
 
-      .block-apps {
+      .block-apps,
+      .block-websites {
         .block-img {
-          background-color: #FFDACF;
-
+          background-color: #F7F7F7;
+          transition: .5s all ease;
+          &:hover {
+            background-color: #FFDACF;
+          }
           img {
-            max-width: 240px;
+            width: 100%;            
           }
         }
 
@@ -309,14 +340,7 @@ summary {
         }
       }
 
-      .block-websites {
-        .block-img {
-          background-color: #F7F7F7;
-          img {
-            max-width: 593px;
-          }
-        }
-
+      .block-apps {        
         .title {
           color: #6D6D6D;
         }
@@ -325,23 +349,28 @@ summary {
 
     }
   }
-  .sec-areas{    
+
+  .sec-areas {
     padding: 80px 0;
     background-color: $color-green;
-    .content{
-      .sec-title{
+
+    .content {
+      .sec-title {
         margin-bottom: 40px;
       }
-      .e-text{
-        color:white;
+
+      .e-text {
+        color: white;
         max-width: 500px;
         margin: 0 auto;
         margin-bottom: 100px;
-        span{
+
+        span {
           font-weight: 600;
         }
       }
-      .cover-areas{
+
+      .cover-areas {
         max-width: 100%;
         padding: 0 10%;
 
@@ -351,30 +380,38 @@ summary {
 }
 
 
-.menu{
+.menu {
   z-index: 1000;
-  position:absolute;
+  position: absolute;
   background-color: $color-green;
   height: 100vh;
   width: 100%;
   top: -100%;
-  .data{
+
+  .data {
     padding: 0 8em;
     text-align: left;
     display: flex;
     align-items: center;
     height: 100%;
-    ul{
+
+    ul {
       list-style: none;
-      li{
-        a{
-          display: block;                    
-          color:white;
-          font-size: 42px;
+
+      li {
+        span{
+          color: white;
+          font-size: 22px;
           font-weight: 600;
+        } 
+        a {
+          display: block;
+          color: white;
+          font-size: 26px;
+          font-weight: 300;
           margin: 20px 0;
         }
-      }      
+      }
     }
   }
 }

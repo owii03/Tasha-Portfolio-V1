@@ -1,42 +1,50 @@
 import React, { Component } from 'react'
-import { IconBehance, IconInstagram, IconDribbble } from '../components/icons'
+import { Link } from "gatsby"
+import { IconBehance, IconInstagram, IconDribbble, WaveLine } from '../components/icons'
 import { TimelineMax, Expo } from "gsap/TweenMax";
 import Layout from '../components/layout'
 import img1 from '../images/logo.svg'
 import img2 from '../images/illustratio-hero.svg'
-import img3 from '../images/flower.svg'
-import img4 from '../images/block-apps.svg'
-import img5 from '../images/block-websites.svg'
+import img3 from '../images/flower-home.png'
+import img4 from '../images/block-apps.png'
+import img5 from '../images/block-websites.png'
 import img6 from '../images/areas.svg'
+
+import imgAback1 from '../images/about-back1.png'
+import imgAback2 from '../images/about-back2.png'
+
 class IndexPage extends Component {
 
   state = {
 
   }
-
+  t1 = null;
   showMenu = (event) => {
     if (event) {
       event.preventDefault();
     }
-
-    var t1 = new TimelineMax({ paused: true })
+    this.t1 = new TimelineMax({ paused: true })
       .to(".menu", 2, {
         top: "0%",
         ease: Expo.easeInOut,
         delay: -1
       })
       .reverse();
+  }
 
-    document.getElementById("menu-link").addEventListener('click', (e) => {
-      e.preventDefault();
-      t1.reversed(!t1.reversed());
-    });
-    var list = document.getElementsByClassName("m-link")
-    for (let i = 0; i < list.length; i++) {
-      list[i].addEventListener("click", () => {
-        t1.reversed(!t1.reversed());
-      })
-    }
+  openMenu = (e) => {
+
+    e.preventDefault();
+    this.t1.reversed(!this.t1.reversed());
+
+    // for (let i = 0; i < list.length; i++) {
+    //   list[i].addEventListener("click", (e) => {
+    //     e.preventDefault()
+    //     this.t1.reversed(!this.t1.reversed());
+    //   })
+    // }
+  }
+  componentWillMount() {
 
   }
 
@@ -49,10 +57,17 @@ class IndexPage extends Component {
         <div className="menu">
           <div className="data">
             <ul>
-              <li> <a className="m-link" href="#">Inicio</a></li>
-              <li> <a className="m-link" href="#">Acerca de mí</a></li>
-              <li> <a className="m-link" href="#">Proyectos</a></li>
-              <li> <a className="m-link" href="#">Áreas de Diseño</a></li>
+              <li> <Link className="m-link"  to="#">Home</Link></li>
+              <li><span>Web</span></li>
+              <li> <Link className="m-link"  to="/websites/inxights">Inxights</Link></li>
+              <li> <Link className="m-link"  to="/websites/jwh">JWH</Link></li>
+              <li> <Link className="m-link"  to="/websites/evet">Evet</Link></li>
+              <li><span>Mobile & Apps</span></li>
+              <li> <Link className="m-link"  to="/apps/gmf">GMF</Link></li>
+              <li> <Link className="m-link"  to="/apps/volant">Volant</Link></li>
+              <li> <Link className="m-link"  to="/apps/fido">Fido App</Link></li>
+              <li> <Link className="m-link"  to="/apps/santarosa">Santa Rosa</Link></li>
+              <li> <Link className="m-link"  to="/apps/pupusas">Pupusas App</Link></li>
             </ul>
           </div>
         </div>
@@ -61,7 +76,7 @@ class IndexPage extends Component {
             <div className="section-content">
               <div className="navbar">
                 <div className="menu-container">
-                  <a id="menu-link" className="menu-link" href="/">Menu</a>
+                  <a id="menu-link" className="menu-link" onClick={e => { this.openMenu(e) }} href="/">Menu</a>
                 </div>
                 <div className="social-container">
                   <a href=""><IconDribbble width="22px" height="22px" /></a>
@@ -73,22 +88,25 @@ class IndexPage extends Component {
                 <div className="logo-container">
                   <img className="main-logo" src={img1} alt="" />
                 </div>
-                <div className="content">
+                <div className="content animated fadeInUp">
                   <h1 className="sec-title">GITA</h1>
                   <h1 className="sec-title">GOVINDA</h1>
                   <span>GRAPHIC DESIGNER</span>
                 </div>
-                <img className="illustration-hero" src={img2} alt="img" />
+                <img className="illustration-hero animated fadeIn" src={img2} alt="img" />
               </div>
             </div>
           </section>
           <section className="sec-about">
+            <img className="a-back1" src={imgAback1} alt="" />
+            <img className="a-back2" src={imgAback2} alt="" />
             <div className="container">
               <div className="content">
                 <h1 className="sec-title">ACERCA <br /> DE MI</h1>
-                <div className="row">
+                <WaveLine width="200px" height="10px" />
+                <div className="row align-items-center">
                   <div className="col-md-3">
-                    <img src={img3} alt=""/>
+                    <img className="img-responsive" src={img3} alt="" />
                   </div>
                   <div className="col-md-9">
                     <p className="sec-text">
@@ -115,7 +133,7 @@ class IndexPage extends Component {
           </section>
           <section className="sec-projects">
             <div className="content text-center">
-              <h1 className="sec-title ">PROYECTOS</h1>
+              <h1 className="sec-title ">PROYECTOS</h1>              
               <div className="container-fluid">
                 <div className="row align-items-stretch">
                   <div className="col-md-6 px-0 text-center">
@@ -123,7 +141,7 @@ class IndexPage extends Component {
                       <div className="block-img ">
                         <img src={img4} alt="" />
                       </div>
-                      <a href="/apps/" className="title">APLICACIONES</a>
+                      <Link to="/apps/" className="title">APLICACIONES</Link>
                     </div>
                   </div>
                   <div className="col-md-6 px-0 text-center">
@@ -131,7 +149,7 @@ class IndexPage extends Component {
                       <div className="block-img">
                         <img src={img5} alt="" />
                       </div>
-                      <a href="/websites/" className="title ">WEBSITES</a>
+                      <Link to="/websites/" className="title ">WEBSITES</Link>
                     </div>
                   </div>
                 </div>
@@ -141,9 +159,9 @@ class IndexPage extends Component {
           <section className="sec-areas">
             <div className="container">
               <div className="content text-center">
-              <h1 className="sec-title ">ÁREAS DE DISEÑO</h1>
-              <p className="e-text"> <span>Diseño UX - UI:</span>  Me especialicé en diseño ux - ui para crear interacciones y generar experiencias en los usuarios. Actualmente llevo 2 años y medio en esta área del diseño.</p>
-              <img className="cover-areas" src={img6} alt="" />
+                <h1 className="sec-title ">ÁREAS DE DISEÑO</h1>
+                <p className="e-text"> <span>Diseño UX - UI:</span>  Me especialicé en diseño ux - ui para crear interacciones y generar experiencias en los usuarios. Actualmente llevo 2 años y medio en esta área del diseño.</p>
+                <img className="cover-areas animated fadeIn" src={img6} alt="" />
               </div>
             </div>
           </section>

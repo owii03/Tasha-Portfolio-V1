@@ -1,12 +1,13 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import LayoutProject from '../../components/layoutproject'
-import { ArrowBack } from '../../components/icons'
+import { ArrowBack, WaveLine } from '../../components/icons'
 import img from '../../images/jwh.png'
+import img2 from '../../images/jwh-content1.png'
 const PageJWH = () => (
   <LayoutProject title="EVET" link="/websites/evet">
     <div className="project-page jwh" style={{ position: 'relative' }}>
-    <div className="sec-header">
+      <div className="sec-header">
         <div className="container">
           <div className="d-flex">
             <ArrowBack width="22px" height="22px" />
@@ -32,11 +33,22 @@ const PageJWH = () => (
               <img className="sec-cover" src={img} alt="" />
             </div>
           </div>
+        </div>
+      </section>
+      <section className="sec-progress">
+        <div className="container text-center">
+          <div className="content text-center">
+            <h1 className="sec-title">PROCESOS <br />
+              JWH Burgers.</h1>
+            <WaveLine width="200px" />
+            <img className="img-responsive" src={img2} alt="" />
+          </div>
 
         </div>
-
       </section>
+      <div className="sec-info">
 
+      </div>
     </div>
   </LayoutProject>
 )
