@@ -199,9 +199,11 @@ summary {
 
     .sec-title {
       font-size: 75px;
-
       &:after {
         content: none;
+      }
+      @media screen and (max-width: $break-md) {
+        font-size: 60px;
       }
     }
 
@@ -215,12 +217,9 @@ summary {
         content: "";
         background-image: url('../images/hero-line.svg');
         background-repeat: no-repeat;
-        display: block;
-        width: 190px;
-        height: 8px;
-        position: absolute;
-        right: -166px;
-        top: 42%;
+        display: inline-block;
+        width: 150px;
+        height: 8px;                        
       }
     }
 
@@ -229,6 +228,9 @@ summary {
       position: absolute;
       bottom: 0;
       right: 15%;
+      @media screen and (max-width: $break-md) {
+        right: 0;
+      }
     }
   }
 
@@ -413,5 +415,10 @@ summary {
         }
       }
     }
+  }
+}
+.order-sm-1{
+  @media screen and (max-width: $break-sm) {
+    order: 1;
   }
 }

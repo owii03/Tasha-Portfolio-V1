@@ -142,7 +142,7 @@
 }
 
 .order-sm {
-  @media screen and (max-width: $break-sm) {
+  @media screen and (max-width: 767px) {
     order: 1;
   }
 }
