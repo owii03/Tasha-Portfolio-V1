@@ -29,6 +29,8 @@ const Layout = ({ children }) => (
           ]}
         >
           <html lang="en" />
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"/>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
         </Helmet>
         {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
         <div className="static-sidebar">

@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 import LayoutProject from '../../components/layoutproject'
 import { WaveLine, ArrowBack } from '../../components/icons'
 
-import img1 from '../../images/gmf-cover.png'
+import img1 from '../../images/gmf-anim.gif'
 import img2 from '../../images/gmf-img2.png'
 import img3 from '../../images/gmd-back3.png'
 import img4 from '../../images/gmf-back4.png'
@@ -22,10 +22,9 @@ const PageGMF = () => (
         </div>
       </div>
       <section className="sec-hero" style={{ position: 'relative', overflow: 'hidden' }}>
-        <img src={img1} alt="" style={{ position: 'absolute', top: '0', width: '100%' }} />
 
         <div className="container content">
-          <div className="row">
+          <div className="row align-items-center">
             <div className="col-md-5">
               <div className="block-info">
                 <h1 className="title">GMF</h1>
@@ -36,7 +35,10 @@ const PageGMF = () => (
                 </div>
               </div>
             </div>
-            <div className="col-md-7">
+            <div className="col-md-7 text-center">
+              <div className="image">
+                <img src={img1} alt="" className="img-cover" />
+              </div>
             </div>
           </div>
 

@@ -25,10 +25,9 @@ const PageSantarosa = () => (
         </div>
       </div>
       <section className="sec-hero" style={{ position: 'relative', overflow: 'hidden' }}>
-        <img src={img} className="sec-cover" alt="" />
         <div className="container content">
           <div className="row align-items-center">
-            <div className="col-md-4">
+            <div className="col-md-5">
               <div className="block-info">
                 <h1 className="title">SANTA ROSA</h1>
                 <p className="sec-text">Aplicación de complejo urbano </p>
@@ -38,14 +37,15 @@ const PageSantarosa = () => (
                 </div>
               </div>
             </div>
-            <div className="col-md-8">
+            <div className="col-md-7 text-center">
+              <img src={img} className="img-responsive" alt="" />
             </div>
           </div>
 
-        </div>        
+        </div>
       </section>
       <section className="sec-info">
-      <img className="sr-back1" src={img2} alt="" />
+        <img className="sr-back1" src={img2} alt="" />
         <div className="content container">
           <div className="row align-items-center">
             <div className="col-md-5">
@@ -70,7 +70,7 @@ const PageSantarosa = () => (
             </div>
           </div>
         </div>
-        <img src={imgBack2} className="img-back2" alt=""/>
+        <img src={imgBack2} className="img-back2" alt="" />
       </section>
 
     </div>

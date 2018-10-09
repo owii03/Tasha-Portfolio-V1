@@ -63,6 +63,10 @@
         .sec-text {
           color: $color-text;
           padding-right: 200px;
+
+          @media screen and (max-width: 1300px) {
+            padding-right: 0;
+          }
         }
 
         .details {
@@ -170,19 +174,22 @@
 
     .sec-info {
       position: relative;
-      .img-back1{
+
+      .img-back1 {
         position: absolute;
         right: 0;
         top: 0;
         width: 150px;
 
       }
-      .img-back2{
+
+      .img-back2 {
         position: absolute;
         left: 0;
         bottom: 0;
         width: 90px;
       }
+
       .content {
         .cols-back {
           min-height: 500px;
@@ -192,35 +199,74 @@
           width: 100%;
           z-index: -1;
           height: 100%;
+
           .col {
             width: 50%;
+
             &.right {
               background-color: #F3A303;
-              .img-responsive{
+
+              .img-responsive {
                 position: absolute;
                 bottom: 0;
               }
             }
-          }          
+          }
         }
+
         .info {
           display: flex;
           justify-content: space-between;
           align-items: flex-end;
           z-index: 1000;
           padding: 120px 0;
+
+          @media screen and (max-width: 1024px) {
+            align-items: center;
+          }
+
           .img-responsive {
-            height: 600px;
             max-width: 450px;
           }
-          .info-col{
+
+          .info-col {
             width: calc(100% / 3);
-            
+
+            @media screen and (max-width: 1024px) {
+              width: calc(100% / 2);
+            }
+
+            &.info-content {
+              .details {
+                @media screen and (min-width: 1024px) {
+                  display: none;
+                }
+              }
+            }
+
+            &.col-image {
+              @media screen and (max-width: 1024px) {
+                display: none;
+              }
+            }
+
+            &.col-img-xs {
+              .img-responsive {
+                @media screen and (min-width: 1024px) {
+                  display: none;
+                }
+              }
+
+              .block-info {
+                @media screen and (max-width: 1024px) {
+                  display: none;
+                }
+              }
+            }
           }
         }
 
         .block-info {
-
           padding: 80px;
 
           .title {
@@ -231,19 +277,21 @@
 
           .sec-text {
             color: $color-text;
-
           }
 
           .details {
             margin: 40px 0 80px;
+
             span {
               color: $color-text;
               font-weight: 300;
             }
+
             p {
               font-weight: 400;
               color: #3D3D3D;
             }
+
             .tools {
               display: flex;
               margin-top: 20px;
@@ -299,6 +347,34 @@
         padding: 0 5%;
       }
 
+      .image {
+        display: inline-block;
+        z-index: 1000;
+        position: relative;
+        &:after {
+          content: "";
+          background-image: url('../images/gmf-cover-back.png');
+          background-repeat: no-repeat;
+          background-size: contain;
+          display: block;
+          width: 99%;
+          height: 250px;
+          /* margin: 0 auto; */
+          position: absolute;
+          top: 36%;
+          left: 72%;
+          z-index: -1;
+        }
+
+        .img-cover {
+          width: 100%;
+          max-width: 300px;
+
+        }
+
+      }
+
+
       .gmd-back1 {
         max-width: 100px;
         position: absolute;
@@ -314,7 +390,7 @@
 
         .details {
           margin-top: 40px;
-          margin-left: 50px;
+         
 
           &:before {
             content: "";
@@ -543,15 +619,10 @@
       background-color: #ADCB57;
       padding: 120px 0;
       background-size: cover;
-      height: 100vh;
 
-      .sec-cover {
-        max-width: 700px;
+      .img-responsive {
+        max-width: 400px;
         width: 100%;
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
       }
 
       .block-info {
@@ -680,7 +751,7 @@
 
       .sec-cover {
         width: 100%;
-        padding: 0 5%;
+        max-width: 440px;
       }
 
       .sec-cover {

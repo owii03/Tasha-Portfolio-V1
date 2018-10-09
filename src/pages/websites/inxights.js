@@ -30,10 +30,10 @@ const PageIxights = () => (
       <section className="sec-info">
         <div className="container-fluid">
           <div className="row align-items-center">
-            <div className="col-md-6 text-center">
+            <div className="col-lg-6 col-md-12 text-center">
               <img className="info-img wow animated fadeIn" src={img2} alt="" />
             </div>
-            <div className="col-md-6">
+            <div className="col-lg-6 col-md-12">
               <div className="block-info">
                 <h3 className="title">¿Qué es Inxights?</h3>
                 <p className="sec-text">Plataforma para monitorear campañas creando informes de marketing, donde los datos se pueden consultar en una API para recopilar información, genera informes profesionales que permiten ver el rendimiento de todas las campañas y crea un propio informe de marketing e información útil para alcanzar su objetivo de marketing.</p>

@@ -23,8 +23,8 @@ const PagePupusas = () => (
       </div>
       <section className="sec-hero">
         <div className="container content">
-          <div className="row">
-            <div className="col-md-4">
+          <div className="row align-items-center">
+            <div className="col-md-5">
               <div className="block-info">
                 <h1 className="title">PUPUSAS</h1>
                 <p className="sec-text">Aplicación de comida rápida</p>
@@ -35,7 +35,7 @@ const PagePupusas = () => (
                 </div>
               </div>
             </div>
-            <div className="col-md-8">
+            <div className="col-md-7 text-center">
               <img className="sec-cover" src={img} alt="" />
             </div>
           </div>

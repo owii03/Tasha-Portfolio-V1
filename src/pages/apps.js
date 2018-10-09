@@ -127,7 +127,7 @@ const Apps = () => (
                     <Link to="/apps/pupusas" className="link">VER MÁS</Link>
                   </div>
                 </div>
-              </div>
+              </div>  
             </div>
           </div>
         </div>

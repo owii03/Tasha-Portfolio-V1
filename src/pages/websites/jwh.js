@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 import LayoutProject from '../../components/layoutproject'
 import { ArrowBack, WaveLine } from '../../components/icons'
 import img from '../../images/jwh.png'
-import img2 from '../../images/jwh-content1.png'
+import img2 from '../../images/jwh-anim.gif'
 import img3 from '../../images/jwh-info.png'
 
 import imgback1 from '../../images/jwh-infoback1.png'
@@ -28,10 +28,10 @@ const PageJWH = () => (
       <section className="sec-hero">
         <div className="container content">
           <div className="row">
-            <div className="col-md-4">
+            <div className="col-lg-4 col-md-12">
               <div className="block-info">
                 <h1 className="title">JWH</h1>
-                <p className="sec-text">Plataforma para monitorear campañas</p>
+                <p className="sec-text">Aplicación de comida rápida</p>
 
                 <div className="details">
                   <div className="title">¿Qué es JWH Burgers?</div>
@@ -39,7 +39,7 @@ const PageJWH = () => (
                 </div>
               </div>
             </div>
-            <div className="col-md-8">
+            <div className="col-lg-8 col-md-12">
               <img className="sec-cover" src={img} alt="" />
             </div>
           </div>
@@ -62,18 +62,28 @@ const PageJWH = () => (
         <img className="img-back3" src={imgback3} alt="" />
         <div className="content">
           <div className="info">
-            <div className="info-col">
+            <div className="info-col info-content">
               <div className="block-info">
+                <div className="title">¿Qué es JWH Burgers?</div>
+                <p className="sec-text">Esta aplicación te ayuda a realizar tu pedido de forma sencilla, muestra muchas opciones para ordenar hamburguesas, personalizarlas con aderezos o cualquier condimento en especial,  asi como muestra su precio y descripción de productos.</p>
                 <div className="details">
-                  <div className="title">¿Qué es JWH Burgers?</div>
-                  <p className="sec-text">Esta aplicación te ayuda a realizar tu pedido de forma sencilla, muestra muchas opciones para ordenar hamburguesas, personalizarlas con aderezos o cualquier condimento en especial,  asi como muestra su precio y descripción de productos.</p>
+                  <span>Titulo:</span>
+                  <p>PUPUSAS APP.</p>
+                  <span>Tipo:</span>
+                  <p>APP iOS.</p>
+                  <span>Programas utilizados:</span>
+                  <div className="tools">
+                    <img className="i-tool" src={imgMarvel} alt="" />
+                    <img className="i-tool" src={imgAdobe} alt="" />
+                  </div>
                 </div>
               </div>
             </div>
-            <div className="info-col text-center">
+            <div className="info-col text-center col-image">
               <img src={img3} className="img-responsive" alt="" />
             </div>
-            <div className="info-col">
+            <div className="info-col col-img-xs">
+              <img src={img3} className="img-responsive" alt="" />
               <div className="block-info">
                 <div className="details">
                   <span>Titulo:</span>
