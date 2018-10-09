@@ -23,9 +23,9 @@ const Footer = ({ siteTitle }) => (
 
               <div className="col-f text-right">
                 <div className="social-links">
-                  <IconDribbble width="22px" height="22px" />
-                  <IconInstagram width="22px" height="22px" />
-                  <IconBehance width="22px" height="22px" />
+                <a target="_blank" href="https://dribbble.com/Govinda_"><IconDribbble width="22px" height="22px" /></a>
+                  <a target="_blank" href="https://www.instagram.com/gitagovinda_/"><IconInstagram width="20px" height="20px" /></a>
+                  <a target="_blank" href="https://www.behance.net/Gita-Govinda"><IconBehance width="20px" height="20px" /></a>                  
                 </div>
               </div>
             </div>

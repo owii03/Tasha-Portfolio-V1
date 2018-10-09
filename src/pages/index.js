@@ -121,9 +121,9 @@ class IndexPage extends Component {
                       Puedes encontrarme en Behance, Instagram y Dribbble
                   </p>
                     <div className="social-links">
-                      <div className="s-link"><a href="">Instagram</a></div>
-                      <div className="s-link"><a href="">Behance</a></div>
-                      <div className="s-link"><a href="">Dribbble</a></div>
+                      <div className="s-link"><a target="_blank" href="https://www.instagram.com/gitagovinda_/">Instagram</a></div>
+                      <div className="s-link"><a target="_blank" href="https://www.behance.net/Gita-Govinda">Behance</a></div>
+                      <div className="s-link"><a target="_blank" href="https://dribbble.com/Govinda_">Dribbble</a></div>
                     </div>
                   </div>
                 </div>
@@ -152,7 +152,7 @@ class IndexPage extends Component {
                       <div className="block-img">
                         <img src={img5} alt="" />
                         <div className="overlay">
-                        <Link to="/websites/" className="title "><span>WEB DESIGN</span></Link> 
+                          <Link to="/websites/" className="title "><span>WEB DESIGN</span></Link>
                         </div>
                       </div>
                       {/* <Link to="/websites/" className="title ">WEB DESIGN</Link> */}
