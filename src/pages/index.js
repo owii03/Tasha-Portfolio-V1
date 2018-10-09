@@ -2,6 +2,11 @@ import React, { Component } from 'react'
 import { Link } from "gatsby"
 import { IconBehance, IconInstagram, IconDribbble, WaveLine } from '../components/icons'
 import { TimelineMax, Expo } from "gsap/TweenMax";
+
+import lottie from 'lottie-web'
+import animationAbout from '../lottie/acerca-demi.json'
+import animationHero from '../lottie/principal.json'
+
 import Layout from '../components/layout'
 import img1 from '../images/logo.svg'
 import img2 from '../images/illustratio-hero.svg'
@@ -16,7 +21,7 @@ import imgAback2 from '../images/about-back2.png'
 class IndexPage extends Component {
 
   state = {
-
+    isStopped: false, isPaused: false
   }
   t1 = null;
   showMenu = (event) => {
@@ -50,8 +55,29 @@ class IndexPage extends Component {
 
   componentDidMount() {
     this.showMenu()
+    console.log(animationAbout)
+    lottie.loadAnimation({
+      container: document.getElementById('lottie'), // the dom element that will contain the animation
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      animationData: animationAbout
+    })
+    lottie.loadAnimation({
+      container: document.getElementById('lottie-hero'), // the dom element that will contain the animation
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      animationData: animationHero
+    })
   }
   render() {
+    const defaultOptions = {
+      loop: true,
+      autoplay: true,
+      animationData: animationAbout
+    };
+
     return (
       <Layout>
         <div className="menu">
@@ -93,7 +119,8 @@ class IndexPage extends Component {
                   <h1 className="sec-title">GOVINDA</h1>
                   <span>GRAPHIC DESIGNER</span>
                 </div>
-                <img className="illustration-hero animated fadeIn" src={img2} alt="img" />
+                <div className="illustration-hero animated fadeIn" id="lottie-hero"></div>
+                {/* <img className="illustration-hero animated fadeIn" src={img2} alt="img" /> */}
               </div>
             </div>
           </section>
@@ -105,8 +132,8 @@ class IndexPage extends Component {
                 <h1 className="sec-title">ACERCA <br /> DE MI</h1>
                 <WaveLine width="200px" height="10px" />
                 <div className="row align-items-center">
-                  <div className="col-md-3">
-                    <img className="img-responsive" src={img3} alt="" />
+                  <div className="col-md-3 ">
+                    <div className="img-responsive" id="lottie" />                  
                   </div>
                   <div className="col-md-9">
                     <p className="sec-text">

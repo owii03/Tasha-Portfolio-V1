@@ -11,10 +11,12 @@
     "gatsby-plugin-react-helmet": "^3.0.0",
     "gatsby-plugin-remove-serviceworker": "^1.0.0",
     "gsap": "^2.0.2",
+    "lottie-web": "^5.3.4",
     "node-sass": "^4.9.3",
     "react": "^16.5.1",
     "react-dom": "^16.5.1",
-    "react-helmet": "^5.2.0"
+    "react-helmet": "^5.2.0",
+    "react-lottie": "^1.2.3"
   },
   "keywords": [
     "gatsby"
