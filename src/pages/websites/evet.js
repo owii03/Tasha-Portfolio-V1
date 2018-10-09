@@ -90,7 +90,7 @@ const PageEvet = () => (
                     <img className="i-tool" src={imgAdobe} alt="" />
                   </div>
                 </div>
-                <a href="www.evet.io" className="nav-link">www.evet.io</a>
+                <a href="https://www.evet.io" target="_blank" className="nav-link">www.evet.io</a>
               </div>
             </div>
           </div>

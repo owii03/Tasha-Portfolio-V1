@@ -50,7 +50,7 @@ const PageIxights = () => (
                   </div>
                 </div>
 
-                <a href="www.inxights.co" className="nav-link">www.inxights.co</a>
+                <a href="https://www.inxights.co" target="_blank" className="nav-link">www.inxights.co</a>
               </div>
 
             </div>
