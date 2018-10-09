@@ -4,7 +4,7 @@ import LayoutProject from '../../components/layoutproject'
 import { WaveLine, ArrowBack } from '../../components/icons';
 import imgHero from '../../images/evet-hero.png'
 import imgInfo2 from '../../images/evet-info2.png'
-import imgAnim from '../../images/evet-anim.gif'
+import imgAnim from '../../images/evet-info1.png'
 import imgMarvel from '../../images/marvel.svg'
 import imgAdobe from '../../images/adobexd.svg'
 import imgBack1 from '../../images/evet-back1.svg'
@@ -22,7 +22,7 @@ const PageEvet = () => (
       <section className="sec-hero">
         <div className="container content">
           <div className="row align-items-center">
-            <div className="col-md-4">
+            <div className="col-lg-4 col-md-12">
               <div className="block-info">
                 <h1 className="title">EVET</h1>
                 <p className="sec-text">Plataforma para monitorear campañas</p>
@@ -33,7 +33,7 @@ const PageEvet = () => (
                 </div>
               </div>
             </div>
-            <div className="col-md-8">
+            <div className="col-lg-8 col-md-12">
               <img className="sec-cover" src={imgHero} alt="" />
             </div>
           </div>

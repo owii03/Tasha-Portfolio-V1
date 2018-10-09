@@ -20,14 +20,14 @@ const Apps = () => (
           </div>
         </div>     
         <div className="content text-center">
-          <h1 className="sec-title ">APLICACIONES</h1>
+          <h1 className="sec-title ">MOBILE & APPS</h1>
           <WaveLine width="200px" />
         </div> 
       </section>
       <div className="nav-tabs">
         <div className="tabs">
-          <Link to="/apps/" className="tab active ">APLICACIONES</Link>
-          <Link to="/websites/" className="tab ">WEBSITES</Link>
+          <Link to="/apps/" className="tab active ">MOBILE & APPS</Link>
+          <Link to="/websites/" className="tab ">WEB DESIGN</Link>
         </div>
       </div>
       <section className="sec-projects">

@@ -19,11 +19,8 @@
     .sec-title{
       font-size: 14px;
       font-weight: 600;
-      &:after{
-        margin-top: 20px;
-        width: 150px;
-        
-      }
+      letter-spacing: 5px;
+      
     }
     .actions{
       display: flex;
@@ -33,7 +30,7 @@
       p{
         color: #008787;
         font-size: 14px;
-        letter-spacing: 1px;
+        letter-spacing: .5px;
       }
       .f-logo{
         max-width: 40px;

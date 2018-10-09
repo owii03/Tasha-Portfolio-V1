@@ -417,12 +417,14 @@
         position: absolute;
         top: 0;
         right: 0;
+        width: 100px;
       }
 
       .img-back4 {
         position: absolute;
-        top: -80px;
+        top: -70px;
         left: 20px;
+        width: 80px;
       }
 
       .block-info {
@@ -861,17 +863,21 @@
       }
 
       .volant-back1 {
-
         position: absolute;
         bottom: 0;
         right: 0;
+        width: 600px;
+        @media screen and (max-width: 800px) {
+         width: 500px;
+        }
       }
 
       .volant-back2 {
-        width: 100px;
+        width: 80px;
         // max-width: 100px;
         position: absolute;
         bottom: 5%;
+        left: 20px;
       }
 
       .block-info {
@@ -911,6 +917,7 @@
 
       .img-responsive {
         margin-top: -30%;
+        margin-left: 110px
       }
 
       .sec-title {
@@ -1012,10 +1019,11 @@
       }
 
       .volant-back2 {
-        width: 100px;
+        width: 80px;
         // max-width: 100px;
         position: absolute;
         bottom: 5%;
+        left: 5%;
       }
 
       .block-info {
@@ -1066,7 +1074,7 @@
       }
 
       .img-responsive {
-        max-width: 250px;
+       
       }
 
       .block-info {

@@ -18,14 +18,14 @@ const Websites = () => (
         </div>
 
         <div className="content text-center">
-          <h1 className="sec-title">APLICACIONES</h1>
+          <h1 className="sec-title">WEB DESIGN</h1>
           <WaveLine width="200px" />
         </div>
       </section>
       <div className="nav-tabs">
         <div className="tabs">
-          <Link to="/apps/" className="tab ">APLICACIONES</Link>
-          <Link to="/websites/" className="tab active">WEBSITES</Link>
+          <Link to="/apps/" className="tab ">MOBILE & APPS</Link>
+          <Link to="/websites/" className="tab active">WEB DESIGN</Link>
         </div>
       </div>
       <section className="sec-projects">

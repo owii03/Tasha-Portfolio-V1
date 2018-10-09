@@ -141,7 +141,7 @@ class IndexPage extends Component {
                       <div className="block-img ">
                         <img src={img4} alt="" />
                       </div>
-                      <Link to="/apps/" className="title">APLICACIONES</Link>
+                      <Link to="/apps/" className="title">MOBILE & APPS</Link>
                     </div>
                   </div>
                   <div className="col-md-6 px-0 text-center">
@@ -149,7 +149,7 @@ class IndexPage extends Component {
                       <div className="block-img">
                         <img src={img5} alt="" />
                       </div>
-                      <Link to="/websites/" className="title ">WEBSITES</Link>
+                      <Link to="/websites/" className="title ">WEB DESIGN</Link>
                     </div>
                   </div>
                 </div>
