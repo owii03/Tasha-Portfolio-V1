@@ -57,17 +57,17 @@ class IndexPage extends Component {
         <div className="menu">
           <div className="data">
             <ul>
-              <li> <Link className="m-link"  to="#">Home</Link></li>
+              <li> <Link className="m-link" to="#">Home</Link></li>
               <li><span>Web</span></li>
-              <li> <Link className="m-link"  to="/websites/inxights">Inxights</Link></li>
-              <li> <Link className="m-link"  to="/websites/jwh">JWH</Link></li>
-              <li> <Link className="m-link"  to="/websites/evet">Evet</Link></li>
+              <li> <Link className="m-link" to="/websites/inxights">Inxights</Link></li>
+              <li> <Link className="m-link" to="/websites/jwh">JWH</Link></li>
+              <li> <Link className="m-link" to="/websites/evet">Evet</Link></li>
               <li><span>Mobile & Apps</span></li>
-              <li> <Link className="m-link"  to="/apps/gmf">GMF</Link></li>
-              <li> <Link className="m-link"  to="/apps/volant">Volant</Link></li>
-              <li> <Link className="m-link"  to="/apps/fido">Fido App</Link></li>
-              <li> <Link className="m-link"  to="/apps/santarosa">Santa Rosa</Link></li>
-              <li> <Link className="m-link"  to="/apps/pupusas">Pupusas App</Link></li>
+              <li> <Link className="m-link" to="/apps/gmf">GMF</Link></li>
+              <li> <Link className="m-link" to="/apps/volant">Volant</Link></li>
+              <li> <Link className="m-link" to="/apps/fido">Fido App</Link></li>
+              <li> <Link className="m-link" to="/apps/santarosa">Santa Rosa</Link></li>
+              <li> <Link className="m-link" to="/apps/pupusas">Pupusas App</Link></li>
             </ul>
           </div>
         </div>
@@ -79,9 +79,9 @@ class IndexPage extends Component {
                   <a id="menu-link" className="menu-link" onClick={e => { this.openMenu(e) }} href="/">Menu</a>
                 </div>
                 <div className="social-container">
-                  <a href=""><IconDribbble width="22px" height="22px" /></a>
-                  <a href=""><IconInstagram width="20px" height="20px" /></a>
-                  <a href=""><IconBehance width="20px" height="20px" /></a>
+                  <a target="_blank" href="https://dribbble.com/Govinda_"><IconDribbble width="22px" height="22px" /></a>
+                  <a target="_blank" href="https://www.instagram.com/gitagovinda_/"><IconInstagram width="20px" height="20px" /></a>
+                  <a target="_blank" href="https://www.behance.net/Gita-Govinda"><IconBehance width="20px" height="20px" /></a>
                 </div>
               </div>
               <div className="container-fluid">
@@ -133,23 +133,29 @@ class IndexPage extends Component {
           </section>
           <section className="sec-projects">
             <div className="content text-center">
-              <h1 className="sec-title ">PROYECTOS</h1>              
+              <h1 className="sec-title ">PROYECTOS</h1>
               <div className="container-fluid">
                 <div className="row align-items-stretch">
                   <div className="col-md-6 px-0 text-center">
                     <div className="block-apps">
                       <div className="block-img ">
                         <img src={img4} alt="" />
+                        <div className="overlay">
+                          <Link to="/apps/" className="title"> <span>MOBILE & APPS</span></Link>
+                        </div>
                       </div>
-                      <Link to="/apps/" className="title">MOBILE & APPS</Link>
+                      {/* <Link to="/apps/" className="title">MOBILE & APPS</Link> */}
                     </div>
                   </div>
                   <div className="col-md-6 px-0 text-center">
                     <div className="block-websites">
                       <div className="block-img">
                         <img src={img5} alt="" />
+                        <div className="overlay">
+                        <Link to="/websites/" className="title "><span>WEB DESIGN</span></Link> 
+                        </div>
                       </div>
-                      <Link to="/websites/" className="title ">WEB DESIGN</Link>
+                      {/* <Link to="/websites/" className="title ">WEB DESIGN</Link> */}
                     </div>
                   </div>
                 </div>

@@ -12,21 +12,28 @@ const Footer = ({ siteTitle }) => (
       <div className="row">
         <div className="col-md-12">
           <div className="content text-center">
-            <h1 className="sec-title">TAKE THE RISK OF DOING WHAT YOU LIKE</h1>           
+            <h1 className="sec-title">TAKE THE RISK OF DOING WHAT YOU LIKE</h1>
             <div className="actions">
-              <p>HECHO POR GOVINDA</p>
-              <img className="f-logo" src={img1} alt="" />
-              <div className="social-links">
-                <IconDribbble width="22px" height="22px" />
-                <IconInstagram width="22px" height="22px" />
-                <IconBehance width="22px" height="22px" />
+              <div className="col-f h-md text-left">
+                <p>HECHO POR GOVINDA</p>
+              </div>
+              <div className="col-f h-md">
+                <img className="f-logo" src={img1} alt="" />
+              </div>
+
+              <div className="col-f text-right">
+                <div className="social-links">
+                  <IconDribbble width="22px" height="22px" />
+                  <IconInstagram width="22px" height="22px" />
+                  <IconBehance width="22px" height="22px" />
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </footer>
+  </footer >
 )
 
 export default Footer
