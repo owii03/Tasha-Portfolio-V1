@@ -4,8 +4,7 @@ module.exports = {
   },
   plugins: [
     'gatsby-plugin-react-helmet',
-    `gatsby-plugin-sass`,
-    'gatsby-plugin-remove-serviceworker',
+    'gatsby-plugin-sass',
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -16,7 +15,9 @@ module.exports = {
         theme_color: '#015151',
         display: 'standalone',
         icon: 'src/images/logo.svg',
+        scope: '/apps/',
       },
     },
+    'gatsby-plugin-offline',
   ],
 }
