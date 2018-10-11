@@ -9,14 +9,14 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'gatsby-starter-default',
-        short_name: 'starter',
+        name: 'Gita Govinda Portfolio',
+        short_name: 'Gita Govinda',
         start_url: '/',
-        background_color: '#663399',
-        theme_color: '#663399',
-        display: 'minimal-ui',
-        icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
+        background_color: '#015151',
+        theme_color: '#015151',
+        display: 'standalone',
+        icon: 'src/images/logo.svg',
       },
-    },    
+    },
   ],
 }
