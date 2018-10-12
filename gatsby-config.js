@@ -14,7 +14,7 @@ module.exports = {
         background_color: '#015151',
         theme_color: '#015151',
         display: 'standalone',
-        icon: 'src/images/logo.svg',
+        icon: 'src/images/logo-pwa.png',
         scope: '/apps/',
       },
     },
