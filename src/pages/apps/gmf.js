@@ -5,6 +5,7 @@ import { WaveLine, ArrowBack } from '../../components/icons'
 
 import img1 from '../../images/gmf-anim.gif'
 import img2 from '../../images/gmf-img2.png'
+import img2res from '../../images/gmf-img2-res.png'
 import img3 from '../../images/gmd-back3.png'
 import img4 from '../../images/gmf-back4.png'
 
@@ -14,7 +15,7 @@ const PageGMF = () => (
   <LayoutProject title="VOLANT APP" link="/apps/volant">
     <div className="project-page gmf" style={{ position: 'relative' }}>
       <div className="sec-header">
-        <div className="container">
+        <div className="container content">
           <div className="d-flex">
             <ArrowBack width="22px" height="22px" />
             <Link className="action" to="/apps">REGRESAR</Link>
@@ -22,22 +23,24 @@ const PageGMF = () => (
         </div>
       </div>
       <section className="sec-hero" style={{ position: 'relative', overflow: 'hidden' }}>
-
         <div className="container content">
           <div className="row align-items-center">
-            <div className="col-md-5">
+            <div className=" col-md-5 col-sm-12">
               <div className="block-info">
                 <h1 className="title">GMF</h1>
                 <p className="sec-text">Aplicación de comida rápida</p>
+                <div className="image text-center">
+                  <img src={img1} alt="" className="img-cover img-res" />
+                </div>
                 <div className="details">
                   <div className="title">¿Qué es Get My Food?</div>
                   <p className="sec-text">Es una empresa salvadoreña que se dedica a ofrecer servicio a domicilio de los mejores restaurantes del país. Puede ayudarte a encontrar y ordenar tu comida favorita desde cualquier lugar que te encuentres.</p>
                 </div>
               </div>
             </div>
-            <div className="col-md-7 text-center">
-              <div className="image">
-                <img src={img1} alt="" className="img-cover" />
+            <div className=" col-md-7 col-sm-12 text-center hidden-sm">
+              <div className="image ">
+                <img src={img1} alt="" className="img-cover " />
               </div>
             </div>
           </div>
@@ -50,12 +53,13 @@ const PageGMF = () => (
         <img className="img-back4" src={img4} alt="" />
         <div className="content">
           <div className="container">
-            <div className="row">
+            <div className="row align-items-center">
               <div className="col-md-5">
                 <div className="block-info">
                   <h3 className="title">¿Cómo Funciona?</h3>
                   <p className="sec-text">Buscas tus restaurantes favoritos, ordenas tus platillos preferidos y la entrega llega a la puerta de la casa u oficina.</p>
                   <p className="sec-text">Puedes buscar por tipo de cocina, platos y restaurantes. Además cuenta con ofertas especiales, entregas gratuitas con el cual se puede rastrear cada una de las órdenes.</p>
+                  <img className="img-detail img-res" src={img2res} alt="" />
                   <div className="details">
                     <span>Titulo:</span>
                     <p>GMF</p>
@@ -71,7 +75,8 @@ const PageGMF = () => (
                 </div>
               </div>
               <div className="col-md-7">
-                <img className="img-detail" src={img2} alt="" />
+                <img className="img-detail hidden-sm" src={img2} alt="" />
+               
               </div>
             </div>
           </div>

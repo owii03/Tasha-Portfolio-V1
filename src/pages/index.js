@@ -132,10 +132,10 @@ class IndexPage extends Component {
                 <h1 className="sec-title">ACERCA <br /> DE MI</h1>
                 <WaveLine width="200px" height="10px" />
                 <div className="row align-items-center">
-                  <div className="col-md-3 ">
+                  <div className="col-md-3 hidden-sm">
                     <div className="img-responsive" id="lottie" />                  
                   </div>
-                  <div className="col-md-9">
+                  <div className="col-md-9 col-sm-12" >
                     <p className="sec-text">
                       Hola, <br />
                       Mi nombre es Gita Govinda, me especialicé en diseño UI / UX e ilustración, pero también me interesa el área de branding, comencé con sitios web básicos, diseños visualmente atractivos, detalles sutiles con interfaces innovadoras.
@@ -151,6 +151,7 @@ class IndexPage extends Component {
                       <div className="s-link"><a target="_blank" href="https://www.instagram.com/gitagovinda_/">Instagram</a></div>
                       <div className="s-link"><a target="_blank" href="https://www.behance.net/Gita-Govinda">Behance</a></div>
                       <div className="s-link"><a target="_blank" href="https://dribbble.com/Govinda_">Dribbble</a></div>
+                      <div className="s-link"><a target="_blank" href="https://www.linkedin.com/in/gita-maga%C3%B1a-a18b7b172/">LinkedIn</a></div>
                     </div>
                   </div>
                 </div>

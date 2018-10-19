@@ -4,7 +4,7 @@
 
 .project-page {
   .sec-header {
-    padding: 40px 0;
+    padding: 40px 0 0;
     position: absolute;
     top: 0;
     width: 100%;
@@ -12,25 +12,68 @@
 
     .action {
       font-size: 18px;
-      color: #3D3D3D;
+      color: white;
       font-weight: 500;
       letter-spacing: 1px;
+
+      @media screen and (max-width: $break-md) {
+        display: none;
+      }
     }
 
     .icon-svg {
       margin-right: 10px;
+      fill: white;
+    }
+
+    .content {
+      padding: 0 40px;
+    }
+  }
+
+  .img-res {
+    margin-top: 40px;
+    max-width: 100%;
+
+    @media screen and (min-width: $break-md) {
+      display: none;
+
+    }
+  }
+
+  .block-info {
+    .title {
+      @media screen and (max-width: $break-sm) {
+        font-size: 48px;
+      }
     }
   }
 
   &.inxights {
+    .sec-header {
+      .content {
+        padding: 0 40px;
+      }
+    }
+
     .sec-hero {
       background-color: #F9F5FF;
       padding: 120px 0 0;
 
       .content {
+        padding: 0 40px;
+
+        @media screen and (max-width: $break-sm) {
+          margin-bottom: 60px;
+        }
+
         .title {
           font-size: 64px;
           letter-spacing: 8px;
+
+          @media screen and (max-width: $break-sm) {
+            font-size: 40px;
+          }
         }
 
         .sec-text {
@@ -41,6 +84,12 @@
       .sec-cover {
         width: 100%;
         padding: 0 5%;
+
+        &.hero2 {
+          @media screen and (min-width: 769px) {
+            display: none;
+          }
+        }
       }
     }
 
@@ -120,9 +169,23 @@
       background-color: #F3A303;
       padding: 120px 0;
 
+      .content {
+        padding: 0 40px;
+      }
+
       .sec-cover {
         width: 100%;
         padding: 0 5%;
+
+        @media screen and (max-width: $break-sm) {
+          padding: 0;
+        }
+
+        &.img-res {
+          @media screen and (min-width: $break-md) {
+            display: none;
+          }
+        }
       }
 
       .block-info {
@@ -137,6 +200,10 @@
             background-color: white;
             width: 2px;
             height: 50px;
+
+            @media screen and (max-width: $break-sm) {
+              display: none;
+            }
           }
 
           .title {
@@ -155,6 +222,7 @@
           color: #333333;
           font-size: 30px;
           font-weight: 600;
+          padding-bottom: 10px;
 
           &:after {
             content: none;
@@ -163,6 +231,7 @@
 
         .icon-svg {
           fill: #F3A303;
+          margin-bottom: 40px;
         }
 
         .img-responsive {
@@ -180,7 +249,6 @@
         right: 0;
         top: 0;
         width: 150px;
-
       }
 
       .img-back2 {
@@ -188,6 +256,14 @@
         left: 0;
         bottom: 0;
         width: 90px;
+      }
+
+      .img-back1,
+      .img-back2,
+      .img-back3 {
+        @media screen and (max-width: $break-sm) {
+          display: none;
+        }
       }
 
       .content {
@@ -203,12 +279,22 @@
           .col {
             width: 50%;
 
+            .img-responsive {
+              @media screen and (max-width: $break-sm) {
+                display: none;
+              }
+            }
+
             &.right {
               background-color: #F3A303;
 
               .img-responsive {
                 position: absolute;
                 bottom: 0;
+
+                @media screen and (max-width: $break-sm) {
+                  display: none;
+                }
               }
             }
           }
@@ -225,8 +311,17 @@
             align-items: center;
           }
 
+          @media screen and (max-width: $break-sm) {
+            padding: 0;
+          }
+
           .img-responsive {
             max-width: 450px;
+
+            @media screen and (max-width: $break-sm) {
+              display: none;
+              padding: 0 20px;
+            }
           }
 
           .info-col {
@@ -235,6 +330,11 @@
             @media screen and (max-width: 1024px) {
               width: calc(100% / 2);
             }
+
+            @media screen and (max-width: $break-sm) {
+              width: 100%;
+            }
+
 
             &.info-content {
               .details {
@@ -268,6 +368,10 @@
 
         .block-info {
           padding: 80px;
+
+          @media screen and (max-width: $break-sm) {
+            padding: 40px;
+          }
 
           .title {
             font-size: 24px;
@@ -342,6 +446,14 @@
       padding: 120px 0;
       background-size: cover;
 
+      @media screen and (max-width: $break-sm) {
+        padding: 80px 0 40px;
+      }
+
+      .content {
+        padding: 0 40px;
+      }
+
       .sec-cover {
         width: 100%;
         padding: 0 5%;
@@ -351,13 +463,23 @@
         display: inline-block;
         z-index: 1000;
         position: relative;
+
+        @media screen and (max-width: $break-sm) {
+          display: block;
+
+          &:after {
+            left: auto !important;
+            right: -50px !important;
+          }
+        }
+
         &:after {
           content: "";
           background-image: url('../images/gmf-cover-back.png');
           background-repeat: no-repeat;
           background-size: contain;
           display: block;
-          width: 99%;
+          width: 50%;
           height: 250px;
           /* margin: 0 auto; */
           position: absolute;
@@ -370,6 +492,13 @@
           width: 100%;
           max-width: 300px;
 
+          &.img-res {
+            width: 250px;
+
+            @media screen and (min-width: $break-sm) {
+              display: none !important;
+            }
+          }
         }
 
       }
@@ -390,7 +519,6 @@
 
         .details {
           margin-top: 40px;
-         
 
           &:before {
             content: "";
@@ -399,6 +527,10 @@
             width: 2px;
             height: 50px;
             margin: 25px 0;
+
+            @media screen and (max-width: $break-sm) {
+              display: none;
+            }
           }
 
           .title {
@@ -413,11 +545,19 @@
       padding: 80px 0;
       position: relative;
 
+      @media screen and (max-width: $break-sm) {
+        padding: 40px 0;
+      }
+
       .img-back3 {
         position: absolute;
         top: 0;
         right: 0;
         width: 100px;
+
+        @media screen and (max-width: $break-sm) {
+          width: 70px;
+        }
       }
 
       .img-back4 {
@@ -425,10 +565,18 @@
         top: -70px;
         left: 20px;
         width: 80px;
+
+        @media screen and (max-width: $break-sm) {
+          display: none;
+        }
       }
 
       .block-info {
-        padding: 40px;
+        padding: 25px;
+
+        @media screen and (max-width: $break-md) {
+          padding: 20px;
+        }
 
         .title {
           font-size: 24px;
@@ -442,7 +590,7 @@
         }
 
         .details {
-          margin: 40px 0 80px;
+          margin: 40px 0 0;
 
           span {
             color: $color-text;
@@ -487,6 +635,14 @@
 
       .img-detail {
         max-width: 100%;
+        margin-top: 0;
+
+        &.img-res {
+          @media screen and (min-width: $break-sm) {
+            display: none;
+
+          }
+        }
       }
     }
   }
@@ -497,15 +653,29 @@
       padding: 80px 0;
       position: relative;
 
+      .content {
+        padding: 0 40px;
+      }
+
       .sec-back1 {
         position: absolute;
         bottom: 0;
+
+        @media screen and (max-width: $break-sm) {
+          display: none;
+        }
       }
 
       .sec-cover {
         width: 100%;
         max-width: 500px;
         padding: 0 5%;
+
+        &.img-res {
+          @media screen and(min-width: $break-sm) {
+            display: none;
+          }
+        }
       }
 
       .block-info {
@@ -513,11 +683,14 @@
 
         .icon-svg {
           fill: #5415C2;
+
+          @media screen and (max-width: $break-sm) {
+            display: none;
+          }
         }
 
         .details {
           margin-top: 40px;
-          margin-left: 50px;
 
           &:before {
             content: "";
@@ -526,6 +699,10 @@
             width: 2px;
             height: 50px;
             margin: 25px 0;
+
+            @media screen and(max-width: $break-sm) {
+              display: none;
+            }
           }
 
           .title {
@@ -538,6 +715,7 @@
 
     .sec-info {
       position: relative;
+      overflow: hidden;
 
       .img-back3 {
         position: absolute;
@@ -551,9 +729,18 @@
         left: 20px;
       }
 
-      .block-info {
+      .img-res {
+        @media screen and (min-width: $break-sm) {
+          display: none;
+        }
+      }
 
-        padding: 80px;
+      .block-info {
+        padding: 80px 25px;
+
+        @media screen and (max-width: $break-sm) {
+          padding: 40px;
+        }
 
         .title {
           font-size: 24px;
@@ -612,6 +799,14 @@
 
       .img-detail {
         max-width: 100%;
+        position: absolute;
+        right: -5%;
+        max-width: 650px;
+        top: -10%;
+        @media screen and(max-width: 1100px){
+          top: 20%;
+          max-width: 600px;
+        }
       }
     }
   }
@@ -797,6 +992,10 @@
       .sec-back1 {
         position: absolute;
         bottom: 0;
+
+        @media screen and (max-width: $break-sm) {
+          display: none;
+        }
       }
 
     }
@@ -857,6 +1056,23 @@
       background-size: cover;
       position: relative;
 
+      .content {
+        padding: 0 40px;
+
+        .block-img-res {
+          position: relative;
+        }
+      }
+
+      .img-res {
+        max-width: 350px;
+        margin-top: 20px;
+
+        @media screen and(min-width: $break-sm) {
+          display: none;
+        }
+      }
+
       .sec-cover {
         width: 100%;
         padding: 0 5%;
@@ -867,8 +1083,23 @@
         bottom: 0;
         right: 0;
         width: 600px;
-        @media screen and (max-width: 800px) {
-         width: 500px;
+
+        @media screen and (max-width: $break-md) {
+          width: 500px;
+        }
+
+        @media screen and (max-width: $break-sm) {
+          width: 350px;
+          display: none;
+        }
+
+        &.back-res {
+          display: none;
+
+          @media screen and (max-width: $break-sm) {
+            display: block;
+            z-index: 1;
+          }
         }
       }
 
@@ -882,6 +1113,12 @@
 
       .block-info {
         color: $color-text;
+
+        .title {
+          @media screen and (max-width: $break-md) {
+            font-size: 60px;
+          }
+        }
 
         .sec-text {
           color: $color-text;
@@ -901,6 +1138,10 @@
             width: 2px;
             height: 50px;
             margin: 25px 0;
+
+            @media screen and (max-width: $break-sm) {
+              display: none;
+            }
           }
 
           .title {
@@ -931,6 +1172,12 @@
 
       .icon-svg {
         fill: #51B1B4;
+      }
+
+      .content {
+        padding: 0 40px;
+
+        @media screen and (max-width: $break-sm) {}
       }
 
       .block-info {
@@ -1003,28 +1250,27 @@
 
     .sec-hero {
       background-color: #144261;
-      padding: 120px 0;
+      padding: 100px 0;
       background-size: cover;
+
+      .content {
+        padding: 0 40px;
+      }
 
       .sec-cover {
         width: 100%;
         padding: 0 5%;
+
+        &.img-res {
+          margin-top: 40px;
+
+          @media screen and (min-width: $break-md) {
+            display: none;
+          }
+        }
       }
 
-      .volant-back1 {
-        max-width: 100px;
-        position: absolute;
-        bottom: -12%;
-        bottom: 0;
-      }
 
-      .volant-back2 {
-        width: 80px;
-        // max-width: 100px;
-        position: absolute;
-        bottom: 5%;
-        left: 5%;
-      }
 
       .block-info {
         color: white;
@@ -1035,6 +1281,10 @@
 
         .icon-svg {
           fill: #0073F9;
+
+          @media screen and (max-width: $break-sm) {
+            display: none;
+          }
         }
 
         .details {
@@ -1073,12 +1323,9 @@
         width: 100%;
       }
 
-      .img-responsive {
-       
-      }
-
       .block-info {
         color: white;
+        padding: 0 25px;
 
         .title {
           font-size: 36px;
@@ -1129,6 +1376,7 @@
 
       .block-info {
         color: $color-text;
+        padding: 0 25px;
 
         .title {
           font-size: 36px;
@@ -1198,6 +1446,10 @@
     font-weight: 600;
     border-bottom: 3px solid #DFDFDF;
     margin-bottom: 20px;
+
+    @media screen and (max-width: $break-sm) {
+      font-size: 18px;
+    }
   }
 
   .title {
@@ -1209,8 +1461,17 @@
     height: 45px;
     cursor: pointer;
 
+    @media screen and (max-width: $break-sm) {
+      font-size: 28px;
+      height: 34px;
+    }
+
     &:hover {
       font-size: 46px;
+
+      @media screen and (max-width: $break-sm) {
+        font-size: 30px;
+      }
     }
   }
 }

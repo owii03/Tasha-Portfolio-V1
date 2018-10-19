@@ -48,6 +48,16 @@ section,
 summary {
   display: block;
 }
+.hidden-sm{
+  @media screen and (max-width: $break-sm) {
+    display: none;
+  }
+}
+.hidden-md{
+  @media screen and (max-width: 991px) {
+    display: none;
+  }
+}
 
 .text-center {
   text-align: center !important;
@@ -63,6 +73,10 @@ summary {
 
 .main-container {
   margin-right: 50px;
+
+  @media screen and (max-width: $break-sm) {
+    margin: 0;
+  }
 }
 
 .static-sidebar {
@@ -71,6 +85,10 @@ summary {
   width: 50px;
   position: fixed;
   right: 0;
+
+  @media screen and (max-width: $break-sm) {
+    display: none;
+  }
 
   .content {
     position: relative;
@@ -103,6 +121,9 @@ summary {
     height: 8px;
     margin: 0 auto;
   }
+  @media screen and (max-width: $break-sm) {
+    font-size: 32px !important;
+  }
 }
 
 .sec-text {
@@ -120,6 +141,11 @@ summary {
     padding: 20px 50px;
     position: relative;
 
+    @media screen and (max-width: $break-sm) {
+      height: auto;
+      padding: 40px 0 0;
+    }
+
     .section-content {
       display: flex;
       height: 100%;
@@ -129,6 +155,11 @@ summary {
         flex-direction: column;
         justify-content: space-between;
         z-index: 1000;
+
+        @media screen and (max-width: $break-sm) {
+          display: none;
+        }
+
         .menu-container {
           .menu-link {
             text-transform: uppercase;
@@ -185,23 +216,35 @@ summary {
       .logo-container {
         margin-bottom: 40px;
         text-align: right;
-
+        @media screen and (max-width: $break-sm) {
+         padding: 0 10px;
+        }
         .main-logo {
           max-width: 120px;
           height: 120px;
+
+          @media screen and (max-width: $break-sm) {
+            max-width: 100px;
+          }
         }
       }
 
       .content {
         padding-left: 60px;
+
+        @media screen and (max-width: $break-sm) {
+          padding: 0 5%;
+        }
       }
     }
 
     .sec-title {
       font-size: 75px;
+
       &:after {
         content: none;
       }
+
       @media screen and (max-width: $break-md) {
         font-size: 60px;
       }
@@ -219,7 +262,11 @@ summary {
         background-repeat: no-repeat;
         display: inline-block;
         width: 150px;
-        height: 8px;                        
+        height: 8px;
+      }
+
+      @media screen and (max-width: $break-sm) {
+        font-size: 16px;
       }
     }
 
@@ -228,8 +275,19 @@ summary {
       position: absolute;
       bottom: 0;
       right: 15%;
-      @media screen and (max-width: $break-md) {
+      @media screen and (max-width: 1220px) {
+        width: 100%;
         right: 0;
+        max-width: 600px;
+      }
+      @media screen and (max-width: $break-md) {
+        margin-top: 50px;
+        display: block;
+        margin-top: 50px;
+        max-width: 550px;
+      }
+      @media screen and (max-width: $break-sm) {
+        position: relative;        
       }
     }
   }
@@ -238,20 +296,26 @@ summary {
     padding: 120px 0;
     background-color: $color-two;
     position: relative;
-
+    @media screen and (max-width: $break-sm) {
+      padding: 60px 0;
+    }
     .content {
+      @media screen and (max-width: $break-sm) {
+        padding: 0 20px;
+      }
       .sec-text {
         margin-bottom: 25px;
       }
       .icon-svg {
         fill: $color-green;
-        stroke:$color-green;
+        stroke: $color-green;
       }
-
       .social-links {
         margin-top: 20px;
         display: inline-flex;
-
+        @media screen and (max-width: $break-sm) {
+          margin-bottom: 40px;
+        }
         .s-link {
           min-width: 100px;
 
@@ -274,6 +338,9 @@ summary {
       position: absolute;
       bottom: 0;
       left: 0;
+      @media screen and (max-width: $break-sm) {
+        width: 100px;
+      }
     }
 
     .a-back2 {
@@ -281,17 +348,20 @@ summary {
       width: 80px;
       bottom: 20px;
       right: 20px;
+      @media screen and (max-width: $break-sm) {
+        width: 60px;
+      }
     }
   }
 
   .sec-projects {
-    padding: 80px 0 ;
+    padding: 80px 0;
 
     .content {
       .sec-title {
         color: #3D3D3D;
         font-size: 50px;
-        margin-bottom: 60px;        
+        margin-bottom: 60px;
       }
 
       .icon-svg {
@@ -303,14 +373,18 @@ summary {
       .block-websites {
         height: 100%;
 
-        .block-img {          
-          position: relative;      
-          &:hover{
-            .overlay{
+        .block-img {
+          position: relative;         
+          &:hover {
+            .overlay {
               opacity: 1;
             }
           }
-          .overlay{
+          @media screen and (max-width: $break-sm) {
+           padding: 40px 0;
+          }
+
+          .overlay {
             position: absolute;
             width: 100%;
             height: 100%;
@@ -318,10 +392,11 @@ summary {
             display: flex;
             align-items: center;
             justify-content: center;
-            background-color:rgba(247, 229, 223, 0.71);
+            background-color: rgba(247, 229, 223, 0.71);
             opacity: 0;
             transition: .5s all ease;
-            .title{
+
+            .title {
               display: flex;
               justify-content: center;
               align-items: center;
@@ -338,6 +413,7 @@ summary {
           display: inline-block;
           padding-bottom: 10px;
           border-bottom: 2px solid transparent;
+
           &:hover {
             border-color: #f2f2f2;
           }
@@ -349,17 +425,20 @@ summary {
         .block-img {
           background-color: #F7F7F7;
           transition: .5s all ease;
+
           &:hover {
             background-color: #FFDACF;
           }
+
           img {
-            width: 100%;            
+            width: 100%;
           }
         }
+
         .title {
           color: #333;
         }
-      }  
+      }
 
 
     }
@@ -414,11 +493,12 @@ summary {
       list-style: none;
 
       li {
-        span{
+        span {
           color: white;
           font-size: 22px;
           font-weight: 600;
-        } 
+        }
+
         a {
           display: block;
           color: white;
@@ -430,7 +510,8 @@ summary {
     }
   }
 }
-.order-sm-1{
+
+.order-sm-1 {
   @media screen and (max-width: $break-sm) {
     order: 1;
   }

@@ -1,23 +1,26 @@
 .apps-page {
   .sec-header {
     padding: 40px 0 80px;
-
-    .navigate {
-      align-items: center;
-
+    @media screen and (max-width: $break-sm) {
+      padding: 40px 0;
+    }
+    .navigate {   
+      margin-bottom: 20px;
       a {
         color: white;
       }
-
       .icon-svg {
         fill: white !important;
         margin-right: 10px;
+        vertical-align: middle;
       }
     }
 
     .sec-title {
       font-size: 36px;
-
+      @media screen and (max-width: $break-sm) {
+        font-size: 28px !important;
+      }
       &:after {
         content: none;
       }
@@ -30,7 +33,14 @@
     .tabs {
       display: flex;
       justify-content: center;
-
+      @media screen and (max-width: $break-sm) {
+        justify-content: space-evenly;
+        padding: 0 40px;
+      }
+      @media screen and (max-width: $break-xs) {
+        justify-content: space-between;
+        padding: 0 40px;
+      }
       .tab {
         font-weight: 600;
         color: #6d6d6d;
@@ -38,7 +48,11 @@
         letter-spacing: 2px;
         margin: 0 40px;
         border-bottom: 4px solid transparent;
-
+        @media screen and (max-width: $break-sm) {
+          padding: 20px 0;
+          font-size: 14px;
+          margin: 0;
+        }
         &.active {
           border-color: $color-two;
         }
@@ -48,7 +62,9 @@
 
   .sec-projects {
     padding: 50px 0 50px 50px;
-
+    @media screen and (max-width: $break-sm) {
+      padding: 80px 20px;
+    }
     .project {
       background-color: #FBFBFB;
       padding: 20px;

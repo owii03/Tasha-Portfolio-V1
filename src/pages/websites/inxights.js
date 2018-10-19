@@ -4,6 +4,7 @@ import LayoutProject from '../../components/layoutproject'
 import { WaveLine, ArrowBack } from '../../components/icons'
 import { withPrefix } from 'gatsby'
 import hero1 from '../../images/inxight-hero.png'
+import hero2 from '../../images/inxights-hero2.png'
 import img2 from '../../images/inxights-anim.gif'
 
 import imgMarvel from '../../images/marvel.svg'
@@ -13,7 +14,7 @@ const PageIxights = () => (
   <LayoutProject title="JWH BURGERS" link="/websites/jwh">
     <div className="project-page inxights" style={{ position: 'relative' }}>
       <div className="sec-header">
-        <div className="container">
+        <div className="container content">
           <div className="d-flex">
             <ArrowBack width="22px" height="22px" />
             <Link className="action" to="/websites">REGRESAR</Link>
@@ -25,7 +26,8 @@ const PageIxights = () => (
           <h1 className="title">INXIGHTS</h1>
           <p className="sec-text">Plataforma para monitorear campañas</p>
         </div>
-        <img className="sec-cover animated fadeIn" src={hero1} alt="" />
+        <img className="sec-cover animated hidden-sm fadeIn" src={hero1} alt="" />
+        <img className="sec-cover hero2 animated fadeIn" src={hero2} alt="" />
       </section>
       <section className="sec-info">
         <div className="container-fluid">

@@ -12,7 +12,7 @@ const PageEvet = () => (
   <LayoutProject title="INXIGHTS" link="/websites/inxights">
     <div className="project-page evet" style={{ position: 'relative' }}>
       <div className="sec-header">
-        <div className="container">
+        <div className="container content">
           <div className="d-flex">
             <ArrowBack width="22px" height="22px" />
             <Link className="action" to="/websites">REGRESAR</Link>
@@ -27,6 +27,7 @@ const PageEvet = () => (
                 <h1 className="title">EVET</h1>
                 <p className="sec-text">Plataforma para monitorear campañas</p>
                 <WaveLine width="200px" />
+                <img className="sec-cover img-res" src={imgHero} alt="" />
                 <div className="details">
                   <div className="title">¿Qué es Evet?</div>
                   <p className="sec-text">Plataforma que ayuda a crear, gestionar y hacer eventos, analiza eventos desde cualquier lugar, alcanza nuevas audiencias y cuenta con venta de entradas, desde donde te encuentres.</p>
@@ -34,7 +35,7 @@ const PageEvet = () => (
               </div>
             </div>
             <div className="col-lg-8 col-md-12">
-              <img className="sec-cover" src={imgHero} alt="" />
+              <img className="sec-cover hidden-md" src={imgHero} alt="" />
             </div>
           </div>
         </div>

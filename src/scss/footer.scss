@@ -14,6 +14,12 @@
     right: 0;
     bottom: 0;
   }
+  .f-back-right,
+  .f-back-left{
+    @media screen and (max-width: $break-sm) {
+      width: 60px;
+    }
+  }
   .content{
     padding: 0 10%;
     .sec-title{
@@ -29,6 +35,10 @@
       
       align-items: center;
       margin-top: 40px;
+      @media screen and (max-width: $break-sm) {
+        margin-top: 0;
+        margin-bottom: 40px;
+      }
       .col-f{
         width: calc(100% /3);
         &.h-md{

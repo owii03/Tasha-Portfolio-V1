@@ -6,6 +6,7 @@ import { ArrowBack, WaveLine } from '../../components/icons'
 import img1 from '../../images/volant-back1.png'
 import img2 from '../../images/volant-back2.svg'
 import img from '../../images/volant.png'
+import imgRes from '../../images/volant-hero-2.png'
 import volantContent from '../../images/volant-content.png'
 import imgMarvel from '../../images/marvel.svg'
 import imgAdobe from '../../images/adobexd.svg'
@@ -14,7 +15,7 @@ const PageVolant = () => (
   <LayoutProject title="FIDO APP" link="/apps/fido">
     <div className="project-page volant" style={{ position: 'relative' }}>
       <div className="sec-header">
-        <div className="container">
+        <div className="container content">
           <div className="d-flex">
             <ArrowBack width="22px" height="22px" />
             <Link className="action" to="/apps">REGRESAR</Link>
@@ -30,6 +31,10 @@ const PageVolant = () => (
               <div className="block-info">
                 <h1 className="title">VOLANT</h1>
                 <p className="sec-text">Aplicación para viajes</p>
+                <div className="block-img-res">
+                  <img className="sec-cover img-res" src={imgRes} alt="" />
+                  <img className="volant-back1 back-res" src={img1} alt="" />
+                </div>
                 <div className="details">
                   <div className="title">¿Qué es Volant?</div>
                   <p className="sec-text">Es una aplicación que permite a los usuarios descubrir, planificar y coordinar viajes. La herramienta integra información del lugar, asi como precios, boletos y un perfil donde puedo llevar un control de mis viajes realizados o posibles viajes a realizar.</p>
@@ -37,13 +42,13 @@ const PageVolant = () => (
               </div>
             </div>
             <div className="col-md-8 text-center">
-              <img className="sec-cover" src={img} alt="" />
+              <img className="sec-cover hidden-sm" src={img} alt="" />
             </div>
           </div>
         </div>
-        <img className="volant-back1" src="/img/volant-back1.svg" alt="" />
+
       </section>
-      <section className="sec-info">        
+      <section className="sec-info">
         <div className="content container">
           <div className="row">
             <div className="col-md-5">
@@ -63,11 +68,13 @@ const PageVolant = () => (
                 </div>
               </div>
             </div>
-            <div className="col-md-7"></div>
+            <div className="col-md-7">
+              <img className=" img-res" src={volantContent} alt="" />
+            </div>
           </div>
-          <img className="img-responsive" src={volantContent} alt="" />
+          <img className="img-responsive hidden-sm" src={volantContent} alt="" />
         </div>
-        
+
       </section>
 
     </div>

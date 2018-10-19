@@ -18,8 +18,8 @@ const PageJWH = () => (
   <LayoutProject title="EVET" link="/websites/evet">
     <div className="project-page jwh" style={{ position: 'relative' }}>
       <div className="sec-header">
-        <div className="container">
-          <div className="d-flex">
+        <div className="container px-0">
+          <div className="d-flex content">
             <ArrowBack width="22px" height="22px" />
             <Link className="action" to="/websites">REGRESAR</Link>
           </div>
@@ -32,7 +32,7 @@ const PageJWH = () => (
               <div className="block-info">
                 <h1 className="title">JWH</h1>
                 <p className="sec-text">Aplicación de comida rápida</p>
-
+                <img className="sec-cover img-res" src={img} alt="" />
                 <div className="details">
                   <div className="title">¿Qué es JWH Burgers?</div>
                   <p className="sec-text">Esta aplicación te ayuda a realizar tu pedido de forma sencilla, muestra muchas opciones para ordenar hamburguesas, personalizarlas con aderezos o cualquier condimento en especial,  asi como muestra su precio y descripción de productos.</p>
@@ -40,7 +40,7 @@ const PageJWH = () => (
               </div>
             </div>
             <div className="col-lg-8 col-md-12">
-              <img className="sec-cover" src={img} alt="" />
+              <img className="sec-cover hidden-md" src={img} alt="" />
             </div>
           </div>
         </div>
@@ -79,10 +79,10 @@ const PageJWH = () => (
                 </div>
               </div>
             </div>
-            <div className="info-col text-center col-image">
+            <div className="info-col text-center col-image ">
               <img src={img3} className="img-responsive" alt="" />
             </div>
-            <div className="info-col col-img-xs">
+            <div className="info-col col-img-xs hidden-sm">
               <img src={img3} className="img-responsive" alt="" />
               <div className="block-info">
                 <div className="details">
@@ -103,7 +103,7 @@ const PageJWH = () => (
             <div className="col">
               <img className="img-responsive" src={imgLetters1} alt="" />
             </div>
-            <div className="col right">
+            <div className="col right hidden-sm">
               <img className="img-responsive" src={imgLetters2} alt="" />
             </div>
           </div>

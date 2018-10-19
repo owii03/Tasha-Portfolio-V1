@@ -14,9 +14,11 @@ const Apps = () => (
     <div className="apps-page apps">
       <section className="sec-header">
         <div className="container">
-          <div className="navigate d-flex">
+          <div className="navigate">
+            <Link className="action" to="/">
             <ArrowBack width="22px" height="22px" />
-            <Link className="action" to="/">REGRESAR</Link>
+            <span className="hidden-sm">REGRESAR</span>
+            </Link>
           </div>
         </div>     
         <div className="content text-center">

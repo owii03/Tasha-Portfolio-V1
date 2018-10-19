@@ -12,7 +12,7 @@ const Footer = ({ siteTitle }) => (
       <div className="row">
         <div className="col-md-12">
           <div className="content text-center">
-            <h1 className="sec-title">TAKE THE RISK OF DOING WHAT YOU LIKE</h1>
+            <h1 className="sec-title hidden-sm">TAKE THE RISK OF DOING WHAT YOU LIKE</h1>
             <div className="actions">
               <div className="col-f h-md text-left">
                 <p>HECHO POR GOVINDA</p>

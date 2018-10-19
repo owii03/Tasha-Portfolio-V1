@@ -11,10 +11,12 @@ const Websites = () => (
     <div className="apps-page websites">
       <section className="sec-header">
         <div className="container">
-          <div className="navigate d-flex">
+          <div className="navigate">
+            <Link className="action" to="/">
             <ArrowBack width="22px" height="22px" />
-            <Link className="action" to="/">REGRESAR</Link>
-          </div>
+            <span className="hidden-sm">REGRESAR</span>
+            </Link>
+          </div>      
         </div>
 
         <div className="content text-center">
