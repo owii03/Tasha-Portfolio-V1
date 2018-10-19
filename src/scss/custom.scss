@@ -50,7 +50,7 @@ summary {
 }
 .hidden-sm{
   @media screen and (max-width: $break-sm) {
-    display: none;
+    display: none !important;
   }
 }
 .hidden-md{
@@ -512,6 +512,16 @@ summary {
 }
 
 .order-sm-1 {
+  @media screen and (max-width: $break-sm) {
+    order: 1;
+  }
+}
+.or-md-1 {
+  @media screen and (max-width: $break-md) {
+    order: 1;
+  }
+}
+.or-sm-1 {
   @media screen and (max-width: $break-sm) {
     order: 1;
   }

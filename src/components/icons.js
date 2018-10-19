@@ -22,6 +22,17 @@ export const IconInstagram = ({ width, height }) => (
     </g>
   </svg>
 );
+
+export const IconLinkedin = ({ width, height }) => (
+<svg className="icon-svg" width={width} height={height} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20.637 20.607">
+  <g id="Group_2886" data-name="Group 2886" transform="translate(-37.59 -30.5)">
+    <rect id="Rectangle_2584" data-name="Rectangle 2584" class="cls-1" width="4.798" height="13.729" transform="translate(37.593 37.379)"/>
+    <path id="Path_4976" data-name="Path 4976" class="cls-1" d="M39.992,30.5a2.406,2.406,0,0,0-2.341,2.948,2.431,2.431,0,0,0,1.85,1.821,2.387,2.387,0,0,0,2.89-2.341A2.418,2.418,0,0,0,39.992,30.5Z" transform="translate(0)"/>
+    <path id="Path_4977" data-name="Path 4977" class="cls-1" d="M76.764,58.52c-.318-2.6-1.619-4.22-5.116-4.22-2.486,0-3.468.376-4.046,1.474h0V54.3H63.7V68.029h3.989v-7.2c0-1.792.347-3.15,2.572-3.15,2.2,0,2.37,1.676,2.37,3.266v7.081h4.133S76.822,59.127,76.764,58.52Z" transform="translate(-18.564 -16.921)"/>
+  </g>
+</svg>
+)
+
 export const WaveLine = ({ width, height }) => (
   <svg xmlns="http://www.w3.org/2000/svg" className="icon-svg" width={width} height={height} viewBox="0 0 191.2 7.8">
     <defs>

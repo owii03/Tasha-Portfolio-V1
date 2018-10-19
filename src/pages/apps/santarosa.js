@@ -17,7 +17,7 @@ const PageSantarosa = () => (
   <LayoutProject title="PUPUSAS APP" link="/apps/pupusas">
     <div className="project-page santarosa" style={{ position: 'relative' }}>
       <div className="sec-header">
-        <div className="container">
+        <div className="container content">
           <div className="d-flex">
             <ArrowBack width="22px" height="22px" />
             <Link className="action" to="/apps">REGRESAR</Link>
@@ -31,6 +31,7 @@ const PageSantarosa = () => (
               <div className="block-info">
                 <h1 className="title">SANTA ROSA</h1>
                 <p className="sec-text">Aplicación de complejo urbano </p>
+                <img src={img} className="img-responsive img-res" alt="" />
                 <div className="details">
                   <div className="title">¿Qué es Santa Rosa app?</div>
                   <p className="sec-text">Plataforma para personas que residen en Santa Rosa, tiene una diversidad de funciones  permitiéndole al usuario gestionar  denuncias.</p>
@@ -38,7 +39,7 @@ const PageSantarosa = () => (
               </div>
             </div>
             <div className="col-md-7 text-center">
-              <img src={img} className="img-responsive" alt="" />
+              <img src={img} className="img-responsive hidden-sm" alt="" />
             </div>
           </div>
 
@@ -52,6 +53,7 @@ const PageSantarosa = () => (
               <div className="block-info">
                 <h3 className="title">¿Cómo Funciona?</h3>
                 <p className="sec-text">Aplicación únicamente para residencial Santa Rosa en colaboración a la seguridad y mantenimiento de la zona, la aplicación se complementa con diferentes secciones que se han sido incluidas de acuerdo a las necesidades de los residentes, como alertas, atención al usuario, reglas de convivencia, notificaciones, además cuenta con un dashboard interno para ver el listado de secciones generadas.</p>
+                <img className="img-responsive img-res" src={imgInfo1} alt="" />
                 <div className="details">
                   <span>Titulo:</span>
                   <p>SANTA ROSA</p>
@@ -66,11 +68,11 @@ const PageSantarosa = () => (
               </div>
             </div>
             <div className="col-md-7">
-              <img className="img-responsive" src={imgInfo1} alt="" />
+              <img className="img-responsive hidden-sm" src={imgInfo1} alt="" />
             </div>
           </div>
         </div>
-        <img src={imgBack2} className="img-back2" alt="" />
+        <img src={imgBack2} className="img-back2 hidden-sm" alt="" />
       </section>
 
     </div>

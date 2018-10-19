@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { IconBehance, IconInstagram, IconDribbble, WaveLine } from './icons'
+import { IconBehance, IconInstagram, IconDribbble, IconLinkedin, WaveLine } from './icons'
 import img1 from '../images/f-logo.svg'
 import img2 from '../images/f-left.svg'
 import img3 from '../images/f-right.svg'
@@ -23,9 +23,10 @@ const Footer = ({ siteTitle }) => (
 
               <div className="col-f text-right">
                 <div className="social-links">
-                <a target="_blank" href="https://dribbble.com/Govinda_"><IconDribbble width="22px" height="22px" /></a>
+                  <a target="_blank" href="https://dribbble.com/Govinda_"><IconDribbble width="22px" height="22px" /></a>
                   <a target="_blank" href="https://www.instagram.com/gitagovinda_/"><IconInstagram width="20px" height="20px" /></a>
-                  <a target="_blank" href="https://www.behance.net/Gita-Govinda"><IconBehance width="20px" height="20px" /></a>                  
+                  <a target="_blank" href="https://www.behance.net/Gita-Govinda"><IconBehance width="22px" height="22px" /></a>
+                  <a target="_blank" href="https://www.linkedin.com/in/gita-maga%C3%B1a-a18b7b172/"><IconLinkedin width="18px" height="18px" /></a>
                 </div>
               </div>
             </div>

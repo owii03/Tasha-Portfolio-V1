@@ -50,9 +50,15 @@
   }
 
   &.inxights {
-    .sec-header {
+    .sec-header {      
       .content {
         padding: 0 40px;
+        .icon-svg{
+          fill: #333333;
+        }
+        .action{
+          color: #333333;
+        }
       }
     }
 
@@ -216,19 +222,16 @@
 
     .sec-progress {
       padding: 80px 0;
-
       .content {
         .sec-title {
           color: #333333;
           font-size: 30px;
           font-weight: 600;
           padding-bottom: 10px;
-
           &:after {
             content: none;
           }
         }
-
         .icon-svg {
           fill: #F3A303;
           margin-bottom: 40px;
@@ -237,6 +240,12 @@
         .img-responsive {
           display: block;
           margin: 0 auto;
+          &.img-res{
+            max-width: 250px;
+            @media screen and(min-width: $break-sm){
+                display: none;
+            }
+          }
         }
       }
     }
@@ -729,11 +738,7 @@
         left: 20px;
       }
 
-      .img-res {
-        @media screen and (min-width: $break-sm) {
-          display: none;
-        }
-      }
+
 
       .block-info {
         padding: 80px 25px;
@@ -803,9 +808,22 @@
         right: -5%;
         max-width: 650px;
         top: -10%;
-        @media screen and(max-width: 1100px){
+
+        @media screen and(max-width: 1100px) {
           top: 20%;
           max-width: 600px;
+        }
+
+        @media screen and(max-width: 992px) {
+          max-width: 500px;
+        }
+
+        &.img-res {
+          position: relative;
+
+          @media screen and (min-width: $break-sm) {
+            display: none;
+          }
         }
       }
     }
@@ -817,9 +835,23 @@
       padding: 120px 0;
       background-size: cover;
 
+      @media screen and(max-width: $break-sm) {
+        padding: 80px 0;
+      }
+
       .img-responsive {
         max-width: 400px;
         width: 100%;
+
+        &.img-res {
+          @media screen and(min-width: $break-sm) {
+            display: none;
+          }
+        }
+      }
+
+      .content {
+        padding: 0 40px;
       }
 
       .block-info {
@@ -844,6 +876,10 @@
             width: 2px;
             height: 50px;
             margin: 25px 0;
+
+            @media screen and(max-width: $break-sm) {
+              display: none;
+            }
           }
 
           .title {
@@ -858,11 +894,23 @@
       padding: 80px 0;
       position: relative;
 
+      .img-responsive {
+        &.img-res {
+          @media screen and(min-width: $break-sm) {
+            display: none;
+          }
+        }
+      }
+
       .sr-back1 {
         max-width: 85px;
         position: absolute;
         top: -75px;
         left: 20px;
+
+        @media screen and(max-width: $break-sm) {
+          display: none;
+        }
       }
 
       .img-back2 {
@@ -872,7 +920,7 @@
       }
 
       .block-info {
-        padding: 40px;
+        padding-left: 25px;
 
         .title {
           font-size: 24px;
@@ -949,16 +997,26 @@
       .sec-cover {
         width: 100%;
         max-width: 440px;
+        padding: 0 5%;
+
+        &.img-res {
+          @media screen and(min-width: $break-sm) {
+            display: none;
+          }
+        }
       }
 
-      .sec-cover {
-        width: 100%;
-
-        padding: 0 5%;
+      .content {
+        padding: 0 40px;
       }
 
       .block-info {
         color: white;
+        .title {
+          @media screen and(max-width: $break-md) {
+            font-size: 60px;
+          }
+        }
 
         .icon-svg {
           fill: #E24052;
@@ -970,7 +1028,6 @@
 
         .details {
           margin-top: 40px;
-          margin-left: 50px;
 
           &:before {
             content: "";
@@ -979,6 +1036,9 @@
             width: 2px;
             height: 50px;
             margin: 25px 0;
+            @media screen and(max-width: $break-md) {
+              display: none;
+            }
           }
 
           .title {
@@ -1003,11 +1063,16 @@
     .sec-info {
       padding: 80px 0;
       position: relative;
-
+      .content{
+        @media screen and (max-width:$break-md){
+          padding-left: 25px;
+        }
+      }
       .img-back1 {
         position: absolute;
         top: 20px;
         left: 20px;
+        width: 80px;
       }
 
       .img-content {

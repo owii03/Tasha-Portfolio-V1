@@ -57,7 +57,7 @@ const PageFido = () => (
                   <p className="sec-text">Buscas tus restaurantes favoritos, ordenas tus platillos preferidos y la entrega llega a la puerta de la casa u oficina.</p>
                   <p className="sec-text">Puedes buscar por tipo de cocina, platos y restaurantes. Además cuenta con ofertas especiales, entregas gratuitas con el cual se puede rastrear cada una de las órdenes.</p>
                   <div className="img-container">
-                    <img className="img-detail img-res" src={img2_res} alt="" />
+                    <img className="img-detail img-res" src={img2} alt="" />
                   </div>
                   <div className="details">
                     <span>Titulo:</span>

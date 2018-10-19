@@ -4,6 +4,7 @@ import LayoutProject from '../../components/layoutproject'
 import { ArrowBack, WaveLine } from '../../components/icons'
 import img from '../../images/jwh.png'
 import img2 from '../../images/jwh-anim.gif'
+import img2_res from '../../images/jwh-gif-res.gif'
 import img3 from '../../images/jwh-info.png'
 
 import imgback1 from '../../images/jwh-infoback1.png'
@@ -51,7 +52,8 @@ const PageJWH = () => (
             <h1 className="sec-title">PROCESOS <br />
               JWH Burgers.</h1>
             <WaveLine width="200px" />
-            <img className="img-responsive" src={img2} alt="" />
+            <img className="img-responsive hidden-sm" src={img2} alt="" />
+            <img className="img-responsive img-res" src={img2_res} alt="" />
           </div>
 
         </div>
