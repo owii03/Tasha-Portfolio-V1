@@ -13,10 +13,12 @@ const PageEvet = () => (
     <div className="project-page evet" style={{ position: 'relative' }}>
       <div className="sec-header">
         <div className="container content">
-          <div className="d-flex">
-            <ArrowBack width="22px" height="22px" />
-            <Link className="action" to="/websites">REGRESAR</Link>
-          </div>
+          <Link to="/websites">
+            <div className="d-flex">
+              <ArrowBack width="22px" height="22px" />
+              <span className="action">REGRESAR</span>
+            </div>
+          </Link>
         </div>
       </div>
       <section className="sec-hero">

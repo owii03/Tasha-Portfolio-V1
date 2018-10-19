@@ -20,15 +20,17 @@ const PageJWH = () => (
     <div className="project-page jwh" style={{ position: 'relative' }}>
       <div className="sec-header">
         <div className="container px-0">
-          <div className="d-flex content">
-            <ArrowBack width="22px" height="22px" />
-            <Link className="action" to="/websites">REGRESAR</Link>
-          </div>
+          <Link to="/websites">
+            <div className="d-flex content">
+              <ArrowBack width="22px" height="22px" />
+              <span className="action">REGRESAR</span>
+            </div>
+          </Link>
         </div>
       </div>
       <section className="sec-hero">
         <div className="container content">
-          <div className="row">
+          <div className="row align-items-center">
             <div className="col-lg-4 col-md-12">
               <div className="block-info">
                 <h1 className="title">JWH</h1>

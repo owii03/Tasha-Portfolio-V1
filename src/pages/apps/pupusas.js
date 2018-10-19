@@ -15,10 +15,12 @@ const PagePupusas = () => (
     <div className="project-page pupusas" style={{ position: 'relative' }}>
       <div className="sec-header">
         <div className="container content">
-          <div className="d-flex">
-            <ArrowBack width="22px" height="22px" />
-            <Link className="action" to="/apps">REGRESAR</Link>
-          </div>
+          <Link to="/apps">
+            <div className="d-flex">
+              <ArrowBack width="22px" height="22px" />
+              <span className="action">REGRESAR</span>
+            </div>
+          </Link>
         </div>
       </div>
       <section className="sec-hero">
@@ -45,7 +47,7 @@ const PagePupusas = () => (
 
       </section>
       <section className="sec-info">
-      <img className="img-back1 hidden-md" src={img_back1} alt=""/>
+        <img className="img-back1 hidden-md" src={img_back1} alt="" />
         <div className="content">
           <div className="container">
             <div className="row">
@@ -67,7 +69,7 @@ const PagePupusas = () => (
                     </div>
                   </div>
                 </div>
-                <img className="hidden-md" style={{maxWidth:'80px'}} src={img_f2} alt=""/>
+                <img className="hidden-md" style={{ maxWidth: '80px' }} src={img_f2} alt="" />
               </div>
             </div>
           </div>

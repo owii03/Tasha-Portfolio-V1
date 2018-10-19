@@ -16,10 +16,12 @@ const PageGMF = () => (
     <div className="project-page gmf" style={{ position: 'relative' }}>
       <div className="sec-header">
         <div className="container content">
-          <div className="d-flex">
-            <ArrowBack width="22px" height="22px" />
-            <Link className="action" to="/apps">REGRESAR</Link>
-          </div>
+          <Link to="/apps">
+            <div className="d-flex">
+              <ArrowBack width="22px" height="22px" />
+              <span className="action">REGRESAR</span>
+            </div>
+          </Link>
         </div>
       </div>
       <section className="sec-hero" style={{ position: 'relative', overflow: 'hidden' }}>
@@ -76,7 +78,7 @@ const PageGMF = () => (
               </div>
               <div className="col-md-7">
                 <img className="img-detail hidden-sm" src={img2} alt="" />
-               
+
               </div>
             </div>
           </div>

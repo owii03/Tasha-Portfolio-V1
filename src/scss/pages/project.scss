@@ -1115,6 +1115,14 @@
   }
 
   &.volant {
+    .sec-header{
+      .icon-svg{
+        fill: #333333;
+      }
+      .action{
+        color: #333333;
+      }
+    }
     .sec-hero {
       background-color: #CBF3F5;
       padding: 120px 0;
@@ -1162,7 +1170,7 @@
           display: none;
 
           @media screen and (max-width: $break-sm) {
-            display: block;
+            display: none;
             z-index: 1;
           }
         }
@@ -1174,6 +1182,9 @@
         position: absolute;
         bottom: 5%;
         left: 20px;
+        @media screen and (max-width: $break-sm) {
+          display: none;         
+        }
       }
 
       .block-info {

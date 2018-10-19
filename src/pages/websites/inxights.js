@@ -15,10 +15,12 @@ const PageIxights = () => (
     <div className="project-page inxights" style={{ position: 'relative' }}>
       <div className="sec-header">
         <div className="container content">
-          <div className="d-flex">
-            <ArrowBack width="22px" height="22px" />
-            <Link className="action" to="/websites">REGRESAR</Link>
-          </div>
+          <Link to="/websites">
+            <div className="d-flex">
+              <ArrowBack width="22px" height="22px" />
+              <span className="action" >REGRESAR</span>
+            </div>
+          </Link>
         </div>
       </div>
       <section className="sec-hero">

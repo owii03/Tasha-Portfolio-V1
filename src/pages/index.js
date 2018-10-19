@@ -117,7 +117,7 @@ class IndexPage extends Component {
                 <div className="content animated fadeInUp">
                   <h1 className="sec-title">GITA</h1>
                   <h1 className="sec-title">GOVINDA</h1>
-                  <span>GRAPHIC DESIGNER</span>
+                  <span style={{padding:0}}>GRAPHIC DESIGNER</span>
                 </div>
                 <div className="illustration-hero animated fadeIn" id="lottie-hero"></div>
                 {/* <img className="illustration-hero animated fadeIn" src={img2} alt="img" /> */}

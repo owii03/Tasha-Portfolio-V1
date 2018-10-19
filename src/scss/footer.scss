@@ -64,6 +64,9 @@
           display: flex;
           justify-content: flex-end;
           align-items: center;
+          @media screen and (max-width: $break-md) {
+            justify-content: center;
+          }
           .icon-svg{
             fill: #008787;
             margin: 0 10px;
