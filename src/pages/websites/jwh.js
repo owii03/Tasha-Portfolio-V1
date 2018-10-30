@@ -91,9 +91,9 @@ const PageJWH = () => (
               <div className="block-info">
                 <div className="details">
                   <span>Titulo:</span>
-                  <p>PUPUSAS APP.</p>
+                  <p>JWH</p>
                   <span>Tipo:</span>
-                  <p>APP iOS.</p>
+                  <p>Website, App iOS.</p>
                   <span>Programas utilizados:</span>
                   <div className="tools">
                     <img className="i-tool" src={imgMarvel} alt="" />

@@ -232,10 +232,11 @@
             content: none;
           }
         }
-        .icon-svg {
-          fill: #F3A303;
-          margin-bottom: 40px;
-        }
+        .icon-waveline{    
+          .wave-1{
+            stroke: #F3A303;
+          }
+        }       
 
         .img-responsive {
           display: block;
@@ -665,11 +666,9 @@
       .content {
         padding: 0 40px;
       }
-
       .sec-back1 {
         position: absolute;
         bottom: 0;
-
         @media screen and (max-width: $break-sm) {
           display: none;
         }
@@ -679,7 +678,6 @@
         width: 100%;
         max-width: 500px;
         padding: 0 5%;
-
         &.img-res {
           @media screen and(min-width: $break-sm) {
             display: none;
@@ -690,9 +688,10 @@
       .block-info {
         color: white;
 
-        .icon-svg {
-          fill: #5415C2;
-
+        .icon-waveline {          
+          .wave-1{
+            stroke:white;
+          }
           @media screen and (max-width: $break-sm) {
             display: none;
           }
@@ -742,11 +741,9 @@
 
       .block-info {
         padding: 80px 25px;
-
         @media screen and (max-width: $break-sm) {
           padding: 40px;
         }
-
         .title {
           font-size: 24px;
           font-weight: 600;
@@ -808,19 +805,17 @@
         right: -5%;
         max-width: 650px;
         top: -10%;
-
         @media screen and(max-width: 1100px) {
           top: 20%;
           max-width: 600px;
         }
-
         @media screen and(max-width: 992px) {
           max-width: 500px;
         }
 
         &.img-res {
           position: relative;
-
+          right: 50px;                
           @media screen and (min-width: $break-sm) {
             display: none;
           }
@@ -984,7 +979,6 @@
       .action {
         color: white;
       }
-
       .icon-svg {
         fill: white;
       }
@@ -1018,8 +1012,13 @@
           }
         }
 
-        .icon-svg {
-          fill: #E24052;
+        .icon-waveline {
+          .wave-1{
+            stroke: white;
+          }
+          @media screen and(max-width: $break-sm) {
+            display: none;
+          }
         }
 
         .sec-title {
@@ -1083,6 +1082,10 @@
         .sec-title {
           font-size: 36px;
           color: #6d6d6d;
+          &:after{
+            margin: 10px 0;
+            fill: #FF6590;
+          }
         }
 
         .details {
@@ -1310,6 +1313,17 @@
           }
         }
       }
+      .slider-section{
+        display: none;
+        padding: 0 20%;
+        margin-top: 60px;
+        background-position: top;
+        background-size: contain;
+        background-repeat: no-repeat;
+        @media screen and (max-width: $break-sm){
+          display: block;
+        }
+      }
     }
   }
 
@@ -1355,9 +1369,10 @@
           color: white;
         }
 
-        .icon-svg {
-          fill: #0073F9;
-
+        .icon-waveline {
+          .wave-1{
+            stroke: white;
+          }          
           @media screen and (max-width: $break-sm) {
             display: none;
           }
@@ -1373,6 +1388,9 @@
             width: 2px;
             height: 50px;
             margin: 25px 0;
+            @media screen and (max-width: $break-md) {
+              display: none;
+            }
           }
 
           .title {
@@ -1402,7 +1420,11 @@
       .block-info {
         color: white;
         padding: 0 25px;
-
+        .img-res{
+          @media screen and(min-width: $break-sm){
+            display: none;
+          }
+        }
         .title {
           font-size: 36px;
           font-weight: 600;

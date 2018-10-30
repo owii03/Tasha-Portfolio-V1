@@ -29,10 +29,10 @@ class IndexPage extends Component {
       event.preventDefault();
     }
     this.t1 = new TimelineMax({ paused: true })
-      .to(".menu", 2, {
+      .to(".menu", 1, {
         top: "0%",
         ease: Expo.easeInOut,
-        delay: -1
+        delay: -5
       })
       .reverse();
   }
@@ -71,17 +71,19 @@ class IndexPage extends Component {
       animationData: animationHero
     })
   }
-  render() {
-    const defaultOptions = {
-      loop: true,
-      autoplay: true,
-      animationData: animationAbout
-    };
-
+  render() {    
     return (
       <Layout>
         <div className="menu">
           <div className="data">
+            <div className="close-button" onClick={e => { this.openMenu(e) }}>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.2 19.2" height="20">              
+                <g id="Group_2895" data-name="Group 2895" transform="translate(-54.772 -129.615)">
+                  <line id="Line_11" data-name="Line 11" stroke="#fff" strokeWidth="2px" className="bc-l" y2="23.154" transform="translate(72.558 131.029) rotate(45)" />
+                  <line id="Line_12" data-name="Line 12" stroke="#fff" strokeWidth="2px" className="bc-l" y2="23.154" transform="translate(56.186 131.029) rotate(-45)" />
+                </g>
+              </svg>
+            </div>
             <ul>
               <li> <Link className="m-link" to="#">Home</Link></li>
               <li><span>Web</span></li>
@@ -102,7 +104,7 @@ class IndexPage extends Component {
             <div className="section-content">
               <div className="navbar">
                 <div className="menu-container">
-                  <a id="menu-link" className="menu-link" onClick={e => { this.openMenu(e) }} href="/">Menu</a>
+                  <a id="menu-link" className="menu-link" onClick={e => { this.openMenu(e) }} >Menu</a>
                 </div>
                 <div className="social-container">
                   <a target="_blank" href="https://dribbble.com/Govinda_"><IconDribbble width="22px" height="22px" /></a>
@@ -112,12 +114,21 @@ class IndexPage extends Component {
               </div>
               <div className="container-fluid">
                 <div className="logo-container">
+                  <div className="menu-xs" onClick={e => { this.openMenu(e) }}>
+                    <svg className="h-menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.236 17.872" height="22">
+                      <g id="Group_2711" data-name="Group 2711" transform="translate(-101.75 -104.75)">
+                        <line id="Line_52" data-name="Line 52" strokeWidth="1.5px" stroke="#fff" className="h-line" x2="17.736" transform="translate(102.5 105.5)" />
+                        <line id="Line_53" data-name="Line 53" strokeWidth="1.5px" stroke="#fff" className="h-line" x2="17.736" transform="translate(102.5 113.686)" />
+                        <line id="Line_54" data-name="Line 54" strokeWidth="1.5px" stroke="#fff" className="h-line" x2="17.736" transform="translate(102.5 121.872)" />
+                      </g>
+                    </svg>
+                  </div>
                   <img className="main-logo" src={img1} alt="" />
                 </div>
                 <div className="content animated fadeInUp">
                   <h1 className="sec-title">GITA</h1>
                   <h1 className="sec-title">GOVINDA</h1>
-                  <span style={{padding:0}}>GRAPHIC DESIGNER</span>
+                  <span style={{ padding: 0 }}>GRAPHIC DESIGNER</span>
                 </div>
                 <div className="illustration-hero animated fadeIn" id="lottie-hero"></div>
                 {/* <img className="illustration-hero animated fadeIn" src={img2} alt="img" /> */}
@@ -133,7 +144,7 @@ class IndexPage extends Component {
                 <WaveLine width="200px" height="10px" />
                 <div className="row align-items-center">
                   <div className="col-md-3 hidden-sm">
-                    <div className="img-responsive" id="lottie" />                  
+                    <div className="img-responsive" id="lottie" />
                   </div>
                   <div className="col-md-9 col-sm-12" >
                     <p className="sec-text">

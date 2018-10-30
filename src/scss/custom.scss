@@ -48,12 +48,14 @@ section,
 summary {
   display: block;
 }
-.hidden-sm{
+
+.hidden-sm {
   @media screen and (max-width: $break-sm) {
     display: none !important;
   }
 }
-.hidden-md{
+
+.hidden-md {
   @media screen and (max-width: 991px) {
     display: none;
   }
@@ -76,6 +78,45 @@ summary {
 
   @media screen and (max-width: $break-sm) {
     margin: 0;
+  }
+}
+.slick-list{
+  box-shadow: 25px 28px 40px -4px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) 
+}
+.slick-slide{
+  div{
+    &:active,
+    &:focus{
+      outline: none;
+    }
+  }
+}
+.slick-dots{
+  list-style: none;
+  display: flex !important;
+  justify-content: center;
+  padding: 0;
+  margin-top: 40px;
+  li{
+    &.slick-active{
+      button{
+        background-color: #6D6D6D;
+      }
+    }    
+  }
+  button{
+    width: 12px;
+    padding: 0;
+    height: 12px;
+    border: none;
+    background-color: #a9a9a9;    
+    margin: 0 5px;
+    border-radius: 50%;    
+    font-size: 0;
+    &:active,
+    &:focus{
+      outline: none;
+    }
   }
 }
 
@@ -119,10 +160,22 @@ summary {
     display: block;
     width: 188px;
     height: 8px;
-    margin: 0 auto;
+    margin: 10px auto 0;
+    @media screen and (max-width: $break-sm) {      
+      width: 120px;
+    }
   }
+
   @media screen and (max-width: $break-sm) {
     font-size: 32px !important;
+  }
+}
+.icon-waveline{
+  @media screen and (max-width: $break-sm) {      
+    width:120px;
+  }
+  .wave-1{
+    stroke: $color-green;
   }
 }
 
@@ -145,6 +198,7 @@ summary {
       height: auto;
       padding: 40px 0 0;
     }
+  
 
     .section-content {
       display: flex;
@@ -155,10 +209,6 @@ summary {
         flex-direction: column;
         justify-content: space-between;
         z-index: 1000;
-
-        @media screen and (max-width: $break-sm) {
-          display: none;
-        }
 
         .menu-container {
           .menu-link {
@@ -180,6 +230,10 @@ summary {
               left: 50%;
               right: 50%;
             }
+
+            @media screen and (max-width: $break-sm) {
+              display: none;
+            }
           }
         }
 
@@ -189,6 +243,10 @@ summary {
           justify-content: center;
           align-items: center;
           position: relative;
+
+          @media screen and (max-width: $break-sm) {
+            display: none;
+          }
 
           a {
             color: white;
@@ -216,15 +274,45 @@ summary {
       .logo-container {
         margin-bottom: 40px;
         text-align: right;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-end;
+
         @media screen and (max-width: $break-sm) {
-         padding: 0 10px;
+          padding: 0 10px;
+          justify-content: space-between;
+          margin-bottom: 80px;
         }
+
+        .menu-xs {
+          height: 20px;
+          margin-top: 15px;
+          cursor: pointer;
+
+          @media screen and (min-width: $break-sm) {
+            display: none;
+          }
+
+          svg {
+            .h-line {
+              transition: .3s all ease;
+            }
+
+            &:hover {
+              .h-line {
+                stroke: $color-two;
+              }
+            }
+          }
+        }
+
         .main-logo {
           max-width: 120px;
           height: 120px;
 
           @media screen and (max-width: $break-sm) {
-            max-width: 100px;
+            max-width: 80px;
+            height: 90px;
           }
         }
       }
@@ -275,19 +363,22 @@ summary {
       position: absolute;
       bottom: 0;
       right: 15%;
+
       @media screen and (max-width: 1220px) {
         width: 100%;
         right: 0;
         max-width: 600px;
       }
+
       @media screen and (max-width: $break-md) {
         margin-top: 50px;
         display: block;
         margin-top: 50px;
         max-width: 550px;
       }
+
       @media screen and (max-width: $break-sm) {
-        position: relative;        
+        position: relative;
       }
     }
   }
@@ -296,35 +387,47 @@ summary {
     padding: 120px 0;
     background-color: $color-two;
     position: relative;
+
     @media screen and (max-width: $break-sm) {
       padding: 60px 0;
     }
+
     .content {
       @media screen and (max-width: $break-sm) {
         padding: 0 20px;
       }
+
       .sec-text {
         margin-bottom: 25px;
       }
+
       .icon-svg {
         fill: $color-green;
         stroke: $color-green;
       }
+
       .social-links {
         margin-top: 20px;
         display: inline-flex;
+        flex-wrap: wrap;
+
         @media screen and (max-width: $break-sm) {
           margin-bottom: 40px;
         }
+
         .s-link {
           min-width: 100px;
+          @media screen and (max-width: $break-sm) {
+            margin-bottom: 40px;
+            width: calc(100% / 2);
+            margin: 20px 0;
+          }
 
           a {
             margin-right: 10px;
             color: white;
-
             border-bottom: 1px solid transparent;
-
+            transition: .3s all ease;
             &:hover {
               font-weight: 600;
               border-color: white;
@@ -338,6 +441,7 @@ summary {
       position: absolute;
       bottom: 0;
       left: 0;
+
       @media screen and (max-width: $break-sm) {
         width: 100px;
       }
@@ -348,6 +452,7 @@ summary {
       width: 80px;
       bottom: 20px;
       right: 20px;
+
       @media screen and (max-width: $break-sm) {
         width: 60px;
       }
@@ -374,14 +479,16 @@ summary {
         height: 100%;
 
         .block-img {
-          position: relative;         
+          position: relative;
+
           &:hover {
             .overlay {
               opacity: 1;
             }
           }
+
           @media screen and (max-width: $break-sm) {
-           padding: 40px 0;
+            padding: 40px 0;
           }
 
           .overlay {
@@ -483,14 +590,39 @@ summary {
   top: -100%;
 
   .data {
-    padding: 0 8em;
+    padding: 0 50px;
     text-align: left;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
     height: 100%;
+
+    @media screen and (max-width: $break-sm) {
+      padding: 60px 30px;
+    }
+    .close-button {
+      margin-bottom: 20px;
+      cursor: pointer;
+      svg {
+        .bc-l {
+          transition: .3s all ease;
+        }
+
+        &:hover {
+          .bc-l {
+            stroke: $color-two;
+          }
+        }
+      }
+    }
 
     ul {
       list-style: none;
+      padding-left: 150px;
+      @media screen and (max-width: $break-sm) {
+        
+        padding: 0 60px;
+      }
 
       li {
         span {
@@ -506,6 +638,13 @@ summary {
           font-weight: 300;
           margin: 20px 0;
         }
+
+        span,
+        a {
+          @media screen and (max-width: $break-sm) {
+            font-size: 22px;
+          }
+        }
       }
     }
   }
@@ -516,11 +655,13 @@ summary {
     order: 1;
   }
 }
+
 .or-md-1 {
   @media screen and (max-width: $break-md) {
     order: 1;
   }
 }
+
 .or-sm-1 {
   @media screen and (max-width: $break-sm) {
     order: 1;

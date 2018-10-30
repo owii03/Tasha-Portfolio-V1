@@ -46,7 +46,7 @@ const PagePupusas = () => (
         </div>
 
       </section>
-      <section className="sec-info">
+      <section className="sec-info hidden-sm">
         <img className="img-back1 hidden-md" src={img_back1} alt="" />
         <div className="content">
           <div className="container">

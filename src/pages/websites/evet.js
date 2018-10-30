@@ -52,6 +52,7 @@ const PageEvet = () => (
                 <p className="sec-text">Ofrece a los invitados una experiencia de acceso sin problemas, utilizando un sistema confiable para escanear entradas y acreditar invitados.
                 Además encuentras conferencias, convenciones, seminarios, capacitaciones, etc,
                 evitando colas a los asistentes del evento.</p>
+                <img className="img-responsive img-res" src={imgAnim} alt="" />
                 <div className="details">
                   <span>Titulo:</span>
                   <p>GMF</p>
@@ -67,7 +68,7 @@ const PageEvet = () => (
               </div>
             </div>
             <div className="col-md-6 text-center">
-              <img className="img-responsive" src={imgAnim} alt="" />
+              <img className="img-responsive hidden-sm" src={imgAnim} alt="" />
             </div>
           </div>
         </div>
@@ -76,7 +77,7 @@ const PageEvet = () => (
         <div className="content container">
           <div className="row">
             <div className="col-md-7">
-              <img className="img-responsive" src={imgInfo2} alt="" />
+              <img className="img-responsive hidden-sm" src={imgInfo2} alt="" />
             </div>
             <div className="col-md-5">
               <div className="block-info">

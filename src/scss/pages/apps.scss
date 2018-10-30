@@ -27,7 +27,7 @@
       &:after {
         content: none;
       }
-    }
+    }    
   }
 
   .nav-tabs {
@@ -143,9 +143,10 @@
   &.websites {
     .sec-header {
       background-color: $color-green;
-
-      .icon-svg {
-        fill: $color-two;
+      .icon-waveline{    
+        .wave-1{
+          stroke: $color-two;
+        }
       }
     }
 

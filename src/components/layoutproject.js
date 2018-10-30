@@ -27,6 +27,7 @@ const LayoutProject = ({children, title, link}) => (
           ]}
         >
           <html lang="en" />
+          <link rel="stylesheet" type="text/css" charset="UTF-8" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />          
         </Helmet>        
         <div className="static-sidebar">
           <div className="content">

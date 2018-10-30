@@ -11,6 +11,24 @@ import volantContent from '../../images/volant-content.png'
 import imgMarvel from '../../images/marvel.svg'
 import imgAdobe from '../../images/adobexd.svg'
 
+import Slider from "react-slick";
+
+import slide1 from '../../images/volant-slider/1.png'
+import slide2 from '../../images/volant-slider/2.png'
+import slide3 from '../../images/volant-slider/3.png'
+import slide4 from '../../images/volant-slider/4.png'
+import slide5 from '../../images/volant-slider/5.png'
+import slideback from '../../images/volant-slider/back-slider.png'
+
+var settings = {
+  dots: true,
+  arrows: false,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 1,
+  slidesToScroll: 1
+};
+
 const PageVolant = () => (
   <LayoutProject title="FIDO APP" link="/apps/fido">
     <div className="project-page volant" style={{ position: 'relative' }}>
@@ -71,12 +89,30 @@ const PageVolant = () => (
               </div>
             </div>
             <div className="col-md-7">
-              <img className=" img-res" src={volantContent} alt="" />
+              {/* <img className=" img-res" src={volantContent} alt="" /> */}
             </div>
           </div>
           <img className="img-responsive hidden-sm" src={volantContent} alt="" />
         </div>
-
+        <div className="slider-section" style={{ backgroundImage: `url('${slideback}')` }}>
+          <Slider {...settings}>
+            <div>
+              <img style={{ width: '100%' }} src={slide1} alt="" />
+            </div>
+            <div>
+              <img style={{ width: '100%' }} src={slide2} alt="" />
+            </div>
+            <div>
+              <img style={{ width: '100%' }} src={slide3} alt="" />
+            </div>
+            <div>
+              <img style={{ width: '100%' }} src={slide4} alt="" />
+            </div>
+            <div>
+              <img style={{ width: '100%' }} src={slide5} alt="" />
+            </div>
+          </Slider>
+        </div>
       </section>
 
     </div>
