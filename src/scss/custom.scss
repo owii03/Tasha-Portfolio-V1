@@ -80,41 +80,48 @@ summary {
     margin: 0;
   }
 }
-.slick-list{
-  box-shadow: 25px 28px 40px -4px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) 
+
+.slick-list {
+  box-shadow: 25px 28px 40px -4px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
 }
-.slick-slide{
-  div{
+
+.slick-slide {
+  div {
+
     &:active,
-    &:focus{
+    &:focus {
       outline: none;
     }
   }
 }
-.slick-dots{
+
+.slick-dots {
   list-style: none;
   display: flex !important;
   justify-content: center;
   padding: 0;
   margin-top: 40px;
-  li{
-    &.slick-active{
-      button{
+
+  li {
+    &.slick-active {
+      button {
         background-color: #6D6D6D;
       }
-    }    
+    }
   }
-  button{
+
+  button {
     width: 12px;
     padding: 0;
     height: 12px;
     border: none;
-    background-color: #a9a9a9;    
+    background-color: #a9a9a9;
     margin: 0 5px;
-    border-radius: 50%;    
+    border-radius: 50%;
     font-size: 0;
+
     &:active,
-    &:focus{
+    &:focus {
       outline: none;
     }
   }
@@ -161,7 +168,8 @@ summary {
     width: 188px;
     height: 8px;
     margin: 10px auto 0;
-    @media screen and (max-width: $break-sm) {      
+
+    @media screen and (max-width: $break-sm) {
       width: 120px;
     }
   }
@@ -170,11 +178,13 @@ summary {
     font-size: 32px !important;
   }
 }
-.icon-waveline{
-  @media screen and (max-width: $break-sm) {      
-    width:120px;
+
+.icon-waveline {
+  @media screen and (max-width: $break-sm) {
+    width: 120px;
   }
-  .wave-1{
+
+  .wave-1 {
     stroke: $color-green;
   }
 }
@@ -198,7 +208,7 @@ summary {
       height: auto;
       padding: 40px 0 0;
     }
-  
+
 
     .section-content {
       display: flex;
@@ -211,6 +221,8 @@ summary {
         z-index: 1000;
 
         .menu-container {
+          cursor: pointer;
+
           .menu-link {
             text-transform: uppercase;
             writing-mode: vertical-lr;
@@ -218,6 +230,8 @@ summary {
             color: white;
             letter-spacing: 5px;
             position: relative;
+            transition: .4s all ease-in-out;
+
 
             &:before {
               content: "";
@@ -229,10 +243,57 @@ summary {
               bottom: -35px;
               left: 50%;
               right: 50%;
+              transition: .4s all ease-in-out;
             }
 
             @media screen and (max-width: $break-sm) {
               display: none;
+            }
+          }
+
+          .close-button {
+            display: none;
+            transition: .4s all ease-in-out;
+            @media screen and (max-width: $break-sm) {
+              display: none;
+            }
+            &:hover {
+              .icon-svg {
+                fill: $color-two;
+              }
+            }
+          }
+
+          &.close {
+            .close-button {
+              display: block;
+              @media screen and (max-width: $break-sm) {
+                display: none;
+              }
+            }
+
+            .menu-link {
+              &:before {
+                display: none;
+              }
+            }
+          }
+
+          &:hover {
+            .menu-link {
+              color: $color-two;
+
+              &:before {
+                background-color: $color-two;
+              }
+            }
+
+            .close-button {
+              .icon-svg {
+                .bc-l {
+                  stroke: $color-two;
+                }
+              }
             }
           }
         }
@@ -250,10 +311,21 @@ summary {
 
           a {
             color: white;
-            margin-bottom: 5px;
-
+            margin-bottom: 10px;
             .icon-svg {
               fill: white;
+              transition: .3s all ease-out;
+              &.dribbble {
+                stroke: white;
+              }
+            }
+            &:hover{
+              .icon-svg{
+                fill: $color-two;
+                &.dribbble{
+                  stroke: $color-two;
+                }
+              }
             }
           }
 
@@ -307,12 +379,12 @@ summary {
         }
 
         .main-logo {
-          max-width: 120px;
-          height: 120px;
+          max-width: 150px;
+          height: 150px;
 
           @media screen and (max-width: $break-sm) {
-            max-width: 80px;
-            height: 90px;
+            max-width: 130px;
+            height: 130px;
           }
         }
       }
@@ -417,6 +489,7 @@ summary {
 
         .s-link {
           min-width: 100px;
+
           @media screen and (max-width: $break-sm) {
             margin-bottom: 40px;
             width: calc(100% / 2);
@@ -428,6 +501,7 @@ summary {
             color: white;
             border-bottom: 1px solid transparent;
             transition: .3s all ease;
+
             &:hover {
               font-weight: 600;
               border-color: white;
@@ -600,9 +674,16 @@ summary {
     @media screen and (max-width: $break-sm) {
       padding: 60px 30px;
     }
+
     .close-button {
       margin-bottom: 20px;
+
+      @media screen and (min-width: $break-sm) {
+        display: none;
+      }
+
       cursor: pointer;
+
       svg {
         .bc-l {
           transition: .3s all ease;
@@ -619,8 +700,9 @@ summary {
     ul {
       list-style: none;
       padding-left: 150px;
+
       @media screen and (max-width: $break-sm) {
-        
+
         padding: 0 60px;
       }
 

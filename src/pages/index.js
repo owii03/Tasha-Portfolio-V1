@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from "gatsby"
-import { IconBehance, IconInstagram, IconDribbble, WaveLine } from '../components/icons'
+import { IconBehance, IconInstagram, IconDribbble, WaveLine, IconLinkedin } from '../components/icons'
 import { TimelineMax, Expo } from "gsap/TweenMax";
 
 import lottie from 'lottie-web'
@@ -8,7 +8,7 @@ import animationAbout from '../lottie/acerca-demi.json'
 import animationHero from '../lottie/principal.json'
 
 import Layout from '../components/layout'
-import img1 from '../images/logo.svg'
+import img1 from '../images/logo2.svg'
 import img2 from '../images/illustratio-hero.svg'
 import img3 from '../images/flower-home.png'
 import img4 from '../images/block-apps.png'
@@ -21,27 +21,28 @@ import imgAback2 from '../images/about-back2.png'
 class IndexPage extends Component {
 
   state = {
-    isStopped: false, isPaused: false
+    isStopped: false, isPaused: false, openMenu: false
   }
-  t1 = null;
-  showMenu = (event) => {
-    if (event) {
-      event.preventDefault();
-    }
-    this.t1 = new TimelineMax({ paused: true })
-      .to(".menu", 1, {
-        top: "0%",
-        ease: Expo.easeInOut,
-        delay: -5
-      })
-      .reverse();
-  }
-
+  // t1 = null;
+  // showMenu = (event) => {
+  //   if (event) {
+  //     event.preventDefault();
+  //   }
+  //   this.t1 = new TimelineMax({ paused: true })
+  //     .to(".menu", 1, {
+  //       top: "0%",
+  //       ease: Expo.easeInOut,
+  //       delay: 0
+  //     })
+  //     .reverse();
+  // }
+  t1 = new TimelineMax({ paused: true })
   openMenu = (e) => {
-
     e.preventDefault();
-    this.t1.reversed(!this.t1.reversed());
-
+    const {openMenu} = this.state
+    this.setState({openMenu: !openMenu})
+    //this.t1.reversed(!this.t1.reversed());
+    this.t1.reversed() ? this.t1.play() : this.t1.reverse();
     // for (let i = 0; i < list.length; i++) {
     //   list[i].addEventListener("click", (e) => {
     //     e.preventDefault()
@@ -54,8 +55,13 @@ class IndexPage extends Component {
   }
 
   componentDidMount() {
-    this.showMenu()
-    console.log(animationAbout)
+    //this.showMenu()
+    this.t1.to(".menu", 2, {
+      top: "0%",
+      ease: Expo.easeInOut,      
+    })
+    this.t1.reverse();
+
     lottie.loadAnimation({
       container: document.getElementById('lottie'), // the dom element that will contain the animation
       renderer: 'svg',
@@ -71,13 +77,13 @@ class IndexPage extends Component {
       animationData: animationHero
     })
   }
-  render() {    
+  render() {
     return (
       <Layout>
         <div className="menu">
           <div className="data">
             <div className="close-button" onClick={e => { this.openMenu(e) }}>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.2 19.2" height="20">              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.2 19.2" height="20">
                 <g id="Group_2895" data-name="Group 2895" transform="translate(-54.772 -129.615)">
                   <line id="Line_11" data-name="Line 11" stroke="#fff" strokeWidth="2px" className="bc-l" y2="23.154" transform="translate(72.558 131.029) rotate(45)" />
                   <line id="Line_12" data-name="Line 12" stroke="#fff" strokeWidth="2px" className="bc-l" y2="23.154" transform="translate(56.186 131.029) rotate(-45)" />
@@ -103,13 +109,22 @@ class IndexPage extends Component {
           <section className="sec-hero">
             <div className="section-content">
               <div className="navbar">
-                <div className="menu-container">
+                <div className={this.state.openMenu ? "menu-container close" : "menu-container " }>
                   <a id="menu-link" className="menu-link" onClick={e => { this.openMenu(e) }} >Menu</a>
+                  <div className="close-button" onClick={e => { this.openMenu(e) }}>
+                    <svg className="icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.2 19.2" height="20">
+                      <g id="Group_2895" data-name="Group 2895" transform="translate(-54.772 -129.615)">
+                        <line id="Line_11" data-name="Line 11" stroke="#fff" strokeWidth="2px" className="bc-l" y2="23.154" transform="translate(72.558 131.029) rotate(45)" />
+                        <line id="Line_12" data-name="Line 12" stroke="#fff" strokeWidth="2px" className="bc-l" y2="23.154" transform="translate(56.186 131.029) rotate(-45)" />
+                      </g>
+                    </svg>
+                  </div>
                 </div>
                 <div className="social-container">
                   <a target="_blank" href="https://dribbble.com/Govinda_"><IconDribbble width="22px" height="22px" /></a>
                   <a target="_blank" href="https://www.instagram.com/gitagovinda_/"><IconInstagram width="20px" height="20px" /></a>
                   <a target="_blank" href="https://www.behance.net/Gita-Govinda"><IconBehance width="20px" height="20px" /></a>
+                  <a target="_blank" href="https://www.linkedin.com/in/gita-maga%C3%B1a-a18b7b172/"><IconLinkedin width="18px" height="18px" /></a>
                 </div>
               </div>
               <div className="container-fluid">

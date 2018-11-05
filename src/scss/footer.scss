@@ -71,8 +71,14 @@
             fill: #008787;
             margin: 0 10px;
             transition: .3s all ease;
+            &.dribbble{
+              stroke: #008787;
+            }
             &:hover{
               fill:$color-two;
+              &.dribbble{
+                stroke: $color-two;
+              }
             }
           }
         }
