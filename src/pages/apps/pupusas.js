@@ -10,6 +10,10 @@ import img_back1 from '../../images/pupusas-back1.png'
 
 import imgMarvel from '../../images/marvel.svg'
 import imgAdobe from '../../images/adobexd.svg'
+import pupusasWireframes1 from '../../images/pupusas/wireframes-1.png'
+import pupusasWireframes2 from '../../images/pupusas/wireframes-2.png'
+import pupusasMockups1 from '../../images/pupusas/mockups-1.png'
+import pupusasBack1 from '../../images/pupusas/back-pr-1.png'
 const PagePupusas = () => (
   <LayoutProject title="GMF" link="/apps/gmf">
     <div className="project-page pupusas" style={{ position: 'relative' }}>
@@ -75,9 +79,74 @@ const PagePupusas = () => (
           </div>
         </div>
       </section>
+      <section className="sec-process">
+        <div className="wireframes">
+          <div className="content">
+            <div className="container">
+              <h5 className="title">WIREFRAMES</h5>
+            </div>
 
+            <img src={pupusasWireframes1} className="img-responsive" alt="" />
+
+
+            <img src={pupusasWireframes2} className="img-responsive" alt="" />
+
+          </div>
+        </div>
+        <div className="assets-1">
+          <div className="content">
+            <div className="container">
+              <div className="col-md-12">
+                <h5 className="title">ASSETS</h5>
+                <div className="info">
+                  <div className="r-info">
+                    <p className="title">Tipo de Aplicación</p>
+                    <p>App iOS</p>
+                  </div>
+                  <div className="r-info">
+                    <p className="title">Assets Tipografía ROBOTO CONDENSED</p>
+                    <div className="d-flex fonts">
+                      <p>Roboto</p>
+                      <p>Roboto</p>
+                      <p>Roboto</p>
+                    </div>
+                  </div>
+                  <div className="r-info">
+                    <p className="title">Assets Colores Primarios</p>
+                    <div className="d-flex colors">
+                      <div className="r-color">
+                        <span className="c-color c1"></span>
+                        <p className="text">#FF658E</p>
+                      </div>
+                      <div className="r-color">
+                        <span className="c-color c2"></span>
+                        <p className="text">#FF658E</p>
+                      </div>
+                      <div className="r-color ">
+                        <span className="c-color c3"></span>
+                        <p className="text">#FF658E</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="assets-2" style={{backgroundImage:`url(${pupusasBack1})`}}>
+          <div className="content">
+            <div className="container text-center">
+              <h5 className="title">PANTALLAS PUPUSAS APP</h5>
+              <img className="img-responsive" src={pupusasMockups1} alt=""/>
+            </div>
+          </div>
+        </div>
+        <div className="assets-3">
+
+        </div>
+      </section>
     </div>
-  </LayoutProject>
+  </LayoutProject >
 )
 
 export default PagePupusas

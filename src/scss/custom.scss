@@ -133,7 +133,7 @@ summary {
   width: 50px;
   position: fixed;
   right: 0;
-
+  z-index: 10000;
   @media screen and (max-width: $break-sm) {
     display: none;
   }
