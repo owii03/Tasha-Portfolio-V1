@@ -9,6 +9,15 @@ import img2 from '../../images/fido-content.png'
 import img2_res from '../../images/fido-content-res.png'
 import imgMarvel from '../../images/marvel.svg'
 import imgAdobe from '../../images/adobexd.svg'
+import processCover from '../../images/fido/main-cover.png'
+import processDog from '../../images/fido/dog.png'
+import processWireframes1 from '../../images/fido/wirframes-1.png'
+
+import processApp1 from '../../images/fido/app-1.png'
+import processApp2 from '../../images/fido/app-2.png'
+import processApp3 from '../../images/fido/app-3.png'
+import processApp4 from '../../images/fido/app-4.png'
+
 const PageFido = () => (
   <LayoutProject title="SANTA ROSA" link="/apps/santarosa">
     <div className="project-page fido" style={{ position: 'relative' }}>
@@ -82,6 +91,90 @@ const PageFido = () => (
           </div>
         </div>
 
+      </section>
+      <section className="sec-process">
+        <img src={processCover} className="img-responsive" alt="" />
+        <div className="info-1">
+          <div className="content">
+            <div className="container">
+              <div className="row align-items-center">
+                <div className="col-md-6">
+                  <div className="block">
+                    <h5 className="title">¿Qué es Fido app?</h5>
+                    <p className="text">Aplicación en pro ayuda a los animales, beneficiándolos para encontrar un buen hogar, así como denunciar los maltratos por sus dueños, entre otros servicio.</p>
+                  </div>
+                  <div className="block">
+                    <h5 className="title">¿Cómo Funciona?</h5>
+                    <p className="text">Fido app busca el bienestar para los animales,  los perros que sufren maltrato o se encuentran abandonados pueden tener una segunda oportunidad y conseguir una adopción, pueden ser seleccionados por su perfil, donde están los datos básicos de el perrito, también la app cuenta con un sistema de alertas para poder denunciar cualquier maltrato o descuido de la mascota.</p>
+                  </div>
+                </div>
+                <div className="col-md-6 text-center">
+                  <img src={processDog} style={{ maxWidth: '70%' }} className="img-responsive" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="wireframes" style={{ backgroundColor: '#F6F1FF' }}>
+          <div className="content">
+            <div className="container">
+              <h5 className="title">WIREFRAMES</h5>
+              <div className="text-right">
+                <img src={processWireframes1} className="img-responsive" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="wireframes-2">
+          <div className="content">
+            <div className="container">
+              <h5 className="title">PANTALLAS FIDO APP</h5>
+              <div className="row align-items-center">
+                <div className="col-md-6 text-right">
+                  <img className="img-responsive" src={processApp1} alt="" />
+                </div>
+                <div className="col-md-6">
+                  <div className="block right">
+                    <div className="text">En busca el bienestar para los animales, en poder brindarles una segunda oportunidad y conseguir una adopción, Fido App cuenta con un fácil acceso a través de redes sociales o correo electrónico.</div>
+                  </div>
+                </div>
+              </div>
+              <div className="row align-items-center">
+                <div className="col-md-6">
+                  <div className="block left">
+                    <p className="text text-right">Con esta aplicación  pretende sensibilizar a la sociedad sobre el maltrato animal y facilitar que estas situaciones no queden impunes, así como generar adopciones para darles una mejor vida a nuestros amigos caninos, cuenta también con una lista de refugios para poder generar una ayuda  y donaciones.</p>
+                  </div>
+                </div>
+                <div className="col-md-6 text-left">
+                  <img className="img-responsive" src={processApp2} alt="" />
+                </div>
+              </div>
+              <div className="row align-items-center">
+                <div className="col-md-6 text-right">
+                  <img className="img-responsive" src={processApp3} alt="" />
+                </div>
+                <div className="col-md-6">
+                  <div className="block right">
+                    <div className="text">En busca el bienestar para los animales, en poder brindarles una segunda oportunidad y conseguir una adopción, Fido App cuenta con un fácil acceso a través de redes sociales o correo electrónico.</div>
+                  </div>
+                </div>
+              </div>
+              <div className="row align-items-center">
+                <div className="col-md-6">
+                  <div className="block left">
+                    <p className="text text-right">Con esta aplicación  pretende sensibilizar a la sociedad sobre el maltrato animal y facilitar que estas situaciones no queden impunes, así como generar adopciones para darles una mejor vida a nuestros amigos caninos, cuenta también con una lista de refugios para poder generar una ayuda  y donaciones.</p>
+                  </div>
+                </div>
+                <div className="col-md-6 text-left">
+                  <img className="img-responsive" src={processApp4} alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="d-flex justify-content-center align-items-center" style={{backgroundColor:'#915AE9', padding:'40px 0'}}>
+          <p style={{color:'white', fontWeight:'600', fontSize:'24px'}}>Gracias</p>
+        </div>
       </section>
     </div>
   </LayoutProject>
