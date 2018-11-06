@@ -32,27 +32,29 @@ const PageFido = () => (
         </div>
       </div>
       <section className="sec-hero">
-        <div className="container content">
-          <div className="row align-items-center">
-            <div className="col-md-5">
-              <div className="block-info">
-                <h1 className="title">FIDO APP</h1>
-                <p className="sec-text">Aplicación para mascotas</p>
-                <WaveLine width="180px" />
+        <div className="content">
+          <div className="container ">
+            <div className="row align-items-center">
+              <div className="col-md-5 ">
+                <div className="block-info">
+                  <h1 className="title">FIDO APP</h1>
+                  <p className="sec-text">Aplicación para mascotas</p>
+                  <WaveLine width="180px" />
 
-                <img className="sec-cover img-res" src={img} alt="" />
+                  <img className="sec-cover img-res" src={img} alt="" />
 
-                <div className="details">
-                  <div className="title">¿Qué es Fido app?</div>
-                  <p className="sec-text">Aplicación en pro ayuda a los animales, beneficiándolos para encontrar un buen hogar, así como denunciar los maltratos por sus dueños, entre otros servicio.</p>
+                  <div className="details">
+                    <div className="title">¿Qué es Fido app?</div>
+                    <p className="sec-text">Aplicación en pro ayuda a los animales, beneficiándolos para encontrar un buen hogar, así como denunciar los maltratos por sus dueños, entre otros servicio.</p>
+                  </div>
                 </div>
               </div>
+              <div className="col-md-7 text-center">
+                <img className="sec-cover hidden-sm" src={img} alt="" />
+              </div>
             </div>
-            <div className="col-md-7 text-center">
-              <img className="sec-cover hidden-sm" src={img} alt="" />
-            </div>
-          </div>
 
+          </div>
         </div>
         <img className="sec-back1" src={img1} alt="" />
       </section>
@@ -93,8 +95,8 @@ const PageFido = () => (
 
       </section>
       <section className="sec-process">
-        <img src={processCover} className="img-responsive" alt="" />
-        <div className="info-1">
+        {/* <img src={processCover} className="img-responsive" alt="" /> */}
+        {/* <div className="info-1">
           <div className="content">
             <div className="container">
               <div className="row align-items-center">
@@ -114,8 +116,8 @@ const PageFido = () => (
               </div>
             </div>
           </div>
-        </div>
-        <div className="wireframes" style={{ backgroundColor: '#F6F1FF' }}>
+        </div> */}
+        {/* <div className="wireframes" style={{ backgroundColor: '#F6F1FF' }}>
           <div className="content">
             <div className="container">
               <h5 className="title">WIREFRAMES</h5>
@@ -124,34 +126,40 @@ const PageFido = () => (
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
         <div className="wireframes-2">
           <div className="content">
             <div className="container">
               <h5 className="title">PANTALLAS FIDO APP</h5>
               <div className="row align-items-center">
                 <div className="col-md-6 text-right">
-                  <img className="img-responsive" src={processApp1} alt="" />
+                  <div className="img">
+                    <img className="img-responsive" src={processApp1} alt="" />
+                  </div>
                 </div>
-                <div className="col-md-6">
-                  <div className="block right">
+                <div className="col-md-6 ">
+                  <div className="block right ">
                     <div className="text">En busca el bienestar para los animales, en poder brindarles una segunda oportunidad y conseguir una adopción, Fido App cuenta con un fácil acceso a través de redes sociales o correo electrónico.</div>
                   </div>
                 </div>
               </div>
               <div className="row align-items-center">
-                <div className="col-md-6">
-                  <div className="block left">
+                <div className="col-md-6 or-sm-1">
+                  <div className="block left ">
                     <p className="text text-right">Con esta aplicación  pretende sensibilizar a la sociedad sobre el maltrato animal y facilitar que estas situaciones no queden impunes, así como generar adopciones para darles una mejor vida a nuestros amigos caninos, cuenta también con una lista de refugios para poder generar una ayuda  y donaciones.</p>
                   </div>
                 </div>
-                <div className="col-md-6 text-left">
-                  <img className="img-responsive" src={processApp2} alt="" />
+                <div className="col-md-6 text-left ">
+                  <div className="img">
+                    <img className="img-responsive" src={processApp2} alt="" />
+                  </div>
                 </div>
               </div>
               <div className="row align-items-center">
                 <div className="col-md-6 text-right">
-                  <img className="img-responsive" src={processApp3} alt="" />
+                  <div className="img">
+                    <img className="img-responsive" src={processApp3} alt="" />
+                  </div>
                 </div>
                 <div className="col-md-6">
                   <div className="block right">
@@ -160,21 +168,23 @@ const PageFido = () => (
                 </div>
               </div>
               <div className="row align-items-center">
-                <div className="col-md-6">
+                <div className="col-md-6 or-sm-1">
                   <div className="block left">
                     <p className="text text-right">Con esta aplicación  pretende sensibilizar a la sociedad sobre el maltrato animal y facilitar que estas situaciones no queden impunes, así como generar adopciones para darles una mejor vida a nuestros amigos caninos, cuenta también con una lista de refugios para poder generar una ayuda  y donaciones.</p>
                   </div>
                 </div>
                 <div className="col-md-6 text-left">
-                  <img className="img-responsive" src={processApp4} alt="" />
+                  <div className="img">
+                    <img className="img-responsive" src={processApp4} alt="" />
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="d-flex justify-content-center align-items-center" style={{backgroundColor:'#915AE9', padding:'40px 0'}}>
+        {/* <div className="d-flex justify-content-center align-items-center" style={{backgroundColor:'#915AE9', padding:'40px 0'}}>
           <p style={{color:'white', fontWeight:'600', fontSize:'24px'}}>Gracias</p>
-        </div>
+        </div> */}
       </section>
     </div>
   </LayoutProject>
