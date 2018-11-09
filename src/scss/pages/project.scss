@@ -1499,7 +1499,7 @@
       }
       .assets-2{
         background-color: #FF6590;
-        background-size: cover;                
+        background-size: contain;                
         padding: 0 0 280px;
         @media screen and(max-width: $break-sm){
           padding: 100px 0 280px;
