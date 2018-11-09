@@ -153,7 +153,7 @@ const PagePupusas = () => (
             </div>
           </div>
         </div>
-        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1400.3 340.5" space="preserve">
+        <svg className="section-waves" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1400.3 340.5" space="preserve">
           <path class="st0" fill="#FF6590" d="M1400.3,155V0H0v298.7C281.3,278.3,683.8,74.1,935,39.4C1178,5.9,1329.6,96,1400.3,155z" />
         </svg>
         <div className="assets-3">
