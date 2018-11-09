@@ -868,7 +868,7 @@
       }
 
       .wireframes {
-        padding: 80px 0;
+        padding: 80px 0 ;
 
         .content {
           padding: 0 20px;
@@ -1262,10 +1262,11 @@
       position: relative;
 
       .wireframes {
-        padding: 80px 0;
-
+        padding: 80px 0 0;
+        margin-bottom: -160px;
         .content {
           padding: 0 20px;
+          position: relative;
         }
         .title {
           font-size: 26px;
@@ -1315,10 +1316,11 @@
                 }
               }
               .colors{
-                
+                flex-wrap: wrap;
                 .r-color{
                   display: flex;
                   margin-right: 20px;
+                  margin-bottom: 20px;
                   p{
                     font-weight: 600;
                   }
@@ -1348,7 +1350,7 @@
       .assets-2{
         background-color: #FF6590;
         background-size: cover;                
-        padding: 40px 0 120px;
+        padding: 0 0 280px;
         .content{
           padding: 0 25px;
           .title {
@@ -1361,6 +1363,11 @@
       .assets-3{
         background-color: white;
         padding: 0 0 80px;
+        text-align: center;
+        .img-responsive{
+          max-width: 70%;
+          margin: -400px auto 0;
+        }
       }
     }
   }
@@ -1829,4 +1836,9 @@
       }
     }
   }
+}
+
+.section-waves{
+  display: block;
+  margin: 0;
 }

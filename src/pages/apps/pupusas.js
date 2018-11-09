@@ -13,6 +13,7 @@ import imgAdobe from '../../images/adobexd.svg'
 import pupusasWireframes1 from '../../images/pupusas/wireframes-1.png'
 import pupusasWireframes2 from '../../images/pupusas/wireframes-2.png'
 import pupusasMockups1 from '../../images/pupusas/mockups-1.png'
+import pupusasMockups2 from '../../images/pupusas/wireframes-3.png'
 import pupusasBack1 from '../../images/pupusas/back-pr-1.png'
 const PagePupusas = () => (
   <LayoutProject title="GMF" link="/apps/gmf">
@@ -93,6 +94,11 @@ const PagePupusas = () => (
 
           </div>
         </div>
+        <svg className="section-waves" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1400 359" space="preserve">
+          <path class="st0" fill="#FFFFFF" d="M465.1,317.8C716.4,281.5,1118.7,67.8,1400,46.5V0H0v196.8C70.6,258.6,222.2,352.8,465.1,317.8z" />
+          <path class="st1" fill="#f9f9f9" d="M0,196.8V359h1400V46.5c-281.3,21.4-683.6,235-934.9,271.3C222.2,352.8,70.6,258.6,0,196.8z" />
+        </svg>
+
         <div className="assets-1">
           <div className="content">
             <div className="container">
@@ -133,16 +139,25 @@ const PagePupusas = () => (
             </div>
           </div>
         </div>
-        <div className="assets-2" style={{backgroundImage:`url(${pupusasBack1})`}}>
+        <svg version="1.1" className="section-waves" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1400.3 340.5" space="preserve">
+          <g>
+            <path className="st0" fill="#FF6590" d="M935,39.4C683.8,74.1,281.3,278.3,0,298.7v41.8h1400.3V155C1329.6,96,1178,5.9,935,39.4z" />
+            <path className="st1" fill="#f9f9f9" d="M1400.3,155V0H0v298.7C281.3,278.3,683.8,74.1,935,39.4C1178,5.9,1329.6,96,1400.3,155z" />
+          </g>
+        </svg>
+        <div className="assets-2" style={{ backgroundImage: `url(${pupusasBack1})` }}>
           <div className="content">
             <div className="container text-center">
               <h5 className="title">PANTALLAS PUPUSAS APP</h5>
-              <img className="img-responsive" src={pupusasMockups1} alt=""/>
+              <img className="img-responsive" src={pupusasMockups1} alt="" />
             </div>
           </div>
         </div>
+        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1400.3 340.5" space="preserve">
+          <path class="st0" fill="#FF6590" d="M1400.3,155V0H0v298.7C281.3,278.3,683.8,74.1,935,39.4C1178,5.9,1329.6,96,1400.3,155z" />
+        </svg>
         <div className="assets-3">
-
+        <img src={pupusasMockups2} className="img-responsive " alt=""/>
         </div>
       </section>
     </div>
