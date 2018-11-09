@@ -22,13 +22,15 @@ const PageFido = () => (
   <LayoutProject title="SANTA ROSA" link="/apps/santarosa">
     <div className="project-page fido" style={{ position: 'relative' }}>
       <div className="sec-header">
-        <div className="container content">
-          <Link to="/apps">
-            <div className="d-flex">
-              <ArrowBack width="22px" height="22px" />
-              <span className="action">REGRESAR</span>
-            </div>
-          </Link>
+        <div className="content">
+          <div className="container ">
+            <Link to="/apps">
+              <div className="d-flex">
+                <ArrowBack width="22px" height="22px" />
+                <span className="action">REGRESAR</span>
+              </div>
+            </Link>
+          </div>
         </div>
       </div>
       <section className="sec-hero">
@@ -59,7 +61,6 @@ const PageFido = () => (
         <img className="sec-back1" src={img1} alt="" />
       </section>
       <section className="sec-info">
-
         <div className="content">
           <img className="img-detail hidden-sm" src={img2} alt="" />
           <div className="container">
