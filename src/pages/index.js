@@ -92,11 +92,13 @@ class IndexPage extends Component {
             </div>
             <ul>
               <li> <Link className="m-link" to="#">Home</Link></li>
-              <li><span>Web</span></li>
+              <br/>
+              <li><span>Web Projects</span></li>
               <li> <Link className="m-link" to="/websites/inxights">Inxights</Link></li>
               <li> <Link className="m-link" to="/websites/jwh">JWH</Link></li>
               <li> <Link className="m-link" to="/websites/evet">Evet</Link></li>
-              <li><span>Mobile & Apps</span></li>
+              <br/>
+              <li><span>Mobile Application Projects</span></li>
               <li> <Link className="m-link" to="/apps/gmf">GMF</Link></li>
               <li> <Link className="m-link" to="/apps/volant">Volant</Link></li>
               <li> <Link className="m-link" to="/apps/fido">Fido App</Link></li>

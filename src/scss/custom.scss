@@ -721,6 +721,10 @@ summary {
           margin: 20px 0;
         }
 
+        a:hover{
+          color: $color-two;
+        }
+
         span,
         a {
           @media screen and (max-width: $break-sm) {
