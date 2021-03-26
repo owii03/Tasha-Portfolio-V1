@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gita Govinda',
+    title: 'Tasha Cornelia',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -8,8 +8,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'Gita Govinda Portfolio',
-        short_name: 'Gita Govinda',
+        name: 'Tasha Cornelia Portfolio',
+        short_name: 'Tasha Cornelia',
         start_url: '/',
         background_color: '#015151',
         theme_color: '#015151',

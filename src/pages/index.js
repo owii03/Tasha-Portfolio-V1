@@ -141,9 +141,9 @@ class IndexPage extends Component {
                   <img className="main-logo" src={img1} alt="" />
                 </div>
                 <div className="content animated fadeInUp">
-                  <h1 className="sec-title">GITA</h1>
-                  <h1 className="sec-title">GOVINDA</h1>
-                  <span style={{ padding: 0 }}>GRAPHIC DESIGNER</span>
+                  <h1 className="sec-title">TASHA</h1>
+                  <h1 className="sec-title">CORNELIA</h1>
+                  <span style={{ padding: 0 }}>UI UX DESIGNER</span>
                 </div>
                 <div className="illustration-hero animated fadeIn" id="lottie-hero"></div>
                 {/* <img className="illustration-hero animated fadeIn" src={img2} alt="img" /> */}
