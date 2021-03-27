@@ -10,6 +10,10 @@
     width: 100%;
     z-index: 1000;
 
+    &:hover {
+      margin-left: -10px;
+    }
+
     .action {
       font-size: 18px;
       color: white;
@@ -37,7 +41,6 @@
 
     @media screen and (min-width: $break-md) {
       display: none;
-
     }
   }
 
@@ -56,16 +59,22 @@
 
         .icon-svg {
           fill: #333333;
+          &:hover {
+            fill: $color-two;
+          }
         }
 
         .action {
           color: #333333;
+          &:hover {
+            color: $color-two;
+          }
         }
       }
     }
 
     .sec-hero {
-      background-color: #F9F5FF;
+      background-color: #f9f5ff;
       padding: 120px 0 0;
 
       .content {
@@ -114,7 +123,7 @@
         .title {
           font-size: 24px;
           font-weight: 600;
-          color: #3D3D3D;
+          color: #3d3d3d;
         }
 
         .sec-text {
@@ -136,7 +145,7 @@
 
           p {
             font-weight: 600;
-            color: #3D3D3D;
+            color: #3d3d3d;
           }
 
           .tools {
@@ -152,12 +161,12 @@
         }
 
         .nav-link {
-          color: #460A89;
+          color: #460a89;
           font-weight: 700;
           position: relative;
 
           &:after {
-            content: "";
+            content: '';
             display: inline-block;
             width: 70px;
             height: 7px;
@@ -174,7 +183,7 @@
 
   &.jwh {
     .sec-hero {
-      background-color: #F3A303;
+      background-color: #f3a303;
       padding: 120px 0;
 
       .content {
@@ -203,7 +212,7 @@
           margin-top: 40px;
 
           &:before {
-            content: "";
+            content: '';
             display: block;
             background-color: white;
             width: 2px;
@@ -239,7 +248,7 @@
 
         .icon-waveline {
           .wave-1 {
-            stroke: #F3A303;
+            stroke: #f3a303;
           }
         }
 
@@ -303,7 +312,7 @@
             }
 
             &.right {
-              background-color: #F3A303;
+              background-color: #f3a303;
 
               .img-responsive {
                 position: absolute;
@@ -352,7 +361,6 @@
               width: 100%;
             }
 
-
             &.info-content {
               .details {
                 @media screen and (min-width: 1024px) {
@@ -393,7 +401,7 @@
           .title {
             font-size: 24px;
             font-weight: 600;
-            color: #3D3D3D;
+            color: #3d3d3d;
           }
 
           .sec-text {
@@ -410,7 +418,7 @@
 
             p {
               font-weight: 400;
-              color: #3D3D3D;
+              color: #3d3d3d;
             }
 
             .tools {
@@ -426,12 +434,12 @@
           }
 
           .nav-link {
-            color: #460A89;
+            color: #460a89;
             font-weight: 700;
             position: relative;
 
             &:after {
-              content: "";
+              content: '';
               display: inline-block;
               width: 70px;
               height: 7px;
@@ -459,7 +467,7 @@
     }
 
     .sec-hero {
-      background-color: #F04032;
+      background-color: #f04032;
       padding: 120px 0;
       background-size: cover;
 
@@ -491,7 +499,7 @@
         }
 
         &:after {
-          content: "";
+          content: '';
           background-image: url('../images/gmf-cover-back.png');
           background-repeat: no-repeat;
           background-size: contain;
@@ -517,9 +525,7 @@
             }
           }
         }
-
       }
-
 
       .gmd-back1 {
         max-width: 100px;
@@ -531,14 +537,14 @@
         color: white;
 
         .icon-svg {
-          fill: #5415C2;
+          fill: #5415c2;
         }
 
         .details {
           margin-top: 40px;
 
           &:before {
-            content: "";
+            content: '';
             display: block;
             background-color: yellow;
             width: 2px;
@@ -598,12 +604,11 @@
         .title {
           font-size: 24px;
           font-weight: 600;
-          color: #3D3D3D;
+          color: #3d3d3d;
         }
 
         .sec-text {
           color: $color-text;
-
         }
 
         .details {
@@ -616,7 +621,7 @@
 
           p {
             font-weight: 600;
-            color: #3D3D3D;
+            color: #3d3d3d;
           }
 
           .tools {
@@ -632,12 +637,12 @@
         }
 
         .nav-link {
-          color: #460A89;
+          color: #460a89;
           font-weight: 700;
           position: relative;
 
           &:after {
-            content: "";
+            content: '';
             display: inline-block;
             width: 70px;
             height: 7px;
@@ -657,21 +662,20 @@
         &.img-res {
           @media screen and (min-width: $break-sm) {
             display: none;
-
           }
         }
       }
     }
-    .sec-process{
-      .assets-1{
+    .sec-process {
+      .assets-1 {
         padding: 80px 0;
-        background-color: #F9F9F9;
+        background-color: #f9f9f9;
         .content {
           padding: 0 20px;
           position: relative;
           .title {
             font-size: 26px;
-            color: #3D3D3D;
+            color: #3d3d3d;
             margin: 0 0 40px;
           }
 
@@ -679,50 +683,50 @@
             .r-info {
               margin: 40px 0;
               .title {
-                color: #F04032;
+                color: #f04032;
                 font-weight: 600;
-                font-size: 18px;                
-                margin-bottom: 15px;                
+                font-size: 18px;
+                margin-bottom: 15px;
               }
-              .fonts{            
-                p{
+              .fonts {
+                p {
                   margin-right: 20px;
                   padding-right: 15px;
-                  border-right: 1px solid #3D3D3D;
-                  &:last-child{
+                  border-right: 1px solid #3d3d3d;
+                  &:last-child {
                     border: none;
                   }
                 }
               }
-              .colors{
+              .colors {
                 flex-wrap: wrap;
-                .r-color{
+                .r-color {
                   display: flex;
                   margin-right: 20px;
                   margin-bottom: 20px;
-                  p{
+                  p {
                     font-weight: 600;
                   }
-                  .c-color{
-                    width:50px;
-                    height:50px;
+                  .c-color {
+                    width: 50px;
+                    height: 50px;
                     border-radius: 50%;
                     display: inline-block;
                     background-color: $color-two;
                     margin-right: 10px;
-                    &.c1{
-                      background-color: #F04032;
+                    &.c1 {
+                      background-color: #f04032;
                     }
-                    &.c2{
-                      background-color: #D22E2E;
+                    &.c2 {
+                      background-color: #d22e2e;
                     }
-                    &.c3{
-                      background-color: #B3B3B8;
+                    &.c3 {
+                      background-color: #b3b3b8;
                     }
-                    &.c4{
-                      background-color: #FF9400;
+                    &.c4 {
+                      background-color: #ff9400;
                     }
-                    &.c5{
+                    &.c5 {
                       background-color: black;
                     }
                   }
@@ -732,7 +736,7 @@
           }
         }
       }
-      .assets-2{
+      .assets-2 {
         padding: 0 80px;
         padding: 80px 0;
 
@@ -741,7 +745,7 @@
 
           .title {
             font-size: 26px;
-            color: #3D3D3D;
+            color: #3d3d3d;
             margin: 0 0 120px;
           }
 
@@ -760,14 +764,13 @@
             color: $color-text;
 
             &:after {
-              content: "";
+              content: '';
               height: 50px;
               width: 2px;
               display: inline-block;
-              background-color: #F04032;
+              background-color: #f04032;
               top: 5px;
               position: absolute;
-
             }
 
             &.left {
@@ -797,9 +800,7 @@
               line-height: 1.5;
               position: relative;
               margin: 0;
-
             }
-
           }
         }
       }
@@ -808,7 +809,7 @@
 
   &.fido {
     .sec-hero {
-      background-color: #A389CF;
+      background-color: #a389cf;
       padding: 80px 0;
       position: relative;
 
@@ -854,7 +855,7 @@
           margin-top: 40px;
 
           &:before {
-            content: "";
+            content: '';
             display: block;
             background-color: white;
             width: 2px;
@@ -894,8 +895,6 @@
         left: 20px;
       }
 
-
-
       .block-info {
         padding: 80px 0;
 
@@ -906,12 +905,11 @@
         .title {
           font-size: 24px;
           font-weight: 600;
-          color: #3D3D3D;
+          color: #3d3d3d;
         }
 
         .sec-text {
           color: $color-text;
-
         }
 
         .details {
@@ -924,7 +922,7 @@
 
           p {
             font-weight: 600;
-            color: #3D3D3D;
+            color: #3d3d3d;
           }
 
           .tools {
@@ -940,12 +938,12 @@
         }
 
         .nav-link {
-          color: #460A89;
+          color: #460a89;
           font-weight: 700;
           position: relative;
 
           &:after {
-            content: "";
+            content: '';
             display: inline-block;
             width: 70px;
             height: 7px;
@@ -999,7 +997,7 @@
 
           .title {
             font-size: 22px;
-            color: #3D3D3D;
+            color: #3d3d3d;
           }
 
           .text {
@@ -1010,7 +1008,7 @@
       }
 
       .wireframes {
-        padding: 80px 0 ;
+        padding: 80px 0;
 
         .content {
           padding: 0 20px;
@@ -1018,7 +1016,7 @@
 
         .title {
           font-size: 26px;
-          color: #3D3D3D;
+          color: #3d3d3d;
           margin: 0;
         }
 
@@ -1036,7 +1034,7 @@
 
           .title {
             font-size: 26px;
-            color: #3D3D3D;
+            color: #3d3d3d;
             margin: 0 0 120px;
           }
 
@@ -1055,14 +1053,13 @@
             color: $color-text;
 
             &:after {
-              content: "";
+              content: '';
               height: 50px;
               width: 2px;
               display: inline-block;
-              background-color: #8842FA;
+              background-color: #8842fa;
               top: 5px;
               position: absolute;
-
             }
 
             &.left {
@@ -1092,9 +1089,7 @@
               line-height: 1.5;
               position: relative;
               margin: 0;
-
             }
-
           }
         }
       }
@@ -1103,7 +1098,7 @@
 
   &.santarosa {
     .sec-hero {
-      background-color: #ADCB57;
+      background-color: #adcb57;
       padding: 120px 0;
       background-size: cover;
 
@@ -1135,14 +1130,14 @@
         }
 
         .icon-svg {
-          fill: #5415C2;
+          fill: #5415c2;
         }
 
         .details {
           margin-top: 40px;
 
           &:before {
-            content: "";
+            content: '';
             display: block;
             background-color: #009336;
             width: 2px;
@@ -1197,12 +1192,11 @@
         .title {
           font-size: 24px;
           font-weight: 600;
-          color: #3D3D3D;
+          color: #3d3d3d;
         }
 
         .sec-text {
           color: $color-text;
-
         }
 
         .details {
@@ -1215,7 +1209,7 @@
 
           p {
             font-weight: 600;
-            color: #3D3D3D;
+            color: #3d3d3d;
           }
 
           .tools {
@@ -1231,12 +1225,12 @@
         }
 
         .nav-link {
-          color: #460A89;
+          color: #460a89;
           font-weight: 700;
           position: relative;
 
           &:after {
-            content: "";
+            content: '';
             display: inline-block;
             width: 70px;
             height: 7px;
@@ -1263,7 +1257,7 @@
     }
 
     .sec-hero {
-      background-color: #FF6590;
+      background-color: #ff6590;
       padding: 120px 0;
 
       .sec-cover {
@@ -1309,7 +1303,7 @@
           margin-top: 40px;
 
           &:before {
-            content: "";
+            content: '';
             display: block;
             background-color: white;
             width: 2px;
@@ -1326,7 +1320,6 @@
             font-size: 24px;
           }
         }
-
       }
 
       .sec-back1 {
@@ -1337,7 +1330,6 @@
           display: none;
         }
       }
-
     }
 
     .sec-info {
@@ -1368,7 +1360,7 @@
 
           &:after {
             margin: 10px 0;
-            fill: #FF6590;
+            fill: #ff6590;
           }
         }
 
@@ -1382,7 +1374,7 @@
 
           p {
             font-weight: 600;
-            color: #3D3D3D;
+            color: #3d3d3d;
           }
 
           .tools {
@@ -1397,7 +1389,6 @@
           }
         }
       }
-
     }
 
     .sec-process {
@@ -1406,7 +1397,7 @@
       .wireframes {
         padding: 80px 0 0;
         margin-bottom: -160px;
-        @media screen and(max-width: $break-sm){
+        @media screen and(max-width: $break-sm) {
           margin-bottom: -100px;
         }
         .content {
@@ -1415,7 +1406,7 @@
         }
         .title {
           font-size: 26px;
-          color: #3D3D3D;
+          color: #3d3d3d;
           margin: 0 0 40px;
         }
 
@@ -1425,24 +1416,22 @@
           &:last-child {
             margin-left: -15%;
           }
-          @media screen and(max-width: $break-sm){
+          @media screen and(max-width: $break-sm) {
             margin: 20px 0 20px 15%;
           }
-          
         }
-
       }
 
       .assets-1 {
         padding: 80px 0;
-        background-color: #F9F9F9;
-        @media screen and(max-width: $break-sm){
+        background-color: #f9f9f9;
+        @media screen and(max-width: $break-sm) {
           padding: 80px 0 20px;
         }
         .content {
           .title {
             font-size: 26px;
-            color: #3D3D3D;
+            color: #3d3d3d;
             margin: 0 0 40px;
           }
 
@@ -1450,45 +1439,45 @@
             .r-info {
               margin: 40px 0;
               .title {
-                color: #3D3D3D;
+                color: #3d3d3d;
                 font-weight: 600;
-                font-size: 18px;                
-                margin-bottom: 15px;                
+                font-size: 18px;
+                margin-bottom: 15px;
               }
-              .fonts{            
-                p{
+              .fonts {
+                p {
                   margin-right: 20px;
                   padding-right: 15px;
-                  border-right: 1px solid #3D3D3D;
-                  &:last-child{
+                  border-right: 1px solid #3d3d3d;
+                  &:last-child {
                     border: none;
                   }
                 }
               }
-              .colors{
+              .colors {
                 flex-wrap: wrap;
-                .r-color{
+                .r-color {
                   display: flex;
                   margin-right: 20px;
                   margin-bottom: 20px;
-                  p{
+                  p {
                     font-weight: 600;
                   }
-                  .c-color{
-                    width:50px;
-                    height:50px;
+                  .c-color {
+                    width: 50px;
+                    height: 50px;
                     border-radius: 50%;
                     display: inline-block;
                     background-color: $color-two;
                     margin-right: 10px;
-                    &.c1{
-                      background-color: #FF658E;
+                    &.c1 {
+                      background-color: #ff658e;
                     }
-                    &.c2{
-                      background-color: #00BDCC;
+                    &.c2 {
+                      background-color: #00bdcc;
                     }
-                    &.c3{
-                      background-color: #C8C8C8;
+                    &.c3 {
+                      background-color: #c8c8c8;
                     }
                   }
                 }
@@ -1497,31 +1486,31 @@
           }
         }
       }
-      .assets-2{
-        background-color: #FF6590;
-        background-size: contain;                
+      .assets-2 {
+        background-color: #ff6590;
+        background-size: contain;
         padding: 0 0 280px;
-        @media screen and(max-width: $break-sm){
+        @media screen and(max-width: $break-sm) {
           padding: 100px 0 280px;
         }
-        @media screen and(max-width: $break-xs){
+        @media screen and(max-width: $break-xs) {
           padding: 80px 0 180px;
         }
 
-        .content{
+        .content {
           padding: 0 25px;
           .title {
             font-size: 26px;
-            color:white;
+            color: white;
             margin: 0 0 40px;
           }
         }
       }
-      .assets-3{
+      .assets-3 {
         background-color: white;
         padding: 0 0 80px;
         text-align: center;
-        .img-responsive{
+        .img-responsive {
           max-width: 70%;
           margin: -400px auto 0;
         }
@@ -1541,7 +1530,7 @@
     }
 
     .sec-hero {
-      background-color: #CBF3F5;
+      background-color: #cbf3f5;
       padding: 120px 0;
       background-size: cover;
       position: relative;
@@ -1619,16 +1608,16 @@
         }
 
         .icon-svg {
-          fill: #5415C2;
+          fill: #5415c2;
         }
 
         .details {
           margin-top: 40px;
 
           &:before {
-            content: "";
+            content: '';
             display: block;
-            background-color: #51B1B4;
+            background-color: #51b1b4;
             width: 2px;
             height: 50px;
             margin: 25px 0;
@@ -1652,7 +1641,7 @@
 
       .img-responsive {
         margin-top: -30%;
-        margin-left: 110px
+        margin-left: 110px;
       }
 
       .sec-title {
@@ -1665,13 +1654,14 @@
       }
 
       .icon-svg {
-        fill: #51B1B4;
+        fill: #51b1b4;
       }
 
       .content {
         padding: 0 40px;
 
-        @media screen and (max-width: $break-sm) {}
+        @media screen and (max-width: $break-sm) {
+        }
       }
 
       .block-info {
@@ -1680,7 +1670,6 @@
         .title {
           font-size: 36px;
           font-weight: 600;
-
         }
 
         .sec-text {
@@ -1716,7 +1705,7 @@
           position: relative;
 
           &:after {
-            content: "";
+            content: '';
             display: inline-block;
             width: 70px;
             height: 7px;
@@ -1777,8 +1766,6 @@
         }
       }
 
-
-
       .block-info {
         color: white;
 
@@ -1800,7 +1787,7 @@
           margin-top: 40px;
 
           &:before {
-            content: "";
+            content: '';
             display: block;
             background-color: white;
             width: 2px;
@@ -1823,7 +1810,7 @@
     .sec-info-1 {
       padding: 80px 0;
       position: relative;
-      background-color: #0073F9;
+      background-color: #0073f9;
 
       .img-back1 {
         position: absolute;
@@ -1875,7 +1862,6 @@
           }
         }
       }
-
     }
 
     .sec-info-2 {
@@ -1900,7 +1886,6 @@
         .title {
           font-size: 36px;
           font-weight: 600;
-
         }
 
         .sec-text {
@@ -1936,7 +1921,7 @@
           position: relative;
 
           &:after {
-            content: "";
+            content: '';
             display: inline-block;
             width: 70px;
             height: 7px;
@@ -1948,14 +1933,12 @@
           }
         }
       }
-
     }
   }
 }
 
-
 .project-footer {
-  background-color: #F8F8F8;
+  background-color: #f8f8f8;
   padding: 40px 20px;
 
   .action {
@@ -1963,7 +1946,7 @@
     color: $color-text;
     font-size: 20px;
     font-weight: 600;
-    border-bottom: 3px solid #DFDFDF;
+    border-bottom: 3px solid #dfdfdf;
     margin-bottom: 20px;
 
     @media screen and (max-width: $break-sm) {
@@ -1976,7 +1959,7 @@
     font-size: 44px;
     font-weight: 600;
     color: #383737;
-    transition: .7s all ease;
+    transition: 0.7s all ease;
     height: 45px;
     cursor: pointer;
 
@@ -1995,7 +1978,7 @@
   }
 }
 
-.section-waves{
+.section-waves {
   display: block;
   margin: -2px 0;
 }

@@ -16,7 +16,7 @@ const PageEvet = () => (
           <Link to="/websites">
             <div className="d-flex">
               <ArrowBack width="22px" height="22px" />
-              <span className="action">REGRESAR</span>
+              <span className="action">BACK</span>
             </div>
           </Link>
         </div>
@@ -94,7 +94,7 @@ const PageEvet = () => (
                     <img className="i-tool" src={imgAdobe} alt="" />
                   </div>
                 </div>
-                <a href="https://www.evet.io" target="_blank" className="nav-link">www.evet.io</a>
+                <a href="https://www.evet.io" target="_blank" rel="noreferrer" className="nav-link">www.evet.io</a>
               </div>
             </div>
           </div>

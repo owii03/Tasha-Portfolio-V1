@@ -24,7 +24,7 @@ const PageGMF = () => (
             <Link to="/apps">
               <div className="d-flex">
                 <ArrowBack width="22px" height="22px" />
-                <span className="action">REGRESAR</span>
+                <span className="action">BACK</span>
               </div>
             </Link>
           </div>

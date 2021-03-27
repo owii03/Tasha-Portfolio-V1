@@ -14,7 +14,7 @@ const Websites = () => (
           <div className="navigate">
             <Link className="action" to="/">
             <ArrowBack width="22px" height="22px" />
-            <span className="hidden-sm">REGRESAR</span>
+            <span className="hidden-sm">BACK</span>
             </Link>
           </div>      
         </div>
@@ -41,14 +41,14 @@ const Websites = () => (
                 <div className="col-md-5">
                   <div className="block-info text-left">
                     <p className="title">INXIGHTS</p>
-                    <p className="subtitle"><span>//</span>website</p>
+                    <p className="subtitle"><span>{'//'}</span>website</p>
                     <p className="sec-text">
                     Plataforma para monitorear campañas creando informes de marketing, generando informes profesionales que permiten ver el rendimiento de todas las campañas.
                     </p>
                     <Link to="/websites/inxights" className="link">VER MÁS</Link>
                   </div>
                 </div>
-              </div>
+              </div> 
             </div>
           </div>
         </div>
@@ -59,7 +59,7 @@ const Websites = () => (
                 <div className="col-md-5  order-sm">
                 <div className="block-info text-right">
                     <p className="title">JWH</p>
-                    <p className="subtitle">App Comida Rápida<span>//</span></p>
+                    <p className="subtitle">App Comida Rápida<span>{'//'}</span></p>
                     <p className="sec-text">
                     Esta aplicación te ayuda a realizar pedidos para ordenar hamburguesas y poderlas  personalizar, así como muestra su precio y descripción de productos.
                     </p>
@@ -83,7 +83,7 @@ const Websites = () => (
                 <div className="col-md-5">
                 <div className="block-info text-left">
                     <p className="title">EVET</p>
-                    <p className="subtitle"><span>//</span>Plataforma para Eventos</p>
+                    <p className="subtitle"><span>{'//'}</span>Plataforma para Eventos</p>
                     <p className="sec-text hidden-sm">
                     Plataforma que ayuda a crear, gestionar y hacer eventos, analizar eventos desde cualquier lugar, alcanzar nuevas audiencias y venta de entradas.</p>
                     <Link to="/websites/evet" className="link">VER MÁS</Link>

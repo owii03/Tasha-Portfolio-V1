@@ -31,7 +31,7 @@ const LayoutProject = ({children, title, link}) => (
         </Helmet>        
         <div className="static-sidebar">
           <div className="content">
-            <p className="sidebar-title">THINK MORE, DESIGN LESS</p>
+            <p className="sidebar-title">CREATIVITY IS NOTHING, BUT A MIND SET FREE</p>
           </div>
         </div>
         <div>{children}</div>

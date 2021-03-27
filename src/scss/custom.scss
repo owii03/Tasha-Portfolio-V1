@@ -82,12 +82,12 @@ summary {
 }
 
 .slick-list {
-  box-shadow: 25px 28px 40px -4px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+  box-shadow: 25px 28px 40px -4px rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .slick-slide {
   div {
-
     &:active,
     &:focus {
       outline: none;
@@ -105,7 +105,7 @@ summary {
   li {
     &.slick-active {
       button {
-        background-color: #6D6D6D;
+        background-color: #6d6d6d;
       }
     }
   }
@@ -151,7 +151,6 @@ summary {
       color: $color-two;
     }
   }
-
 }
 
 .sec-title {
@@ -161,7 +160,7 @@ summary {
   font-weight: 400;
 
   &:after {
-    content: "";
+    content: '';
     background-image: url('../images/title-line.svg');
     background-repeat: no-repeat;
     display: block;
@@ -192,7 +191,7 @@ summary {
 .sec-text {
   color: white;
   font-size: 16px;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
   line-height: 1.5;
 }
 
@@ -208,7 +207,6 @@ summary {
       height: auto;
       padding: 40px 0 0;
     }
-
 
     .section-content {
       display: flex;
@@ -230,11 +228,10 @@ summary {
             color: white;
             letter-spacing: 5px;
             position: relative;
-            transition: .4s all ease-in-out;
-
+            transition: 0.4s all ease-in-out;
 
             &:before {
-              content: "";
+              content: '';
               width: 1px;
               height: 30px;
               background-color: white;
@@ -243,7 +240,7 @@ summary {
               bottom: -35px;
               left: 50%;
               right: 50%;
-              transition: .4s all ease-in-out;
+              transition: 0.4s all ease-in-out;
             }
 
             @media screen and (max-width: $break-sm) {
@@ -253,7 +250,7 @@ summary {
 
           .close-button {
             display: none;
-            transition: .4s all ease-in-out;
+            transition: 0.4s all ease-in-out;
             @media screen and (max-width: $break-sm) {
               display: none;
             }
@@ -314,15 +311,15 @@ summary {
             margin-bottom: 10px;
             .icon-svg {
               fill: white;
-              transition: .3s all ease-out;
+              transition: 0.3s all ease-out;
               &.dribbble {
                 stroke: white;
               }
             }
-            &:hover{
-              .icon-svg{
+            &:hover {
+              .icon-svg {
                 fill: $color-two;
-                &.dribbble{
+                &.dribbble {
                   stroke: $color-two;
                 }
               }
@@ -330,7 +327,7 @@ summary {
           }
 
           &:after {
-            content: "";
+            content: '';
             width: 1px;
             height: 30px;
             background-color: white;
@@ -367,7 +364,7 @@ summary {
 
           svg {
             .h-line {
-              transition: .3s all ease;
+              transition: 0.3s all ease;
             }
 
             &:hover {
@@ -417,7 +414,7 @@ summary {
       position: relative;
 
       &:after {
-        content: "";
+        content: '';
         background-image: url('../images/hero-line.svg');
         background-repeat: no-repeat;
         display: inline-block;
@@ -500,7 +497,7 @@ summary {
             margin-right: 10px;
             color: white;
             border-bottom: 1px solid transparent;
-            transition: .3s all ease;
+            transition: 0.3s all ease;
 
             &:hover {
               font-weight: 600;
@@ -538,7 +535,7 @@ summary {
 
     .content {
       .sec-title {
-        color: #3D3D3D;
+        color: #3d3d3d;
         font-size: 50px;
         margin-bottom: 60px;
       }
@@ -575,7 +572,7 @@ summary {
             justify-content: center;
             background-color: rgba(247, 229, 223, 0.71);
             opacity: 0;
-            transition: .5s all ease;
+            transition: 0.5s all ease;
 
             .title {
               display: flex;
@@ -604,11 +601,11 @@ summary {
       .block-apps,
       .block-websites {
         .block-img {
-          background-color: #F7F7F7;
-          transition: .5s all ease;
+          background-color: #f7f7f7;
+          transition: 0.5s all ease;
 
           &:hover {
-            background-color: #FFDACF;
+            background-color: #ffdacf;
           }
 
           img {
@@ -620,8 +617,6 @@ summary {
           color: #333;
         }
       }
-
-
     }
   }
 
@@ -648,12 +643,10 @@ summary {
       .cover-areas {
         max-width: 100%;
         padding: 0 10%;
-
       }
     }
   }
 }
-
 
 .menu {
   z-index: 1000;
@@ -686,7 +679,7 @@ summary {
 
       svg {
         .bc-l {
-          transition: .3s all ease;
+          transition: 0.3s all ease;
         }
 
         &:hover {
@@ -702,7 +695,6 @@ summary {
       padding-left: 150px;
 
       @media screen and (max-width: $break-sm) {
-
         padding: 0 60px;
       }
 
@@ -716,12 +708,12 @@ summary {
         a {
           display: block;
           color: white;
-          font-size: 26px;
+          font-size: 20px;
           font-weight: 300;
           margin: 20px 0;
         }
 
-        a:hover{
+        a:hover {
           color: $color-two;
         }
 
@@ -751,5 +743,26 @@ summary {
 .or-sm-1 {
   @media screen and (max-width: $break-sm) {
     order: 1;
+  }
+}
+
+.icon-svg2 {
+  fill: white;
+
+  &:hover {
+    fill: $color-two;
+  }
+}
+
+// new from Owii
+.inlineLink {
+  font-weight: 600;
+  color: #9e4446;
+
+  &:hover {
+    background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/78779/bacon.svg');
+    // background-position: 0 1.06em;
+    // background-size: 28px 9px;
+    color: #9e4446;
   }
 }
