@@ -9,11 +9,13 @@ import {
   IconHome,
 } from '../components/icons'
 import { TimelineMax, Expo } from 'gsap/TweenMax'
-import { AnchorLink } from "gatsby-plugin-anchor-links";
+import { AnchorLink } from 'gatsby-plugin-anchor-links'
 
 import lottie from 'lottie-web'
 import animationAbout from '../lottie/acerca-demi.json'
 import animationHero from '../lottie/principal.json'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faStar, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons'
 
 import Layout from '../components/layout'
 import img1 from '../images/logo2.svg'
@@ -384,8 +386,12 @@ class IndexPage extends Component {
                     <p className="sec-text">
                       If you want to know more about me, checkout{' '}
                       <AnchorLink className="inlineLink" to="/#journey">
-                        My Cool Projects!
+                        My Work Journey{' '}
                       </AnchorLink>
+                      or{' '}
+                      <Link className="inlineLink" to="/websites">
+                        My Projects!
+                      </Link>
                     </p>
                     {/* <div className="social-links">
                       <div className="s-link">
@@ -471,53 +477,84 @@ class IndexPage extends Component {
               <div className="content text-center">
                 <h1 className="sec-title ">WORK JOURNEY</h1>
 
-
-
-
-
                 <div className="containerTimeline">
-            <div className="timeline">
-                <div className="timeline-container primary">
-                    <div className="timeline-icon">
-                        <i className="far fa-grin-wink"></i>
-                    </div>
-                    <div className="timeline-body">
-                        <h4 className="timeline-title"><span className="badge">Primary</span></h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam necessitatibus numquam earum ipsa fugiat veniam suscipit, officiis repudiandae, eum recusandae neque dignissimos. Cum fugit laboriosam culpa, repellendus esse commodi deserunt.</p>
+                  <div className="timeline">
+                    <div className="timeline-container primary">
+                      <div className="timeline-icon">
+                        <FontAwesomeIcon
+                          className="ikon"
+                          icon={faMapMarkerAlt}
+                        />
+                      </div>
+                      <div className="timeline-body">
+                        <h4 className="timeline-title">
+                          <span className="badge">Primary</span>
+                        </h4>
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit. Aliquam necessitatibus numquam earum ipsa fugiat
+                          veniam suscipit, officiis repudiandae, eum recusandae
+                          neque dignissimos. Cum fugit laboriosam culpa,
+                          repellendus esse commodi deserunt.
+                        </p>
                         <p className="timeline-subtitle">1 Hours Ago</p>
+                      </div>
                     </div>
-                </div>
-                <div className="timeline-container danger">
-                    <div className="timeline-icon">
-                        <i className="far fa-grin-hearts"></i>
-                    </div>
-                    <div className="timeline-body">
-                        <h4 className="timeline-title"><span className="badge">Danger</span></h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam necessitatibus numquam earum ipsa fugiat veniam suscipit, officiis repudiandae, eum recusandae neque dignissimos. Cum fugit laboriosam culpa, repellendus esse commodi deserunt.</p>
+                    <div className="timeline-container danger">
+                      <div className="timeline-icon">
+                        <FontAwesomeIcon className="ikon" icon={faStar} />
+                      </div>
+                      <div className="timeline-body">
+                        <h4 className="timeline-title">
+                          <span className="badge">Danger</span>
+                        </h4>
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit. Aliquam necessitatibus numquam earum ipsa fugiat
+                          veniam suscipit, officiis repudiandae, eum recusandae
+                          neque dignissimos. Cum fugit laboriosam culpa,
+                          repellendus esse commodi deserunt.
+                        </p>
                         <p className="timeline-subtitle">2 Hours Ago</p>
+                      </div>
                     </div>
-                </div>
-                <div className="timeline-container success">
-                    <div className="timeline-icon">
-                        <i className="far fa-grin-tears"></i>
-                    </div>
-                    <div className="timeline-body">
-                        <h4 className="timeline-title"><span className="badge">Success</span></h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam necessitatibus numquam earum ipsa fugiat veniam suscipit, officiis repudiandae, eum recusandae neque dignissimos. Cum fugit laboriosam culpa, repellendus esse commodi deserunt.</p>
+                    <div className="timeline-container success">
+                      <div className="timeline-icon">
+                        <FontAwesomeIcon className="ikon" icon={faStar} />
+                      </div>
+                      <div className="timeline-body">
+                        <h4 className="timeline-title">
+                          <span className="badge">Success</span>
+                        </h4>
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit. Aliquam necessitatibus numquam earum ipsa fugiat
+                          veniam suscipit, officiis repudiandae, eum recusandae
+                          neque dignissimos. Cum fugit laboriosam culpa,
+                          repellendus esse commodi deserunt.
+                        </p>
                         <p className="timeline-subtitle">6 Hours Ago</p>
+                      </div>
                     </div>
-                </div>
-                <div className="timeline-container warning">
-                    <div className="timeline-icon">
-                        <i className="far fa-grimace"></i>
-                    </div>
-                    <div className="timeline-body">
-                        <h4 className="timeline-title"><span className="badge">Warning</span></h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam necessitatibus numquam earum ipsa fugiat veniam suscipit, officiis repudiandae, eum recusandae neque dignissimos. Cum fugit laboriosam culpa, repellendus esse commodi deserunt.</p>
+                    <div className="timeline-container warning">
+                      <div className="timeline-icon">
+                        <FontAwesomeIcon className="ikon" icon={faStar} />
+                      </div>
+                      <div className="timeline-body">
+                        <h4 className="timeline-title">
+                          <span className="badge">Warning</span>
+                        </h4>
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit. Aliquam necessitatibus numquam earum ipsa fugiat
+                          veniam suscipit, officiis repudiandae, eum recusandae
+                          neque dignissimos. Cum fugit laboriosam culpa,
+                          repellendus esse commodi deserunt.
+                        </p>
                         <p className="timeline-subtitle">1 Day Ago</p>
+                      </div>
                     </div>
-                </div>
-                {/* <div className="timeline-container">
+                    {/* <div className="timeline-container">
                     <div className="timeline-icon">
                         <i className="far fa-grin-beam-sweat"></i>
                     </div>
@@ -527,35 +564,26 @@ class IndexPage extends Component {
                         <p className="timeline-subtitle">3 Days Ago</p>
                     </div>
                 </div> */}
-                <div className="timeline-container info">
-                    <div className="timeline-icon">
-                        <i className="far fa-grin"></i>
-                    </div>
-                    <div className="timeline-body">
-                        <h4 className="timeline-title"><span className="badge">Info</span></h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam necessitatibus numquam earum ipsa fugiat veniam suscipit, officiis repudiandae, eum recusandae neque dignissimos. Cum fugit laboriosam culpa, repellendus esse commodi deserunt.</p>
+                    <div className="timeline-container info">
+                      <div className="timeline-icon">
+                        <FontAwesomeIcon className="ikon" icon={faStar} />
+                      </div>
+                      <div className="timeline-body">
+                        <h4 className="timeline-title">
+                          <span className="badge">Info</span>
+                        </h4>
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit. Aliquam necessitatibus numquam earum ipsa fugiat
+                          veniam suscipit, officiis repudiandae, eum recusandae
+                          neque dignissimos. Cum fugit laboriosam culpa,
+                          repellendus esse commodi deserunt.
+                        </p>
                         <p className="timeline-subtitle">4 Days Ago</p>
+                      </div>
                     </div>
+                  </div>
                 </div>
-            </div>
-        </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
                 {/* <p className="e-text">
                   {' '}
