@@ -1,7 +1,11 @@
 import React from 'react'
 import { Link } from 'gatsby'
+// import { animations } from 'react-animation'
+import { easings } from 'react-animation'
+
 import LayoutProject from '../../components/layoutproject'
 import { WaveLine, ArrowBack } from '../../components/icons'
+
 import { withPrefix } from 'gatsby'
 import hero1 from '../../images/inxight-hero.png'
 import hero2 from '../../images/inxights-hero2.png'
@@ -9,6 +13,10 @@ import img2 from '../../images/inxights-anim.gif'
 
 import imgMarvel from '../../images/marvel.svg'
 import imgAdobe from '../../images/adobexd.svg'
+
+const animatedStyle = {
+  animation: `fade-in-up ${easings.easeInSine} 1000ms forwards`
+}
 
 const PageIxights = () => (
   <LayoutProject title="JWH BURGERS" link="/websites/jwh">
@@ -18,14 +26,14 @@ const PageIxights = () => (
           <Link to="/websites">
             <div className="d-flex">
               <ArrowBack width="22px" height="22px" />
-              <span className="action" >REGRESAR</span>
+              <span className="action">BACK</span>
             </div>
           </Link>
         </div>
       </div>
       <section className="sec-hero">
-        <div className="container content">
-          <h1 className="title">INXIGHTS</h1>
+        <div className="container content" style={animatedStyle}>
+          <h1 className="title" >INXIGHTS</h1>
           <p className="sec-text">Plataforma para monitorear campañas</p>
         </div>
         <img className="sec-cover animated hidden-sm fadeIn" src={hero1} alt="" />

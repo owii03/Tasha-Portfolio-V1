@@ -17,7 +17,7 @@ const Apps = () => (
           <div className="navigate">
             <Link className="action" to="/">
             <ArrowBack width="22px" height="22px" />
-            <span className="hidden-sm">REGRESAR</span>
+            <span className="hidden-sm">BACK</span>
             </Link>
           </div>
         </div>     

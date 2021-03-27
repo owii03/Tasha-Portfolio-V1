@@ -35,7 +35,7 @@ const Layout = ({ children }) => (
         {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
         <div className="static-sidebar">
           <div className="content">
-            <p className="sidebar-title">THINK MORE, DESIGN LESS</p>
+            <p className="sidebar-title">CREATIVITY IS NOTHING, BUT A MIND SET FREE</p>
           </div>
         </div>
         <div style={{position:'relative'}}>{children}</div>

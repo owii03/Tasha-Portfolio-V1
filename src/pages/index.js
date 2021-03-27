@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from "gatsby"
-import { IconBehance, IconInstagram, IconDribbble, WaveLine, IconLinkedin } from '../components/icons'
+import { IconBehance, IconInstagram, IconDribbble, WaveLine, IconLinkedin, IconHome } from '../components/icons'
 import { TimelineMax, Expo } from "gsap/TweenMax";
 
 import lottie from 'lottie-web'
@@ -56,7 +56,7 @@ class IndexPage extends Component {
 
   componentDidMount() {
     //this.showMenu()
-    this.t1.to(".menu", 2, {
+    this.t1.to(".menu", 1, {
       top: "0%",
       ease: Expo.easeInOut,      
     })
@@ -91,12 +91,14 @@ class IndexPage extends Component {
               </svg>
             </div>
             <ul>
-              <li> <Link className="m-link" to="#">Home</Link></li>
+              <li> <Link className="m-link" to="#"><IconHome width="32px" height="32px" /></Link></li>
+              <hr/>
               <br/>
               <li><span>Web Projects</span></li>
               <li> <Link className="m-link" to="/websites/inxights">Inxights</Link></li>
               <li> <Link className="m-link" to="/websites/jwh">JWH</Link></li>
               <li> <Link className="m-link" to="/websites/evet">Evet</Link></li>
+              <hr/>
               <br/>
               <li><span>Mobile Application Projects</span></li>
               <li> <Link className="m-link" to="/apps/gmf">GMF</Link></li>
@@ -145,7 +147,7 @@ class IndexPage extends Component {
                 <div className="content animated fadeInUp">
                   <h1 className="sec-title">TASHA</h1>
                   <h1 className="sec-title">CORNELIA</h1>
-                  <span style={{ padding: 0 }}>UI UX DESIGNER</span>
+                  <span style={{ padding: 0 }}>DESIGNER & PROBLEM SOLVER </span>
                 </div>
                 <div className="illustration-hero animated fadeIn" id="lottie-hero"></div>
                 {/* <img className="illustration-hero animated fadeIn" src={img2} alt="img" /> */}

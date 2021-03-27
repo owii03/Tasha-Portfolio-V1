@@ -716,7 +716,7 @@ summary {
         a {
           display: block;
           color: white;
-          font-size: 26px;
+          font-size: 20px;
           font-weight: 300;
           margin: 20px 0;
         }
@@ -751,5 +751,13 @@ summary {
 .or-sm-1 {
   @media screen and (max-width: $break-sm) {
     order: 1;
+  }
+}
+
+.icon-svg2{
+  fill: white;
+
+  &:hover{
+    fill: $color-two;
   }
 }
