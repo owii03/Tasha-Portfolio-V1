@@ -9,6 +9,7 @@ import {
   IconHome,
 } from '../components/icons'
 import { TimelineMax, Expo } from 'gsap/TweenMax'
+import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 import lottie from 'lottie-web'
 import animationAbout from '../lottie/acerca-demi.json'
@@ -256,31 +257,31 @@ class IndexPage extends Component {
                   </div>
                 </div>
                 <div className="social-container">
-                  <a
+                  {/* <a
                     target="_blank"
                     rel="noreferrer"
                     href="https://dribbble.com/Govinda_"
                   >
                     <IconDribbble width="22px" height="22px" />
-                  </a>
-                  <a
+                  </a> */}
+                  {/* <a
                     target="_blank"
                     rel="noreferrer"
                     href="https://www.instagram.com/gitagovinda_/"
                   >
                     <IconInstagram width="20px" height="20px" />
-                  </a>
+                  </a> */}
                   <a
                     target="_blank"
                     rel="noreferrer"
-                    href="https://www.behance.net/Gita-Govinda"
+                    href="https://www.behance.net/tashacornelia"
                   >
                     <IconBehance width="20px" height="20px" />
                   </a>
                   <a
                     target="_blank"
                     rel="noreferrer"
-                    href="https://www.linkedin.com/in/gita-maga%C3%B1a-a18b7b172/"
+                    href="https://www.linkedin.com/in/tasha-cornelia-8b3295158/"
                   >
                     <IconLinkedin width="18px" height="18px" />
                   </a>
@@ -382,9 +383,9 @@ class IndexPage extends Component {
                     </p>
                     <p className="sec-text">
                       If you want to know more about me, checkout{' '}
-                      <Link className="inlineLink" to="/websites">
+                      <AnchorLink className="inlineLink" to="/#journey">
                         My Cool Projects!
-                      </Link>
+                      </AnchorLink>
                     </p>
                     {/* <div className="social-links">
                       <div className="s-link">
@@ -431,7 +432,7 @@ class IndexPage extends Component {
           </section>
           <section className="sec-projects">
             <div className="content text-center">
-              <h1 className="sec-title ">PROYECTOS</h1>
+              <h1 className="sec-title ">Projects</h1>
               <div className="container-fluid">
                 <div className="row align-items-stretch">
                   <div className="col-md-6 px-0 text-center">
@@ -441,7 +442,7 @@ class IndexPage extends Component {
                         <div className="overlay">
                           <Link to="/apps/" className="title">
                             {' '}
-                            <span>MOBILE & APPS</span>
+                            <span>MOBILE APPS</span>
                           </Link>
                         </div>
                       </div>
@@ -454,7 +455,7 @@ class IndexPage extends Component {
                         <img src={img5} alt="" />
                         <div className="overlay">
                           <Link to="/websites/" className="title ">
-                            <span>WEB DESIGN</span>
+                            <span>WEBSITES</span>
                           </Link>
                         </div>
                       </div>
@@ -465,17 +466,104 @@ class IndexPage extends Component {
               </div>
             </div>
           </section>
-          <section className="sec-areas">
+          <section className="sec-areas" id="journey">
             <div className="container">
               <div className="content text-center">
-                <h1 className="sec-title ">ÁREAS DE DISEÑO</h1>
-                <p className="e-text">
+                <h1 className="sec-title ">WORK JOURNEY</h1>
+
+
+
+
+
+                <div className="containerTimeline">
+            <div className="timeline">
+                <div className="timeline-container primary">
+                    <div className="timeline-icon">
+                        <i className="far fa-grin-wink"></i>
+                    </div>
+                    <div className="timeline-body">
+                        <h4 className="timeline-title"><span className="badge">Primary</span></h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam necessitatibus numquam earum ipsa fugiat veniam suscipit, officiis repudiandae, eum recusandae neque dignissimos. Cum fugit laboriosam culpa, repellendus esse commodi deserunt.</p>
+                        <p className="timeline-subtitle">1 Hours Ago</p>
+                    </div>
+                </div>
+                <div className="timeline-container danger">
+                    <div className="timeline-icon">
+                        <i className="far fa-grin-hearts"></i>
+                    </div>
+                    <div className="timeline-body">
+                        <h4 className="timeline-title"><span className="badge">Danger</span></h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam necessitatibus numquam earum ipsa fugiat veniam suscipit, officiis repudiandae, eum recusandae neque dignissimos. Cum fugit laboriosam culpa, repellendus esse commodi deserunt.</p>
+                        <p className="timeline-subtitle">2 Hours Ago</p>
+                    </div>
+                </div>
+                <div className="timeline-container success">
+                    <div className="timeline-icon">
+                        <i className="far fa-grin-tears"></i>
+                    </div>
+                    <div className="timeline-body">
+                        <h4 className="timeline-title"><span className="badge">Success</span></h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam necessitatibus numquam earum ipsa fugiat veniam suscipit, officiis repudiandae, eum recusandae neque dignissimos. Cum fugit laboriosam culpa, repellendus esse commodi deserunt.</p>
+                        <p className="timeline-subtitle">6 Hours Ago</p>
+                    </div>
+                </div>
+                <div className="timeline-container warning">
+                    <div className="timeline-icon">
+                        <i className="far fa-grimace"></i>
+                    </div>
+                    <div className="timeline-body">
+                        <h4 className="timeline-title"><span className="badge">Warning</span></h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam necessitatibus numquam earum ipsa fugiat veniam suscipit, officiis repudiandae, eum recusandae neque dignissimos. Cum fugit laboriosam culpa, repellendus esse commodi deserunt.</p>
+                        <p className="timeline-subtitle">1 Day Ago</p>
+                    </div>
+                </div>
+                {/* <div className="timeline-container">
+                    <div className="timeline-icon">
+                        <i className="far fa-grin-beam-sweat"></i>
+                    </div>
+                    <div className="timeline-body">
+                        <h4 className="timeline-title"><span className="badge">Secondary</span></h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam necessitatibus numquam earum ipsa fugiat veniam suscipit, officiis repudiandae, eum recusandae neque dignissimos. Cum fugit laboriosam culpa, repellendus esse commodi deserunt.</p>
+                        <p className="timeline-subtitle">3 Days Ago</p>
+                    </div>
+                </div> */}
+                <div className="timeline-container info">
+                    <div className="timeline-icon">
+                        <i className="far fa-grin"></i>
+                    </div>
+                    <div className="timeline-body">
+                        <h4 className="timeline-title"><span className="badge">Info</span></h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam necessitatibus numquam earum ipsa fugiat veniam suscipit, officiis repudiandae, eum recusandae neque dignissimos. Cum fugit laboriosam culpa, repellendus esse commodi deserunt.</p>
+                        <p className="timeline-subtitle">4 Days Ago</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                {/* <p className="e-text">
                   {' '}
                   <span>Diseño UX - UI:</span> Me especialicé en diseño ux - ui
                   para crear interacciones y generar experiencias en los
                   usuarios. Actualmente llevo 2 años y medio en esta área del
                   diseño.
-                </p>
+                </p> */}
                 <img
                   className="cover-areas animated fadeIn"
                   src={img6}
