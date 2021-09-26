@@ -16,6 +16,7 @@ module.exports = {
         display: 'standalone',
         icon: 'src/images/logo-pwa.png',
         scope: '/apps/',
+        target: 'serverless'
       },
     },
     'gatsby-plugin-offline',
