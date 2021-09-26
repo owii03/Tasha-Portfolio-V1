@@ -203,7 +203,7 @@ class IndexPage extends Component {
           <section className="sec-hero">
             <div className="section-content">
               <div className="navbar">
-                <div
+                {/* <div
                   className={
                     this.state.openMenu
                       ? 'menu-container close'
@@ -224,8 +224,8 @@ class IndexPage extends Component {
                     onClick={e => {
                       this.openMenu(e)
                     }}
-                  >
-                    <svg
+                  > */}
+                    {/* <svg
                       className="icon-svg"
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 19.2 19.2"
@@ -255,9 +255,9 @@ class IndexPage extends Component {
                           transform="translate(56.186 131.029) rotate(-45)"
                         />
                       </g>
-                    </svg>
-                  </div>
-                </div>
+                    </svg> */}
+                  {/* </div>
+                </div> */}
                 <div className="social-container">
                   {/* <a
                     target="_blank"
