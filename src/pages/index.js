@@ -64,12 +64,17 @@ class IndexPage extends Component {
   componentWillMount() {}
 
   componentDidMount() {
-    //this.showMenu()
-    this.t1.to('.menu', 1, {
-      top: '0%',
-      ease: Expo.easeInOut,
-    })
-    this.t1.reverse()
+
+
+    // const module = typeof window !== `undefined` ? require("") : null
+
+
+    // //this.showMenu()
+    // this.t1.to('.menu', 1, {
+    //   top: '0%',
+    //   ease: Expo.easeInOut,
+    // })
+    // this.t1.reverse()
 
     lottie.loadAnimation({
       container: document.getElementById('lottie'), // the dom element that will contain the animation
