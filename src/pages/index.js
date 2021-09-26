@@ -8,7 +8,7 @@ import {
   IconLinkedin,
   IconHome,
 } from '../components/icons'
-import { TimelineMax, Expo } from 'gsap/TweenMax'
+import { TimelineMax, Expo } from 'gsap/all'
 import { AnchorLink } from 'gatsby-plugin-anchor-links'
 
 import lottie from 'lottie-web'
